@@ -3578,18 +3578,18 @@ h2{
 	background-position: right top;
 }
 .plus2{
-	background-image:url(/images/general-img/mas.png) !important;
+	background-image:url(/images/general-img/plus.png) !important;
 	background-repeat:no-repeat;
 	background-position: right top;
 }
 .minus3 {
-	background-image:url(/images/general-img/menos.png) !important;
+	background-image:url(./images/general-img/menos.png) !important;
 	background-repeat:no-repeat;
 	background-position:right;
 	cursor:pointer;
 }
 .plus3 {
-	background-image:url(/images/general-img/mas.png) !important;
+	background-image:url(./images/general-img/plus.png) !important;
 	background-repeat:no-repeat;
 	background-position:right;
 	cursor:pointer;
@@ -4888,13 +4888,13 @@ width: 20%;
 	cursor:pointer;
 }
 .minusdet {
-	background-image:url(/images/menos_det.png) !important;
+	background-image:url(../images/menos_det.png) !important;
 	background-repeat:no-repeat;
 	background-position:right;
 	margin-bottom:0px;
 }
 .plusdet {
-	background-image:url(/images/mas_det.png) !important;
+	background-image:url(../images/mas_det.png) !important;
 	background-repeat:no-repeat;
 	background-position:right;
 	margin-bottom:10px;
