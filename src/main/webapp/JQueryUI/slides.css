@@ -1,0 +1,69 @@
+#container,#index_slides,#container .slides_container,#container .slides_container div.slide {width:560px;}
+#container,#inside_container {/*padding:10px;*/margin:0 auto;position:relative;z-index:0;background:#010000;height:250px;font-size:12px;}
+#index_slides,#inside_slides {height:250px;position:relative;}
+
+#container #ribbon {position:absolute;top:-3px;left:-15px;z-index:500;}
+
+#container #frame {position:absolute;z-index:0;width:560px;height:250px;top:-3px;left:-80px;}
+
+/*
+	Slideshow
+*/
+
+#container #slides,#inside_container #slides {position:absolute;top:0px;left:0px;z-index:100;}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+#container .slides_container,#inside_container .slides_container {overflow:hidden;position:relative;display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+#container .slides_container div.slide,#inside_container .slides_container div.slide {height:230px;display:block;}
+
+
+/*
+	Next/prev buttons
+*/
+#container #slides .next,#slides .prev{/*left:333px;*/left:420px;}
+#container #slides .next,#slides .prev,#inside_container #slides .next,#slides .prev {position:absolute;top:230px;width:22px;height:20px;display:block;z-index:101;}
+
+#container #slides .next {left:530px;}
+
+/*
+	Pagination
+*/
+
+#container .pagination,#inside_container .pagination {margin:0px auto;/*width:160px;*/width:150px;float:right;padding-right:10px;
+}
+
+.pagination li {float:left;margin:0 1px;list-style:none;}
+
+.pagination li a {display:block;width:22px;height:0;padding-top:20px;background-image:url(/App_Themes/Default/Images/pagination.gif);	background-position:0 0;float:left;	overflow:hidden;}
+.pagination li.current a {background-position:0 -20px;}
+
+/*
+	Caption
+*/
+#container .caption {width:540px;}
+#container .caption,#inside_container .caption {z-index:500;position:absolute;bottom:-35px;left:0;height:30px;
+	padding:5px 20px 0 20px;background:#000; -moz-opacity:0.7; -webkit-opacity:0.7; opacity:0.7; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);/*border-top:1px solid #333;*/text-shadow:none;
+}
+.caption p{font-size:14px;text-align:center;color:#FFFFFF;}
+
+#inside_container,#inside_slides,#inside_container,#inside_container .slides_container{width:780px;}
+#inside_container .slides_container {overflow:hidden;position:relative;display:none;}
+#inside_container #slides .next,#inside_container #slides .prev{left:553px;}
+#inside_container #slides .next {left:750px;}
+#inside_container .caption{width:760px;}

@@ -1,0 +1,5257 @@
+
+@charset "utf-8";
+/* todo el css */
+
+html, body {
+    width  : 100%;
+}
+.cargando {
+    position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+    background: #fff url(/images/general-img/xd.gif) no-repeat center;
+}
+
+.video-responsive {
+position: relative;
+padding-bottom: 56.25%; /* 16/9 ratio */
+padding-top: 30px; /* IE6 workaround*/
+height: 0;
+overflow: hidden;
+}
+ 
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Oswald;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 120%;
+	color: #666666;
+	background-color: #FFFFFF;
+	background-image: url();
+	background-repeat: repeat-x;
+	background-position: left top;
+	background-attachment: scroll;
+}
+a {
+	color: #69B308;
+	text-decoration: none;
+	font-weight: normal;
+	font-style: normal;
+}
+a:hover {
+	color: #254003;
+}
+h1{
+	width: 97%;
+	float:left;
+	padding-top: 10px;
+	padding-right: 3%;
+	padding-bottom: 10px;
+	padding-left: 0%;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 120%;
+	font-style: normal;
+	color: #69B308;
+	background-color: #FFFFFF;
+	background-image: url( );
+	background-repeat:  no-repeat;
+	background-position:  left top;
+	margin: 0px;
+}
+.centrar {
+	width:95%!important;
+}
+.centrart {
+	text-align:center;
+}
+h2{
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	margin: 0px;
+	color: #69B308;
+	padding: 0px;
+	line-height: 120%;
+}
+h1.ache2{
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	margin-bottom: 1% !important;
+	color: #69B308 !important;
+	background-color: transparent !important;
+	padding: 0px !important;
+	line-height: 120%;
+}
+h2 a{
+	color: #69B308;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: normal;
+}
+h2 a:hover{
+	color: #305204;
+}
+select{
+	height: 26px;
+	padding: 2px;
+	font-family: Oswald;
+	font-size: 20px;
+	font-style: normal;
+	line-height: 120%;
+	color: #666666;
+	border: 1px solid #212121;
+	background-image: url();
+	background-repeat: ;
+	background-position: ;
+	background-color:  #FFFFFF;
+}
+
+input[type=text]{
+/* 	padding: 2%; 
+	font-family: Oswald;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 110%;
+	color: #666666;
+	border: 1px solid #212121;
+	background-image: url();
+	background-repeat: ;
+	background-position: ;
+	background-color:  #FFFFFF;
+	*/
+}
+input[type=password]{
+	padding: 2%;
+	font-family: Oswald;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 110%;
+	color: #666666;
+	border: 1px solid #212121;
+	background-image: url();
+	background-repeat: ;
+	background-position: ;
+	background-color:  #FFFFFF;
+}
+textarea{
+	height: 32px;
+	padding: 1%;
+	font-family: Oswald;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 110%;
+	color: #666666;
+	border: 1px solid #212121;
+	background-image: url();
+	background-repeat: ;
+	background-position: ;
+	background-color:  #FFFFFF;
+}
+table td{
+	padding:8px;
+}
+a.ligaboton{
+	width:20%;
+	padding: 10px;
+	color: #4D4D4D;
+	background-color: #E6E6E6;
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+	margin-top:10px;
+	margin-bottom:10px;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position:  left top;
+}
+.ligabtn {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float:left;
+}
+a.ligaboton:hover {
+	color: #FFFFFF;
+	background-color: #69B308;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position:  left top;
+}
+.resalta {
+	font-weight:bold;
+}
+#wrapper {
+	width: 100%;
+}
+
+#border {
+	width: 100%;
+	text-align: center;
+}
+
+#plecaup {
+	width:100%;
+	float:left;
+	background-color: #333333;
+	padding-top: 0%;
+	padding-right: 0%;
+	padding-bottom: 0%;
+	padding-left: 0%;
+	background-attachment: scroll;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+	display:block;
+	text-align: center;
+}
+#plecaup .contienemenutop {
+	width: 88%;
+	clear:left;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	max-width: 1200px;
+}
+#plecaup .menu {
+	width: 100%;
+	float:left;
+}
+#mensup {
+	display:none;
+}
+#plecaup .menu ul{
+	margin: 0px;
+	padding: 0px;
+	list-style:none;
+	float:left;
+	width: 80%;
+}
+#plecaup .menu li{
+	display:block;
+	float:left;
+	padding: 1.3%;
+	vertical-align: middle;
+	list-style:none;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-width: 1px;
+	border-right-color: transparent;
+	width: 9%;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: normal;
+	text-align: center;
+}
+#plecaup .menu li:hover {
+		background-color:#69B308;
+		color: #FFFFFF;
+		cursor: pointer;
+}
+#plecaup .menu li:hover a {
+		background-color:#69B308;
+		color: #FFFFFF;
+}
+#plecaup .menu li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: normal;
+}
+#plecaup .menu li a:hover{
+	color: #FFFFFF;
+}
+#plecaup .msg {
+	float:right;
+	width:10%;
+	padding: 0.8%;
+	width: 9%;
+	text-align: center;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: normal;
+	white-space: nowrap;
+}
+#plecaup .msg:hover  {
+		background-color:#69B308;
+		color: #FFFFFF;
+		cursor: pointer;
+}
+#plecaup .msg:hover a {
+		background-color:#69B308;
+		color: #FFFFFF;
+}
+#plecaup .msg .carrito {
+	width: 460px;
+	float:right;
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3789/imagen_carrito.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 2px;
+}
+#plecaup .msg a{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-style: normal;
+}
+#plecaup .msg a:hover{
+	color: #FFFFFF;
+}
+#header {
+	width: 94%;
+	padding-right: 3%;
+	padding-left: 3%;
+	padding-top:1%;
+	padding-bottom: 1%;
+	float:left;
+	background-color:rgb(255, 175, 54);
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll;
+}
+#header .contienelogo {
+	width: 100%;
+	margin-right: auto;
+	margin-left:auto;
+	max-width: 1200px;
+}
+#headercheckout {
+	width: 94%;
+	padding-right: 3%;
+	padding-left: 1%;
+	padding-top:1%;
+	padding-bottom: 1%;
+	float:left;
+	background-color: #FFFFFF;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll;
+}
+#headercheckout .logo {
+	width: auto;
+	float:none;
+	font-size: 40px;
+	max-width: 1197px;
+	color: #000000;
+	text-align: ;
+	margin-left: auto;
+	margin-right:auto;
+	margin-bottom: 0px;
+}
+#headercheckout .logo a {
+	color: #000000;
+}
+#headercheckout .logo img{
+	width: auto;
+	float:none;
+	font-size: 40px;
+	max-width: 100%;
+	border:0px;
+	margin-left: auto;
+	margin-right:auto;
+}
+#header .logo {
+	width: auto;
+	float:none;
+	font-size: 40px;
+	max-width: 100%;
+	color: #000000;
+	text-align: ;
+	margin-left: auto;
+	margin-right:auto;
+}
+#header .logo a {
+	color: #000000;
+	font-style: normal;
+	line-height:auto;
+	text-align: left;
+}
+#header .logo img{
+	width: auto;
+	height:auto;
+	float:none;
+	font-size: 40px;
+	max-width: 100%;
+	border:1px;
+	margin-left: auto;
+	margin-right:auto;
+}
+#header .carrito {
+	width: 460px;
+	float:right;
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3789/imagen_carrito.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 35px;
+}
+#header .carrito a{
+	color: #525252;
+	font-style: normal;
+	line-height:150% !important;
+}
+#header .carrito a:hover{
+	color: #69B308;
+}
+#header #contcarritotop {
+	display:block;
+	float:left;
+	padding-top: 3px;
+	height: 32px;
+	line-height: 32px;
+}
+#buscador input[type=text]{
+	width: 50%;
+	padding-right: 1%;
+	height: 32px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 1%;
+	margin-left: 15px;
+	margin-right: 0px;
+	font-family: Oswald;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 110%;
+	color: #666;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #E5E5E5;
+	border-right-color: #E5E5E5;
+	border-bottom-color: #E5E5E5;
+	border-left-color: #E5E5E5;
+}
+#buscador input[type=submit]{
+	width: 35px;
+	background-image: url(./mystore/general-img/submit_buscador_imagen.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 0%;
+	height: 38px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0%;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-family: Oswald;
+	font-size: 15px;
+	line-height: 110%;
+	color: #666;
+	background-color: #FFFFFF;
+	cursor:pointer;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #E5E5E5;
+	border-right-color: #E5E5E5;
+	border-bottom-color: #E5E5E5;
+}
+#buscador input[type=submit]:focus{
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+
+}
+#buscador input[type=submit]:hover{
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3792/submit_buscador_imagen_hover.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-color: #69B308;
+}
+/* Menu Principal Horizontal ----------------------------------------------------------------------- */
+.fixed {
+    position:fixed;
+    top:0;
+	z-index:999;
+}
+#menuhoriz {
+	width:100%;
+	clear:both;
+	float:left;
+	background-color: #545454;
+	padding: 0px;
+	text-align: center;
+	display: none;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+#menuhoriz .opciones{
+	width: 88%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	max-width: 1200px;
+
+}
+.minus {
+	display:none;
+}
+.plus {
+	background-image:url(url());
+
+}
+.sinsub {
+	display:none;
+}
+#menuhoriz  ul {
+	width: 100%;
+	float:left;
+	padding: 0px;
+	margin: 0px;
+	list-style:none;
+}
+#menuhoriz li {
+	padding: 1%;
+	display: block;
+	float:left;
+	width: 14%;
+	text-align: center;
+	list-style:none;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-width: 1px;
+	border-right-color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: normal;
+	font-style: normal;
+	position:relative;
+}
+#menuhoriz li.buscadormenu{
+	width: 20%;
+	padding: 0.8%;
+	margin: 0px;
+	float:right;
+}
+#menuhoriz li.buscadormenu:hover {
+	background-color: transparent !important;
+}
+#menuhoriz li.ultimo{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	position:relative;
+}
+
+#menuhoriz li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-style: normal;
+	display:block;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: normal;
+}
+#menuhoriz li:hover a{
+	background-color: #69B308;
+	color: #FFFFFF;
+}
+#menuhoriz li:hover{
+	background-color: #000000;
+	cursor:pointer;
+}
+
+#menuhoriz ul ul {
+	display: none;
+	z-index:900;
+	position:absolute;
+	float:left;
+	margin: 0px;
+	list-style:none;
+	background-color: #000000;
+	left:0;
+	width: 150%;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+#menuhoriz ul ul li {
+	width:82%;
+	margin: 0px;
+	float:left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-top: 8px;
+	padding-right: 9px;
+	padding-bottom: 0px;
+	padding-left: 13px;
+	text-align: left;
+}
+#menuhoriz ul ul li a{
+		padding-bottom: 3px;
+		color: black !important;
+		font-style: normal !important;
+}
+
+#menuhoriz ul ul li a:hover{
+	background-color: ;
+	cursor:pointer;
+	color: #FFFFFF !important;
+}
+
+#menuhoriz .opciones .titcatresponsive {
+	display:none;
+}
+/* Banner Rotativo ----------------------------------------------------------------------- */
+#bannerprincipal {
+	/*width:96.5%;*/
+	width:97%;
+	margin-top: 1%;
+	float: none;
+	margin-right:auto;
+	margin-left:auto;
+	display: inline-block;
+	margin-bottom: 0%;
+	max-width:1200px;
+	padding-left:0%;
+	padding-right:0%;
+	/*display:none;*/
+}
+#slider1_container {
+	position: relative;
+	top: 0px; left: 0px;
+	width: 1300px;
+	height: 436px;
+	overflow: hidden;
+}
+#bannerprincipal  .contienebannerr {
+	cursor: move;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 1300px;
+	height: 436px;
+	overflow: hidden;
+}
+#bannerprincipal .textobanner {
+	position: absolute;
+	top: 0px;
+	right: ;
+	padding: 3%;
+	text-align: center;
+	font-size: 14px;
+	font-style: normal;
+	background-color: #FFFFFF;
+	height:100%;
+	color: #FFFFFF;
+	width:8%;
+	max-width:8%;
+	background: rgba(215, 215, 215, 0.34);
+	line-height:normal;
+}
+#txt2 {
+	display:block;
+}
+#txt3 {
+	display:block;
+}
+.resaltabanner {
+	font-size: 36px;
+	font-style: normal;
+	line-height: 110%;
+}
+#bannerprincipal .textobanner .btnbanner {
+	margin-top: 8%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#bannerprincipal a{
+	color: #FFFFFF;
+	font-style: normal;
+	background-color: #FFAE36;
+	padding: 8%;
+	text-decoration: none;
+}
+#bannerprincipal a:hover{
+	color: #FFFFFF;
+	background-color: #FFEB69;
+}
+/* Contiene barra y cuerpo ----------------------------------------------------------------------- */
+
+#contenedor {
+	width: 94%;
+	margin-top: 2%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	max-width: 1170px;
+	display: inline-block;
+	text-align: left;
+	padding:15px;
+	background-color: #FFFFFF;
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3817/fondo_imagen_contenedor.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll;
+}
+#contenedorcheckout {
+	width: 94%;
+	margin-top: 2%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	max-width:1170px;
+	display: inline-block;
+	text-align: left;
+	background-color: #FFFFFF;
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3817/fondo_imagen_contenedor.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll;
+	padding:1%;
+}
+.titulos{
+	width: 89%;
+	float:left;
+	padding-top: 10px;
+	padding-right: 3%;
+	padding-bottom: 10px;
+	padding-left: 8%;
+	font-size: 16px;
+}
+/* Barra lateral ----------------------------------------------------------------------- */
+#barraizq {
+	width: 20%;
+	float:left;
+	background-color: #FFFFFF;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll;
+	display: block;
+}
+#bloqueslateralcarrito {
+	width: 90%;
+	float:left;
+	margin-bottom: 10%;
+	margin-left: 6%;
+}
+#bloqueslateralcarrito .carrito {
+	width: 160px;
+	float:left;
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3789/imagen_carrito.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 35px;
+	margin-bottom:18px;
+}
+#bloqueslateralcarrito .carrito a{
+	color: #000000;
+	font-style: normal;
+	line-height: normal !important;
+}
+#bloqueslateralcarrito .carrito a:hover{
+	color: #9C9C9C;
+}
+
+#bloqueslateralcarrito #contcarritotop {
+	display:block;
+	float:left;
+	padding-top: 3px;
+	height: 32px;
+	line-height: 32px;
+}
+#bloqueslateralcarrito #buscador input[type=text]{
+	width: 71%;
+	padding-right: 5%;
+	height: 32px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5%;
+	margin-left: 0px;
+	font-family: Oswald;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 110%;
+	color: #666;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #E5E5E5;
+	border-right-color: #E5E5E5;
+	border-bottom-color: #E5E5E5;
+	border-left-color: #E5E5E5;
+}
+#bloqueslateralcarrito #buscador input[type=submit]{
+	width: 35px;
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3790/submit_buscador_imagen.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 0%;
+	height: 38px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0%;
+	margin-left: 0px;
+	font-family: Oswald;
+	font-size: 15px;
+	line-height: 110%;
+	color: #666;
+	background-color: #FFFFFF;
+	cursor:pointer;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #E5E5E5;
+	border-right-color: #E5E5E5;
+	border-bottom-color: #E5E5E5;
+	border-left-color: #E5E5E5;
+}
+#bloqueslateralcarrito #buscador input[type=submit]:hover{
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3792/submit_buscador_imagen_hover.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-color: #69B308;
+}
+#bloqueslateral {
+	width: 99%;
+	float:left;
+	border: 1px solid #D5D3D0;
+	margin-bottom: 18%;
+	background-color: #FFE09F;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll;
+}
+#bloqueslateral a{
+	color: #4D4D4D;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+}
+#bloqueslateral a:hover{
+		color: #4D4D4D;
+}
+#bloqueslateral1 {
+	width: 99%;
+	float:left;
+	background-color: #FFF3BF;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll;
+	border: 1px solid #D5D3D0;
+	margin-bottom: 18%;
+	display:block;
+}
+
+#bloqueslateral2 {
+	width: 99%;
+	float:left;
+	border: 1px solid #D5D3D0;
+	margin-bottom: 18%;
+	background-color: #FFE09F;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll;
+}
+#bloqueslateral2 a {
+	color: #4D4D4D;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+}
+#bloqueslateral2 a:hover{
+		color: #69B308;
+}
+#bloqueslateral3 {
+	width: 99%;
+	float:left;
+	border: 1px solid #D5D3D0;
+	margin-bottom: 18%;
+	background-color: #FFE09F;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll;
+}
+#bloqueslateral3 a{
+	color: #4D4D4D;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+}
+#bloqueslateral3 a:hover{
+	color: #69B308;
+}
+#bloqueslateralaceptamos {
+	width: 99%;
+	float:left;
+	border: 1px solid #D5D3D0;
+	margin-bottom: 18%;
+	background-color: #FFE09F;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll;
+}
+#barraizq .tit{
+	background-color: #69B308;
+	color: #FFFFFF;
+	font-size: ;
+}
+#barraizq .cat{
+	width: 89%;
+	float:left;
+	padding-top: 3%;
+	padding-right: 3%;
+	padding-bottom: 3%;
+	padding-left: 8%;
+}
+#barraizq .cat ul{
+	margin: 0px;
+	padding: 0px;
+}
+#barraizq .cat li{
+	list-style-type: none;
+	margin-top: 7%;
+	margin-bottom: 7%;
+	width:100%;
+}
+#barraizq .cat li a{
+	color: #424242;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: ;
+	font-style: normal;
+}
+#barraizq .cat li a:hover{
+	color: #69B308;
+}
+#barraizq .cat ul ul {
+	display: none;
+	position:relative;
+	float:left;
+	margin: 0px;
+	list-style:none;
+	left:0;
+	width: 100%;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+	margin-bottom: 7%;
+}
+#barraizq .cat ul ul li {
+	width:82%;
+	margin: 0px;
+	float:left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-top: 8px;
+	padding-right: 9px;
+	padding-bottom: 0px;
+	padding-left: 13px;
+	text-align: left;
+}
+#barraizq .cat ul ul li a{
+		padding-bottom: 3px;
+		font-style: normal;
+}
+
+#barraizq .cat ul ul li a:hover{
+	background-color: ;
+	cursor:pointer;
+	color: #69B308;
+}
+
+#barraizq .contieneproductos{
+	width: 89%;
+	float:left;
+	padding-top: 9%;
+	padding-right: 3%;
+	padding-bottom: 3%;
+	padding-left: 8%;
+}
+#barraizq .productos{
+	width: 100%;
+	float:left;
+	margin-top:3%;
+	margin-bottom:3%;
+}
+#barraizq .productos .foto{
+	width: 47%;
+	float:left;
+	padding-right:2%;
+}
+#barraizq .productos .foto img{
+	width: 80px;
+	height: auto;
+	float:left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#barraizq .productos .foto img a{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#barraizq .productos .desc{
+	width: 47%;
+	float:left;
+}
+#barraizq .productos span.normal{
+	font-size: 15px;
+	color: #2B2B2B;
+	text-decoration: line-through;
+	font-style: normal;
+	padding-right: 10px;
+	line-height:normal;
+}
+#barraizq .productos span.oferta{
+	font-size: 18px;
+	color: #69B308;
+	font-style: normal;
+	line-height:normal;
+}
+
+#barraizq .generico{
+	width: 94%;
+	float:left;
+	padding-top: 3%;
+	padding-right: 3%;
+	padding-bottom: 3%;
+	padding-left: 3%;
+	color:#4D4D4D;
+}
+#barraizq .generico .logos{
+	float:left;
+	width:100%;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#barraizq .generico .logos img{
+	width: 80%;
+	max-width: 174px;
+	height: auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#barraizq .generico ul{
+	list-style-type: none;
+	padding-left:13px;
+}
+#barraizq .generico li{
+	list-style-type: none;
+	padding-bottom: 7%;
+	margin:0px;
+}
+#encuesta {
+	width: 100%;
+}
+#encuesta td{
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+#encuesta td.radio{
+	width: 15%;
+}
+#encuesta td.votar{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#contenedor input[type=submit]{
+	padding: 10px;
+	color: #4D4D4D;
+	background-color: #E6E6E6;
+	text-align: center;
+	font-weight: normal;
+	font-style: normal;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: pointer;
+	font-family: Oswald;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position:  left top;
+
+}
+#contenedor input[type=submit]:hover{
+	color: #FFFFFF;
+	background-color: #69B308;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position:  left top;
+}
+#barraizq #banners{
+	width: 100%;
+	float:left;
+	margin-top: 0px;
+	margin-bottom: 18%;
+}
+#barraizq #banners img{
+	width: auto;
+	max-width: 100%;
+	height:auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+
+	margin-right: auto;
+	margin-left:auto;
+}
+/* Banners ----------------------------------------------------------------------- */
+#banners{
+	width: 100%;
+	max-width: 100%;
+	float:left;
+	margin-bottom: 0%;
+	margin-top:0%;
+	text-align:center;
+}
+#banners .particion1{
+	width: 100%;
+	max-width: 100%;
+	float:left;
+	margin-bottom: 2%;
+}
+#banners .particion2{
+	width: 49%;
+	float:left;
+	margin-bottom: 2%;
+}
+#banners .particion3{
+	width: 32%;
+	float:left;
+	margin-bottom: 2%;
+}
+#banners .particion4{
+	width: 23.5%;
+	float:left;
+	margin-bottom: 2%;
+}
+#banners .particion5{
+	width: 18.4%;
+	float:left;
+	margin-bottom: 2%;
+}
+#banners .particion6{
+	width: 15%;
+	float:left;
+	margin-bottom: 2%;
+}
+#banners .espacio{
+	width: 2%;
+	float:left;
+	margin-bottom: 2%;
+}
+#banners img{
+	width: auto;
+	max-width: 100%;
+	height:auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	margin-right: auto;
+	margin-left:auto;
+}
+/* Cuerpo ----------------------------------------------------------------------- */
+#cuerpo {
+	width: 77%;
+	float:left;
+	margin-left: 3%;
+	margin-right: 0%;
+}
+#cuerpo h1{
+	background-color: #69B308;
+	color: #FFFFFF;
+	font-style: ;
+	border: thin solid #FFFFFF;
+	padding-left: 1%;
+	padding-right:  1%;
+	width:;
+}
+#cuerpo .bannerinferior{
+	width: 100%;
+	float:left;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+#cuerpo .bannerinferior img{
+	width: 100%;
+	height:auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#cuerpo h1.pos{
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 120%;
+	font-style: normal;
+	color: #69B308;
+	background-color: #FFFFFF;
+	background-image: url( );
+	background-repeat:  no-repeat;
+	background-position:  left top;
+	padding-left: 1%;
+	padding-right:  1%;
+	width:98%;
+	border: thin solid transparent;
+}
+#cuerpo h1.descrip{
+	padding-left:0%;
+	width: 95%;
+	font-family: Oswald!important;
+	font-size: 15px!important;
+	line-height: 120%!important;
+	color: #666666;
+	background-color:transparent!important;
+	background-image: url()!important;
+	font-weight: normal;
+}
+
+
+/* Catalogo ----------------------------------------------------------------------- */
+#catalogo {
+	width:100%;
+	float:left;
+	margin-bottom: 20px;
+	text-align:left;
+}
+#catalogo .dest {
+	margin-right:2%;
+}
+#catalogo .productos {
+	width:30.3%;
+	border: 1px solid #FFE09F;
+	float:left;
+	margin-top: 2%;
+	margin-right: 4%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	background-color: #FFFFFF;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll;
+	min-height:480px;
+}
+#catalogo .productosultimo {
+	width:30.3%;
+	border: 1px solid #FFE09F;
+	float:left;
+	margin-top: 2%;
+	margin-right: 0%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	background-color: #FFFFFF;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll;
+	min-height:480px;
+}
+#catalogo .foto {
+	width:94%;
+	float:left;
+	padding: 3%;
+	height:auto;
+}
+#catalogo .foto a {
+	margin: 0px;
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#catalogo .foto img {
+	width:100%;
+	height:auto;
+	float:left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	max-width:100%;
+}
+#catalogo .descripcion {
+	width:94%;
+	float:left;
+	padding: 5%;
+	color: #666;
+	line-height: 160%;
+	color: #525252;
+	font-style: ;
+}
+#catalogo .precio {
+	width:90%;
+	float:left;
+	color: #4D4D4D;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 160%;
+	padding-top: 1%;
+	padding-right: 5%;
+	//padding-bottom: 1%;
+	padding-left: 5%;
+}
+#catalogo span.normal{
+	text-decoration: line-through;
+}
+#catalogo span.oferta{
+	font-size: 15px;
+	color: #69B308;
+	font-weight: bold;
+	font-style: normal;
+}
+#catalogo .detalles {
+	width:92%;
+	float:left;
+	padding:3%;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#catalogo .detalles a {
+	width:45%;
+	padding: 10px;
+	font-size: 100%;
+	color: #5C5C5C;
+	font-style: normal;
+	background-color: #E6E6E6;
+	float:left;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url();
+	background-repeat: ;
+	background-position: ;
+}
+#catalogo .detalles a:hover {
+	color: #FFFFFF;
+	background-color: #69B308;
+	background-image: url();
+	background-repeat: ;
+	background-position: ;
+}
+
+/* Paginacion ----------------------------------------------------------------------- */
+#paginacion{
+	width:100%;
+	padding-top:25px;
+	padding-bottom:10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	float:left;
+	color:#69B308;
+}
+#paginacion .cantprod{
+	width:50%;
+	float:left;
+	color: #666666;
+}
+#paginacion .mostrarprod{
+	width:50%;
+	float:right;
+	text-align: right;
+	color: #666666;
+}
+#paginacion select{
+	margin-left:10px;
+}
+#paginacion .pag{
+	width:50%;
+	float:left;
+}
+#paginacion .pag .activo{
+	padding-right:6px;
+	padding-left:6px;
+}
+#paginacion .pag a{
+	text-decoration: underline;
+	padding-right:6px;
+	padding-left:6px;
+	color:#69B308;
+	font-style: normal;
+}
+#paginacion .pag a:hover{
+	text-decoration: underline;
+	color:#919191;
+}
+#paginacion .sig{
+	width:50%;
+	float:right;
+	text-align: right;
+}
+#paginacion .sig a {
+	padding: 10px;
+	color: #4D4D4D;
+	font-style: normal;
+	background-color: #E6E6E6;
+	float:right;
+	text-align: center;
+}
+#paginacion .sig a:hover {
+	color: #FFFFFF;
+	background-color: #69B308;
+}
+
+/* Detalle ----------------------------------------------------------------------- */
+#detalle {
+	width:100%;
+	float:left;
+	margin-bottom: 20px;
+	color: #666;
+}
+
+#detalle .contienefotodetalle {
+	width:34%;
+	float:left;
+	margin-top: 2%;
+	margin-right: 3%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	max-width:310px;
+	height: auto;
+}
+#detalle .fotodetalle {
+	width:100%;
+	border: thin solid #D5D3D0;
+	float:left;
+	margin-top: 2%;
+	margin-right: 4%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	max-width:310px;
+	height: auto;
+	cursor:pointer;
+}
+#detalle .fotodetalle img {
+	width:100%;
+	height:auto;
+	float:left;
+}
+#detalle .fotosch {
+	width:30%;
+	border: thin solid #D5D3D0;
+	float:left;
+	margin-top: 2%;
+	margin-right: 4%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	max-width:310px;
+	height: auto;
+}
+#detalle .fotoschultimo {
+	width:30%;
+	border: thin solid #D5D3D0;
+	float:left;
+	margin-top: 2%;
+	margin-right: 0%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	max-width:310px;
+	height: auto;
+}
+#detalle .fotosch img {
+	width:100%;
+	height:auto;
+	float:left;
+	border:none;
+}
+#detalle .fotoschultimo img {
+	width:100%;
+	height:auto;
+	float:left;
+	border:none;
+}
+#detalle .social {
+	width:100%;
+	float:left;
+	margin-top: 3%;
+	margin-right: 4%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	height: auto;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color:#CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	padding-top: 3%;
+}
+#detalle .contienesocial {
+	float:left;
+	margin-right:15px;
+
+}
+
+#detalle .descripciondetalle {
+	width:63%;
+	height:auto;
+	float:left;
+	margin-top: 2%;
+	font-family: Oswald;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 120%;
+	color: #666666;
+}
+#detalle .encabezadodetalle {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	padding-top: 0px;
+	padding-bottom: 6px;
+	margin-bottom: 6px;
+	font-family: Oswald;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 120%;
+	color: #666666;
+}
+#detalle .descripciondetalle h1{
+	font-size: ;
+	font-weight: bold;
+	color: #69B308;
+	font-style: normal;
+	background-color: #FFFFFF;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	margin: 0px;
+	padding-top: 3px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	line-height: 120%;
+	width:100%;
+}
+#detalle span.normal{
+	text-decoration: line-through;
+	line-height: 150%;
+	font-size: 28px;
+	color: #2E2E2E;
+	font-style: normal;
+}
+#detalle span.oferta{
+	font-size: 28px;
+	color: #69B308;
+	font-weight: bold;
+	font-style: normal;
+	line-height: 120%;
+}
+#detalle .especif {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 18px;
+	float:left;
+	width:100%;
+}
+#detalle .especif .e {
+	width:90%;
+	float:left;
+	padding-top:7px;
+	padding-bottom:0px;
+	margin-bottom:10px;
+}
+#detalle .especif .valor {
+	width:79%;
+	float:left;
+	margin-left: 1%;
+	margin-bottom:10px;
+}
+#detalle .especif .e2 {
+	width:90%;
+	float:left;
+	padding-top:7px;
+	padding-bottom:0px;
+	margin-bottom:10px;
+}
+#detalle select{
+	width: 60%;
+	padding-right: 0%;
+	height: 32px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 1%;
+	font-family: Oswald;
+	font-size: 20px;
+	font-style: normal;
+	line-height: 110%;
+	border: 1px solid #E5E5E5;
+}
+#detalle .comprar1 {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 18px;
+	float:left;
+	width:100%;
+}
+#detalle input[type=text]{
+	width: 25px;
+	padding-right: 10px;
+	height: 32px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	font-family: Oswald;
+	font-size: 20px;
+	font-style: normal;
+	line-height: 110%;
+	color: #666;
+	border: 1px solid #E5E5E5;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#detalle a.comprar{
+	width:20%;
+	padding: 10px;
+	color: #4D4D4D;
+	background-color: #E6E6E6;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+}
+#detalle a.comprar:hover {
+	color: #FFFFFF;
+	background-color: #69B308;
+}
+#detalle .textodetalle{
+	padding-top: 18px;
+	padding-bottom: 8px;
+	float:left;
+	font-family: Oswald;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 120%;
+	color: #666666;
+}
+#texdetprod {
+	display:block;
+}
+#opinaproducto {
+	float:left;
+	width:100%;
+}
+
+#opinaproducto input[type=text]{
+	font-family: Oswald;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 110%;
+	color: #666666;
+	border: 1px solid #212121;
+	background-image: url();
+	background-repeat: ;
+	background-position: ;
+	background-color:  #FFFFFF;
+	width:50%;
+	text-align:left;
+	margin-left:0px;
+	margin-top: 10px;
+}
+
+
+#opinaproducto textarea {
+	width:50%;
+	text-align:left;
+	margin-left:0px;
+	height: 150px;
+	margin-top:10px;
+}
+#opinaproducto .cap {
+	margin-top:18px;
+}
+#opinaproducto #button {
+	font-size:16px;
+}
+.minusdet {
+	background-image:url() !important;
+	background-repeat:no-repeat;
+	background-position:right;
+}
+.plusdet {
+	background-image:url() !important;
+	background-repeat:no-repeat;
+	background-position:right;
+}
+#detalle .masinfo{
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#comentdet {
+	cursor:auto;
+}
+#btnescribe {
+	display:block;
+}
+
+#detalle .opiniones {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 18px;
+	float:left;
+	width:100%;
+	line-height: 130%;
+}
+#detalle .opiniones .contieneopiniones {
+	float:left;
+	width:100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	margin-bottom: 15px;
+	font-family: Oswald;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 120%;
+	color: #666666;
+
+}
+.estrellas {
+	background-image: url(http://mystore.mx/norw/misc/images/estrella_sin.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	width: 100px;
+	height: 20px;
+	padding-bottom: 5px;
+}
+#detalle .opiniones .estrellas img {
+	float:left;
+
+}
+#detalle .opiniones .porcentajeestrella {
+		background-image: url(http://mystore.mx/norw/misc/images/estrella_con.png);
+		background-position: left top;
+		width: 20px;
+		height: 20px;
+		padding: 0px;
+		float:left;
+}
+
+/* Contenidos generales ----------------------------------------------------------------------- */
+#txtcontenido {
+	width:100%;
+	float:left;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	line-height: 130%;
+}
+#txtcontenido h2 {
+	font-size: 120%;
+	line-height: normal;
+}
+#txtcontenido img {
+	max-width:100%;
+	height:auto !important;
+	float:none;
+}
+#mapa {
+	width:100%;
+	float:left;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+#mapa iframe{
+	width:100%;
+	height:650px;
+}
+/* Contenidos generales ----------------------------------------------------------------------- */
+#contacto {
+	width:100%;
+	float:left;
+	line-height:200%;
+}
+#contacto .alerta {
+	font-color: #FF0000;
+}
+#contacto .campos{
+	width:31%;
+	float:left;
+	font-weight: bold;
+	margin-right:3%;
+}
+#contacto .camposultimo{
+	width:31%;
+	float:left;
+	font-weight: bold;
+}
+#contacto .comentario{
+	width:100%;
+	float:left;
+	font-weight: bold;
+	margin-top: 20px;
+}
+#contacto .acepta{
+	width:100%;
+	float:left;
+
+	margin-top: 20px;
+}
+#contacto .captcha{
+	width:100%;
+	float:left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#contacto .captcha input[type=text]{
+	width:20%;
+	padding:6px;
+}
+#contacto input[type=text]{
+	width:100%;
+}
+#contacto textarea{
+	width:98%;
+	height: 90px;
+}
+#contacto input[type=submit]{
+	font-size: 16px;
+	font-weight: normal;
+	font-family: Oswald;
+	font-style: normal;
+}
+/* Login ----------------------------------------------------------------------- */
+#login {
+	width:100%;
+	float:left;
+}
+#login .log1 {
+	width:42%;
+	border: 1px solid #CCCCCC;
+	padding: 3%;
+	float:left;
+	margin-right:2%;
+	background-color: #EDECF0;
+	color:#363636;
+}
+#login .log2 {
+	width:42%;
+	border: 1px solid #CCCCCC;
+	background-color: #EDECF0;
+	padding: 3%;
+	margin-right:0%;
+	float:right;
+	color: #363636;
+}
+#login input[type=text]{
+	width:80%;
+}
+#login input[type=password]{
+	width:80%;
+}
+#login input[type=submit]{
+	font-size: 16px;
+	font-weight: normal;
+	font-family: Oswald;
+}
+/* Registro ----------------------------------------------------------------------- */
+#registro {
+	width:100%;
+}
+#registro .datos{
+	width:29%;
+	margin-right:4%;
+	margin-top: 2%;
+	float:left;
+}
+
+#registro .datosdostercios{
+	width:60%;
+	margin-right:4%;
+	margin-top: 2%;
+	float:left;
+}
+
+#registro input[type=text] {
+	padding: 2%;
+	width:100%;
+}
+#registro input[type=password] {
+	padding: 2.5%;
+	width:99.5%;
+}
+#registro select {
+	padding: 0%;
+	width:105%;
+}
+#registro .continuar{
+	width:100%;
+	margin-right:4%;
+	margin-top: 2%;
+	float:left;
+}
+/* Tablas ----------------------------------------------------------------------- */
+#tablaped {
+	width:100%;
+	float:left;
+	margin-top: 2%;
+}
+#tablaped table {
+	width:100%;
+}
+
+#tablaped table thead{
+	background-color: #545454;
+	color:#FFFFFF;
+}
+#tablaped table tr:nth-child(even) {
+	background-color: #E8E8E8
+}
+/* Carrito ----------------------------------------------------------------------- */
+#carrito {
+	width:100%;
+	float:left;
+	margin-top: 2%;
+}
+#carrito .cantfinal{
+	text-align:center;
+}
+#carrito .item{
+	text-align:right;
+}
+#carrito .producto{
+	text-align:left;
+}
+#carrito .alerta{
+	width:95%;
+	float:left;
+	color: #FFFFFF;
+	background-color: #69B308;
+	border: 1px solid #69B308;
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3932/carrito_alerta_palomita.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-top: 9px;
+	padding-right: 9px;
+	padding-bottom: 9px;
+	padding-left: 40px;
+	margin-bottom:20px;
+}
+
+#carrito .tablacarrito{
+	width:100%;
+	float:left;
+	margin-bottom: 2%;
+	background-color: #FFFFFF;
+	color: ;
+}
+
+#carrito .tablacarrito table {
+	border-collapse: collapse;
+}
+#carrito table thead{
+	font-weight: bold;
+}
+#carrito .tablacarrito table td{
+	border: 1px solid #E4E4E4;
+	margin:0px;
+	vertical-align: top;
+}
+#carrito .tablacarrito table td.precio{
+	text-align: right;
+}
+#carrito .tablacarrito input[type=button].borrar{
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3934/carrito_boton_borrar.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #FFFFFF;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor:pointer;
+	height:22px;
+	min-width: 50px;
+}
+#carrito .tablacarrito input[type=button].borrar:hover{
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3936/carrito_boton_borrar_hover.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #FFFFFF;
+}
+#carrito .tablacarrito img.fotocarrito{
+	width: 100px;
+	height:auto;
+	border:none;
+}
+#carrito .tablacarrito input[type=text].cant{
+	width: 25px;
+	padding-right: 10px;
+	height: 32px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	font-size: 16px;
+	line-height: 110%;
+	border: 1px solid #E5E5E5;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: ;
+}
+#carrito .tablacarrito td.actualizar{
+	text-align: right;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+#carrito .tablacarrito td.actualizar a{
+	text-align: right;
+	padding: 6px;
+}
+#carrito .textocarrito {
+	float:left;
+	width:100%;
+	margin-bottom:15px;
+}
+#carrito .contienedercarrito {
+	width: 35%;
+	float:left;
+	padding: 0%;
+}
+#carrito .contienedercarritoch {
+	width: 38%;
+	float:left;
+	padding: 0%;
+}
+#carrito .dercheckout {
+	width: 100% !important;
+}
+#carrito .contienedercartxt {
+	width: 100%;
+	float:left;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+#carrito .dercarrito {
+	width: 35%;
+	float:left;
+	border: 1px solid #000000;
+	padding: 2%;
+	background-color: #F0F0F0;
+	color: #404040;
+}
+#carrito .subtotal {
+	float:left;
+	width:48%;
+	margin-bottom:0px;
+	font-weight:bold;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 0%;
+	padding-left: 1%;
+}
+#carrito .subtotal2 {
+	float:left;
+	width:48%;
+	margin-bottom:0px;
+	text-align:right;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 0%;
+	padding-left: 1%;
+	font-weight:bold;
+}
+#carrito .izqcarrito {
+	width: 60%;
+	float:left;
+}
+#carrito .izqcarrito .datoscliente {
+	float:left;
+	width:45%;
+	margin-bottom:8px;
+	padding:1%;
+	border: 1px solid #D7D7D7;
+	margin-right:10px;
+}
+#carrito .izqcarrito .datosclientecomp {
+	float:left;
+	width:94.2%;
+	margin-bottom:8px;
+	padding:1%;
+	border: 1px solid #D7D7D7;
+	margin-right:10px;
+}
+#carrito .envios {
+	float:left;
+	width:98%;
+	margin-bottom:8px;
+	padding:1%;
+	font-weight:bold;
+}
+#carrito .coddesc {
+	float:left;
+	width:98%;
+	margin-bottom:8px;
+	padding:1%;
+}
+#carrito .coddesc .coding{
+	float:left;
+	margin-right:20px;
+}
+#carrito .coddesc  input[type=text]{
+	height:auto !important;
+	padding:5% !important;
+}
+#carrito .aplicar{
+	float:left;
+	margin-top:0px;
+	margin-bottom:0px;
+	width:50%;
+}
+#carrito .costoenvio {
+	float:left;
+	width:48%;
+	margin-bottom:0px;
+	font-weight:bold;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 0%;
+	padding-left: 1%;
+}
+#carrito .total1 {
+	float:left;
+	width:48%;
+	margin-bottom:8px;
+	text-align:right;
+	font-weight:bold;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+}
+#carrito .envios select {
+	float:left;
+	width:93%;
+}
+#carrito .totaltit {
+	float:left;
+	width:59%;
+	margin-bottom:8px;
+	padding:1%;
+	font-weight:bold;
+	background-color: #69B308;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #69B308;
+	border-right-color: #69B308;
+	border-bottom-color: #69B308;
+	border-left-color: #69B308;
+	color:#FFFFFF;
+}
+#carrito .total2 {
+	float:left;
+	width:36%;
+	margin-bottom:8px;
+	text-align:right;
+	padding:1%;
+	font-weight:bold;
+	background-color: #69B308;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #69B308;
+	border-right-color: #69B308;
+	border-bottom-color: #69B308;
+	border-left-color: #69B308;
+	color:#FFFFFF;
+}
+#carrito .monedacarrito {
+	float:left;
+	width:98%;
+	margin-bottom:8px;
+	padding:1%;
+	font-weight:bold;
+}
+#carrito .observaciones {
+	float:left;
+	width:98%;
+	margin-bottom:8px;
+	padding:1%;
+}
+#carrito .observaciones textarea {
+	width:90%;
+	height:58px;
+}
+#carrito .finalizar {
+	width: 100%;
+	float:left;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#carrito .finalizar .liga {
+	font-size:130%;
+	padding-top: 4%;
+	padding-right: 6%;
+	padding-bottom: 4%;
+	padding-left: 6%;
+}
+#carrito .finalizar input[type=button]{
+	padding: 10px;
+	color: #4D4D4D;
+	background-color: #E6E6E6;
+	text-align: center;
+	font-weight: normal;
+	font-style: normal;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: pointer;
+	font-family: Oswald;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position:  left top;
+	font-size:120%;
+}
+#carrito .finalizar input[type=button]:hover{
+	color: #FFFFFF;
+	background-color: #69B308;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position:  left top;
+}
+#carrito .sitioseguro {
+	width:100%;
+	float:left;
+	font-size:100%;
+	margin-top:20px;
+}
+#carrito .sitioseguro img {
+	float:left;
+	margin-right:10px;
+	vertical-align: text-bottom;
+	margin-bottom: 10px;
+}
+
+/* Ayuda ----------------------------------------------------------------------- */
+#ayuda {
+	width:100%;
+}
+#ayuda ul {
+	list-style-type: none;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	padding-top: 15px;
+}
+#ayuda li {
+	list-style-type: none;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+
+/* Footer ----------------------------------------------------------------------- */
+#footer {
+	width: 100%;
+	float:left;
+	background-color: transparent;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: transparent;
+	padding-bottom: 3%;
+	text-align:left;
+	color:#70635B;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll;
+}
+#footer h6 {
+	font-size: 15px;
+	text-decoration: none;
+	font-weight: normal;
+	font-style: normal;
+	margin: 0%;
+}
+#footer a {
+	color:#B0B0B0;
+}
+#footer a:hover {
+	color:#A7E887;
+}
+#footer #micuenta {
+	display:block;
+}
+#footer #cabierto {
+	display:block;
+}
+#footer #sobrenos {
+	display:block;
+}
+#footer .contenido {
+	width: 90%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	max-width: 1200px;
+}
+#footer .contenido .bloques {
+	width: 29%;
+	float:left;
+	border-right-width: thin;
+	border-right-style: solid;
+	border-right-color: #ABABAB;
+	margin-right: 5%;
+	height: 100%;
+}
+#footer .titulos {
+	padding:0px;
+	margin:0px;
+}
+#footer .contenido .bloquesultimo {
+	width: 29%;
+	float:left;
+	margin-right: 0%;
+}
+#footer .contenido .tit {
+	font-weight: bold;
+	color: #68C732;
+	font-size: ;
+	font-style: normal;
+	line-height: normal;
+	float:left;
+}
+#footer #notitresp {
+	width:100%;
+	margin-top:25px;
+}
+#footer .bloquetexto {
+	float:left;
+	padding-top: 10px;
+}
+#footer .contenido ul {
+	width: 100%;
+	float:left;
+	margin: 0px;
+	list-style:none;
+	padding-top: 1%;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#footer .contenido li {
+	display: block;
+	list-style:none;
+	padding-top: 14px;
+}
+#footer input[type=text]{
+	width: 60%;
+	padding-right: 15%;
+	height: 32px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 1%;
+	margin-top: 18px;
+	font-family: Oswald;
+	font-size: 15px;
+	font-style: normal;
+	line-height: 110%;
+	color: #666666;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #E5E5E5;
+	border-right-color: #E5E5E5;
+	border-bottom-color: #E5E5E5;
+	border-left-color: #E5E5E5;
+}
+#footer .bloquetexto input[type=submit]{
+	width: 35px;
+	padding-right: 0%;
+	height: 38px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0%;
+	margin-left: 0px;
+	font-family: Oswald;
+	font-size: 15px;
+	line-height: 110%;
+	color: #9B9B9B;
+	background-color: #FFFFFF;
+	cursor:pointer;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #E5E5E5;
+	border-right-color: #E5E5E5;
+	border-bottom-color: #E5E5E5;
+	border-left-color: #E5E5E5;
+	font-weight: bold;
+	line-height: normal;
+}
+#footer .bloquetexto input[type=submit]:hover{
+	color: #FFFFFF;
+	background-color: #000000;
+}
+#footer .textofooter {
+	width: 90%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	clear:both;
+	max-width: 1200px;
+	line-height: normal;
+}
+#footer .poweredby {
+	float: left;
+	width:70px;
+	height:83px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+}
+#footer .textofooter .textf p {
+	width:99%!important;
+	margin-top:0%;
+}
+
+#footer .redes {
+	float: left;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+#footer .redes img{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#footer .redes img:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#footer .secure {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	text-align: right;
+}
+/* Checkout ----------------------------------------------------------------------- */
+#checkout {
+	width: 100%;
+	float:left;
+	margin-top: 15px;
+		line-height:200%;
+}
+
+
+#cuerpo h1.checkout{
+	color: #FFFFFF;
+	padding-left:2%;
+	width: 95%;
+	border: 0px;
+	background-color: #575757;
+	float:left;
+	font-weight: normal;
+}
+#checkout  h2{
+	color: #FFFFFF;
+	padding-left:1%;
+	width: 98%;
+	border: 0px;
+	background-color: #69B308;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 1%;
+	float:left;
+	line-height: 40px;
+	height:40px;
+	font-weight: normal;
+}
+#checkout  h1{
+	color: #FFFFFF;
+	padding-left:1%;
+	width: 98%;
+	border: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 1%;
+	float:left;
+	line-height: 40px;
+	height:40px;
+	font-size: 130%;
+}
+.finalizap{
+	color: #FFFFFF;
+	background-color: #69B308;
+	padding-left:1%;
+	width: 99%;
+	border: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 0%;
+	float:left;
+	line-height: 40px;
+	font-size: 130%;
+	margin-left:0px;
+	margin-top:0px;
+}
+#checkout  .nopedido{
+	font-size: 180%;
+	line-height: 120%;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+#checkout  .subtitch{
+	font-size: 180%;
+	line-height: 120%;
+	margin-bottom:0px;
+
+}
+#checkout .logob{
+	padding-bottom: 0px;
+	margin-bottom:0px;
+	margin-top:0px;
+	float:left;
+	width:100%;
+}
+
+#checkout h2 .numeros {
+	color: #69B308;
+	padding-left:0%;
+	padding-right: 0%;
+	float:left;
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3974/checkout_numeracion_encabezados_imagen.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	font-size:150%;
+	min-width:40px;
+	text-align:center;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#checkout .datos {
+	width: 100%;
+	float:left;
+	margin-bottom: 15px;
+}
+#checkout .datos .pagos{
+	width: 100%;
+	float:left;
+}
+#checkout .contienedatos {
+	width: 97.7%;
+	float:left;
+	border: 1px solid #DADADA;
+	padding:1%;
+	margin-top: 15px;
+}
+#checkout .campos {
+	width: 45%;
+	float:left;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	margin-right: 5%;
+}
+#checkout .camposch {
+	width: 45%;
+	float:left;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	margin-right: 5%;
+}
+#checkout .pagos br {
+	clear:both;
+}
+#checkout .camposcompleto {
+	width: 95%;
+	float:left;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	margin-right: 0%;
+}
+#checkout input[type=submit]{
+	padding: 10px;
+	color: #4D4D4D;
+	background-color: #E6E6E6;
+	text-align: center;
+	font-weight: normal;
+	font-style: normal;
+	font-size:16px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	cursor: pointer;
+	font-family: Oswald;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position:  left top;
+}
+#checkout input[type=submit]:hover{
+	color: #FFFFFF;
+	background-color: #69B308;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position:  left top;
+}
+#checkout .campostercio {
+	width: 28%;
+	float:left;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	margin-right: 5.32%;
+}
+#checkout .camposcuarto {
+	width: 20%;
+	float:left;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	margin-right: 5%;
+}
+#checkout .divide {
+	width: 95%;
+	float:left;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	margin-right: 0%;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999;
+}
+#checkout input[type=text] {
+	width: 100%;
+	padding:9px;
+}
+#checkout input[type=password] {
+	width: 100%;
+	padding:9px;
+}
+#checkout select {
+	width: 105%;
+	padding:8px;
+	height:auto;
+	font-size: 15px;
+}
+
+#checkout img {
+	float:left;
+	padding-bottom:10px;
+	vertical-align: middle;
+}
+#barraizqcheckout {
+	width: 20%;
+	float:left;
+}
+
+#bloqueslateralcheckout {
+	width: 100%;
+	float:left;
+	margin-bottom: 5%;
+}
+#barraizqcheckout .tit{
+	background-color: #69B308;
+	color: #FFFFFF;
+}
+#barraizqcheckout .generico{
+	width: 100%;
+	float:left;
+	padding-top: 0%;
+	padding-right: 0%;
+	padding-bottom: 1%;
+	padding-left: 0%;
+}
+#barraizqcheckout .generico ul{
+	list-style-type: none;
+	padding-left:0px;
+}
+#barraizqcheckout .generico li{
+	list-style-type: none;
+	background-color: #575757;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	color:#FFFFFF;
+	padding-right: 4%;
+	padding-left: 4%;
+	padding-top: 10px;
+	padding-bottom: 11px;
+	line-height:170%;
+}
+#barraizqcheckout .generico li.activo{
+	background-color: #69B308;
+	color: #FFFFFF;
+}
+#barraizqcheckout .check {
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3982/checkout_pasos_listo_imagen_check.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-color: #949494 !important;
+	color: #FFFFFF !important;
+}
+#barraizqcheckout .generico .numeros {
+	color: #69B308;
+	padding-left:0%;
+	padding-right: 0%;
+	float:left;
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3985/checkout_pasos_listo_numeros_imagen_fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	font-size:150%;
+	line-height:110%;
+	min-width:40px;
+	text-align:center;
+
+}
+#barraizqcheckout .sitioseguro {
+	width:100%;
+	float:left;
+	font-size:85%;
+	margin-top: 20%;
+	margin-bottom: 20%;
+}
+#barraizqcheckout .sitioseguro img {
+	float:left;
+	margin-right:10px;
+	vertical-align: text-bottom;
+	margin-bottom: 10px;
+}
+#barraizqcheckout .dercarrito {
+	width: 96%;
+	float:left;
+	border: 1px solid #000000;
+	padding: 2%;
+	background-color: #F0F0F0;
+	color: #404040;
+}
+#barraizqcheckout .subtotal {
+	float:left;
+	width:48%;
+	margin-bottom:0px;
+	font-weight:bold;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 0%;
+	padding-left: 1%;
+}
+#barraizqcheckout .subtotal2 {
+	float:left;
+	width:48%;
+	margin-bottom:0px;
+	text-align:right;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 0%;
+	padding-left: 1%;
+	font-weight:bold;
+}
+#barraizqcheckout .costoenvio {
+	float:left;
+	width:48%;
+	margin-bottom:0px;
+	font-weight:bold;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 0%;
+	padding-left: 1%;
+}
+#barraizqcheckout .total1 {
+	float:left;
+	width:48%;
+	margin-bottom:8px;
+	text-align:right;
+	font-weight:bold;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+}
+#barraizqcheckout .totaltit {
+	float:left;
+	width:57%;
+	margin-bottom:8px;
+	padding:1%;
+	font-weight:bold;
+	background-color: #69B308;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #69B308;
+	border-right-color: #69B308;
+	border-bottom-color: #69B308;
+	border-left-color: #69B308;
+	color:#FFFFFF;
+}
+#barraizqcheckout .total2 {
+	float:left;
+	width:38%;
+	margin-bottom:8px;
+	text-align:right;
+	padding:1%;
+	font-weight:bold;
+	background-color: #69B308;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #69B308;
+	border-right-color: #69B308;
+	border-bottom-color: #69B308;
+	border-left-color: #69B308;
+	color:#FFFFFF;
+}
+#barraizqcheckout .monedacarrito {
+	float:left;
+	width:98%;
+	margin-bottom:8px;
+	padding:1%;
+	font-weight:bold;
+}
+#dividecarres {
+	display:none;
+}
+.canttotal1 {
+	display: none;
+}
+
+@media screen and (max-width: 1215px) {
+
+#bannerprincipal {
+	width:97%;
+	margin-top: 1%;
+	float: none;
+	margin-right:auto;
+	margin-left:auto;
+	display: inline-block;
+	margin-bottom: 0%;
+	max-width:1200px;
+	padding-left:0%;
+	padding-right:0%;
+}
+
+
+#contenedor {
+	width: 94%;
+	padding:15px;
+	max-width: 1200px;
+}
+#bannerprincipal .textobanner {
+	font-size: 128%;
+}
+
+#detalle .fotosch {
+	width:29.6%;
+	border: thin solid #D5D3D0;
+	float:left;
+	margin-top: 2%;
+	margin-right: 4%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	max-width:310px;
+	height: auto;
+}
+#detalle .fotoschultimo {
+	width:29.9%;
+	border: thin solid #D5D3D0;
+	float:left;
+	margin-top: 2%;
+	margin-right: 0%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	max-width:310px;
+	height: auto;
+}
+#buscador input[type=text]{
+	width: 48% !important;
+}
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+#bannerprincipal {
+	width:97%;
+	margin-top: 1%;
+	float: none;
+	margin-right:auto;
+	margin-left:auto;
+	display: inline-block;
+	margin-bottom: 0%;
+	max-width:1200px;
+	padding-left:0%;
+	padding-right:0%;
+}
+#contenedor {
+	width: 94%;
+	padding:15px;
+	max-width: 1200px;
+}
+
+#header .carrito {
+	width: 360px;
+	float:right;
+	padding-left: 35px;
+}
+#buscador input[type=text]{
+	width: 28% !important;
+}
+#buscador input[type=text]{
+	font-family: Oswald;
+	font-size: 15px;
+	font-style: normal;
+}
+
+/* Barra lateral ----------------------------------------------------------------------- */
+#barraizq {
+	width: 30%;
+	float:left;
+}
+/* Cuerpo ----------------------------------------------------------------------- */
+#cuerpo {
+	width: 67%;
+	float:left;
+	margin-left: 3%;
+	margin-right: 0%;
+}
+
+/* Catalogo ----------------------------------------------------------------------- */
+#catalogo .productos {
+	width:99.3%;
+	border: 1px solid #FFE09F;
+	float:left;
+	margin-top: 2%;
+	margin-right: 0%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	height:auto;
+	min-height:200px;
+
+}
+#catalogo .productosultimo {
+	width:99.3%;
+	border: 1px solid #FFE09F;
+	float:left;
+	margin-top: 2%;
+	margin-right: 0%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	height:auto;
+	min-height:200px;
+}
+#catalogo .foto {
+	width:34%;
+	float:left;
+	padding: 3%;
+}
+#catalogo .foto a {
+	margin: 0px;
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#catalogo .foto img {
+	width:100%;
+	height:auto;
+	float:left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#catalogo .descripcion {
+	width:50%;
+	float:left;
+	padding-top:3%;
+	padding-bottom:0%;
+	padding-left:5%;
+	padding-right:5%;
+	color: #525252;
+	line-height: 160%;
+}
+#catalogo .precio {
+	width:50%;
+	float:right;
+	color: #4D4D4D;
+	font-size: 15px;
+	line-height: 160%;
+	padding-top: 1%;
+	padding-right: 5%;
+	//padding-bottom: 1%;
+	padding-left: 5%;
+}
+#catalogo span.normal{
+	padding-right: 10px;
+}
+#catalogo .detalles {
+	width:50%;
+	float:right;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top:3%;
+	padding-bottom:3%;
+	padding-left:5%;
+	padding-right:5%;
+}
+#catalogo .detalles a {
+	width:70%;
+	padding: 10px;
+	float:left;
+	text-align: center;
+	font-size: 110%;
+	line-height:normal;
+}
+
+#barraizq .productos .foto{
+	width: 40%;
+	float:left;
+	padding-right:6%;
+}
+#barraizq .productos .foto img{
+	min-width: 20px;
+	height: auto;
+	float:left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+/* Detalle */
+#detalle .descripciondetalle {
+	width:60%;
+	height:auto;
+	float:left;
+	margin-top: 2%;
+}
+#detalle .fotosch {
+	width:29.6%;
+	border: thin solid #D5D3D0;
+	float:left;
+	margin-top: 2%;
+	margin-right: 4%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	max-width:310px;
+	height: auto;
+}
+#detalle .fotoschultimo {
+	width:29.8%;
+	border: thin solid #D5D3D0;
+	float:left;
+	margin-top: 2%;
+	margin-right: 0%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	max-width:310px;
+	height: auto;
+}
+/*Pleca */
+#plecaup .menu li{
+	display:block;
+	float:left;
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	vertical-align: middle;
+	list-style:none;
+}
+/*Carrito */
+#carrito .alerta{
+	width:89%;
+}
+#carrito .izqcarrito {
+	width: 100%;
+	float:left;
+}
+#carrito .dercarrito {
+	width: 94%;
+	float:left;
+	padding: 2%;
+	margin-bottom:15px;
+	margin-left:6px;
+}
+#carrito .observaciones {
+	float:left;
+	width:98%;
+	margin-bottom:8px;
+	padding:1%;
+}
+#carrito .observaciones textarea {
+	width:98%;
+	height:50px;
+}
+#carrito .envios {
+	float:left;
+	width:98%;
+	margin-bottom:8px;
+	padding:1%;
+	font-weight:bold;
+}
+#carrito .envios select {
+	float:left;
+	width:100%;
+}
+#carrito .finalizar {
+	width: 100%;
+	float:left;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#carrito .finalizar .liga {
+	font-size:130%;
+	padding-top: 2%;
+	padding-right: 6%;
+	padding-bottom: 2%;
+	padding-left: 6%;
+}
+#carrito .izqcarrito .datoscliente {
+	float:left;
+	width:29.5%;
+	margin-bottom:8px;
+	padding:1%;
+	border: 1px solid #D7D7D7;
+	margin-right:2%;
+}
+
+#carrito .izqcarrito .datosclientecomp {
+	float:left;
+	width:29.5%;
+	margin-bottom:8px;
+	padding:1%;
+	border: 1px solid #D7D7D7;
+	margin-right:0%;
+}
+#carrito .contienedercarritoch {
+	width: 94.8%;
+	float:left;
+	padding: 0%;
+}
+#barraizqcheckout .subtotal {
+	float:left;
+	width:38%;
+	margin-bottom:0px;
+	font-weight:bold;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 0%;
+	padding-left: 1%;
+}
+#barraizqcheckout .subtotal2 {
+	float:left;
+	width:58%;
+	margin-bottom:0px;
+	text-align:right;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 0%;
+	padding-left: 1%;
+	font-weight:bold;
+}
+#barraizqcheckout .costoenvio {
+	float:left;
+	width:38%;
+	margin-bottom:0px;
+	font-weight:bold;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 0%;
+	padding-left: 1%;
+}
+#barraizqcheckout .total1 {
+	float:left;
+	width:58%;
+	margin-bottom:8px;
+	text-align:right;
+	font-weight:bold;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+}
+#barraizqcheckout .totaltit {
+	width:100%;
+}
+#barraizqcheckout .total2 {
+	width:100%;
+
+}
+#barraizqcheckout .monedacarrito {
+	float:left;
+	width:98%;
+	margin-bottom:8px;
+	padding:1%;
+	font-weight:bold;
+}
+#footer input[type=text]{
+	width: 55%;
+}
+}
+
+@media screen and (max-width: 717px) {
+
+body {
+	font-size:105%;
+	line-height:normal;
+}
+h1{
+	width: 98%;
+	float:left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 8%;
+	font-size: 130%;
+	line-height:normal;
+	font-weight: normal;
+	margin: 0px;
+}
+h2{
+	font-size: 120%;
+	line-height:normal;
+	font-weight: normal;
+	margin: 0px;
+	color: #69B308;
+	padding: 0px;
+}
+#border {
+	width: 100%;
+	text-align: center;
+}
+
+#plecaup {
+	width: 94%;
+	float:left;
+	background-color:#333333;
+	background-attachment: scroll;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-top: 1%;
+	padding-right: 3%;
+	padding-bottom: 1%;
+	padding-left: 3%;
+	display:block!important;
+}
+#mensup {
+	width: 100%;
+	float:left;
+	padding-top:3%;
+	padding-bottom:3%;
+	display:block;
+}
+#mensup .mensup1 {
+	width: 33%;
+	float:left;
+	display:block;
+	cursor:pointer;
+}
+
+#plecaup .menu {
+	width: 40%;
+	float:left;
+}
+#plecaup .menu ul{
+	margin: 0px;
+	padding: 0px;
+	list-style:none;
+	position:absolute;
+	z-index:994;
+	background-color:#333333;
+	left:0px;
+	width:70%;
+}
+#plecaup .menu li{
+	display:none;
+	float:left;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	vertical-align: middle;
+	list-style:none;
+	width:100%;
+	text-align:left;
+	font-size:120%;
+	cursor:pointer;
+}
+
+#plecaup .menu li a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#plecaup .menu li a:hover{
+	color: #FF6600;
+}
+#plecaup .msg {
+	float:left;
+	text-align: right;
+	width:40%;
+	display:none;
+}
+#header .logo {
+	width: 100%;
+	float:left;
+	font-size: 40px;
+}
+
+#header .logo img{
+	width: auto;
+	float: right;
+	font-size: 40px;
+	max-width: 100%;
+	height:auto;
+	margin-left: auto;
+	border:0px;
+	margin-right:auto;
+}
+#header {
+	width: 94%;
+
+}
+#header .carrito {
+	width: 100%;
+}
+#header #contcarritotop {
+	display:none;
+}
+#buscador {
+	margin-bottom: 15px;
+	margin-top: 15px;
+	width:100%;
+	float:left;
+}
+#buscador input[type=text]{
+	width: 73%!important;
+	padding-right: 0%;
+	height: 40px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 3%;
+	margin-top: 0px;
+	margin-left:0px;
+	margin-right:3%;
+	font-family: Oswald;
+	font-size: 120%;
+	line-height: 110%;
+	color: #999;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color:#9F9F9F;
+	border-right-color: #9F9F9F;
+	border-bottom-color: #9F9F9F;
+	border-left-color: #9F9F9F;
+	float:left;
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .3em;
+}
+#buscador input[type=submit]{
+	width: 20%;
+	background-image: url(http://www.tkpartes.com.mx/mystore/misc/images/lupa_gde.png)!important;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	padding-right: 0%;
+	height: 46px !important;
+	padding-top: 2px !important;
+	padding-bottom: 2px !important;
+	padding-left: 0%;
+	margin: 0px;
+	font-family: Oswald;
+	font-size: 120% !important;
+	line-height: 110% !important;
+	color: #666 !important;
+	background-color:#333333 !important;
+	cursor:pointer;
+	float:right;
+	border: solid 1px #9F9F9F !important;
+	background: #333333;
+	background: url(http://www.tkpartes.com.mx/mystore/misc/images/lupa_gde.png) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#999999), to(#333)) !important;
+	background: url(http://www.tkpartes.com.mx/mystore/misc/images/lupa_gde.png) center center no-repeat, -moz-linear-gradient(top,  #999999,  #333) !important;
+
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .3em;
+
+}
+#buscador input[type=submit]:hover{
+	border: solid 1px #9F9F9F !important;
+	background: #999999;
+	background: url(http://www.tkpartes.com.mx/mystore/misc/images/lupa_gde.png) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#999999), to(#333));
+	background: url(http://www.tkpartes.com.mx/mystore/misc/images/lupa_gde.png) center center no-repeat, -moz-linear-gradient(top,  #999999,  #333);
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .3em;
+}
+
+
+
+/* Menu Principal Horizontal ----------------------------------------------------------------------- */
+.fixed {
+	position:fixed;
+    top:0;
+	z-index:999;
+}
+#menuhoriz {
+	width:100%;
+	clear:both;
+	float:left;
+	background-color: #545454;
+	padding: 0px;
+	text-align: center;
+	z-index:999;
+}
+#menuhoriz .opciones{
+	width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#menuhoriz .opciones .titcatresponsive {
+	display:block;
+	background-color: #545454;
+	padding-top:14px;
+	padding-bottom:14px;
+	cursor:pointer;
+	width:96%;
+	color:#FFFFFF;
+	font-size: 120%;
+	line-height: normal;
+	text-align:left;
+	padding-left:4%;
+}
+.minus {
+	background-image:url(http://www.tkpartes.com.mx/mystore/style_tmp/3996/menos_up.jpg) !important;
+	background-repeat:no-repeat;
+	background-position:right;
+}
+.plus {
+	background-image:url(http://www.tkpartes.com.mx/mystore/style_tmp/3998/mas_up.jpg) !important;
+	background-repeat:no-repeat;
+	background-position:right;
+}
+.minus2 {
+	background-image:url(http://www.tkpartes.com.mx/mystore/style_tmp/3997/menos_up2.jpg) !important;
+	background-repeat:no-repeat;
+	background-position: right top;
+}
+.plus2{
+	background-image:url(http://www.tkpartes.com.mx/mystore/style_tmp/3999/mas_up2.jpg) !important;
+	background-repeat:no-repeat;
+	background-position: right top;
+}
+.minus3 {
+	background-image:url(http://www.tkpartes.com.mx/mystore/style_tmp/3996/menos_up.jpg) !important;
+	background-repeat:no-repeat;
+	background-position:right;
+	cursor:pointer;
+}
+.plus3 {
+	background-image:url(http://www.tkpartes.com.mx/mystore/style_tmp/3998/mas_up.jpg) !important;
+	background-repeat:no-repeat;
+	background-position:right;
+	cursor:pointer;
+}
+.sinsub {
+	background-color: #545454;
+}
+
+#menuhoriz  ul {
+	width: 100%;
+	float:left;
+	padding: 0px;
+	margin: 0px;
+	list-style:none;
+	background-color: #545454;
+	display: block;
+	z-index:992;
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+}
+#menuhoriz li {
+	padding-top:14px;
+	padding-bottom:14px;
+	padding-left:4%;
+	display: none;
+	float:left;
+	width: 96%;
+	text-align: left;
+	list-style:none;
+	min-height: 18px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 1px;
+	border-top-color: #FFF;
+	font-size: 110%;
+	position:relative;
+	background-color: #545454;
+}
+#menuhoriz li.ultimo{
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-width: 1px;
+	border-top-color: #FFF;
+}
+
+#menuhoriz li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	display:block;
+	line-height: normal;
+}
+#menuhoriz li a:hover{
+	background-color:transparent;
+}
+#menuhoriz li:hover{
+	background-color: #545454;
+	cursor:pointer;
+}
+
+#menuhoriz ul ul {
+	display:none;
+	position:relative;
+	float:left;
+	margin-top: 5px;
+	list-style:none;
+	background-color: #545454;
+	left:0;
+	width: 100%;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+#menuhoriz ul ul li {
+	width:82%;
+	margin: 0px;
+	float:left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-top: 8px;
+	padding-right: 9px;
+	padding-bottom: 0px;
+	padding-left: 13px;
+	text-align: left;
+	display: block;
+	position:relative;
+	font-size: 100%;
+	background-color: !important;
+}
+#menuhoriz ul ul li a{
+		padding-bottom: 3px;
+}
+
+#menuhoriz ul ul li a:hover{
+	background-color: ;
+	cursor:pointer;
+	color: #FFFFFF;
+}
+
+/* Banner Rotativo ----------------------------------------------------------------------- */
+#bannerprincipal {
+	width: 100%;
+	max-width: 100%;
+	margin-top: 0%;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	display: block;
+	text-align: left;
+	float:left;
+	left:0px;
+}
+
+#slider1_container {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 717px;
+	height: 240px;
+	overflow: hidden;
+	float:left;
+}
+#bannerprincipal  .contienebannerr {
+	cursor: move;
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 717px;
+	height: 240px;
+	overflow: hidden;
+}
+
+.textobanner {
+	position: absolute;
+	top: 0px;
+	right:  ;
+	padding: 3%;
+	text-align: center;
+	font-size: 70%;
+	font-style: normal;
+	background-color: #FFFFFF;
+	height:100%;
+	color: #FFFFFF;
+	width:8%;
+	max-width:8%;
+	background: rgba(10,0,0, 0.5);
+	line-height:normal;
+}
+
+#txt2 {
+	display:none;
+}
+#txt3 {
+	display:none;
+}
+.resaltabanner {
+	font-size: 100%;
+	line-height: 110%;
+}
+
+.btnbanner {
+	margin-top: 8%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.btnbanner a{
+	color: #FFFFFF;
+	background-color: #FFAE36;
+	padding: 3%;
+	text-decoration: none;
+}
+.btnbanner a:hover{
+	color: #FFFFFF;
+	background-color: #FFEB69;
+}
+/* Banners ----------------------------------------------------------------------- */
+#banners{
+	width: 100%;
+	float:left;
+	margin-bottom: 0%;
+	margin-top:0%;
+}
+#banners .particion1{
+	width: 100%;
+	float:left;
+	margin-bottom: 2%;
+}
+#banners .particion2{
+	width: 100%;
+	float:left;
+	margin-bottom: 2%;
+}
+#banners .particion3{
+	width: 100%;
+	float:left;
+	margin-bottom: 2%;
+}
+#banners .particion4{
+	width: 100%;
+	float:left;
+	margin-bottom: 2%;
+}
+#banners .particion5{
+	width: 100%;
+	float:left;
+	margin-bottom: 2%;
+}
+#banners .particion6{
+	width: 100%;
+	float:left;
+	margin-bottom: 2%;
+}
+#banners .espacio{
+	width: 2%;
+	float:left;
+	margin-bottom: 2%;
+}
+#banners img{
+	width: 100%;
+	height:auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+/* Contiene barra y cuerpo ----------------------------------------------------------------------- */
+
+#contenedor {
+	width: 95%;
+	margin-top: 2%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	max-width:1170px;
+	display: inline-block;
+	text-align: left;
+	padding:3%;
+}
+
+.titulos{
+	width: 89%;
+	float:left;
+	padding-top: 10px;
+	padding-right: 3%;
+	padding-bottom: 10px;
+	padding-left: 8%;
+	font-size: 120%;
+	line-height:normal;
+}
+/* Cuerpo ----------------------------------------------------------------------- */
+#cuerpo {
+	width: 100%;
+	float:left;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+#cuerpo .bannerinferior{
+	width: 100%;
+	float:left;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+#cuerpo .bannerinferior img{
+	width: 100%;
+	height:auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#cuerpo h1.pos{
+	font-size: 120%;
+	line-height:normal;
+}
+/* Catalogo ----------------------------------------------------------------------- */
+#catalogo {
+	width:100%;
+	float:left;
+	margin-bottom: 20px;
+}
+h2 a{
+	line-height: normal;
+}
+
+.video-responsive {
+position: relative;
+padding-bottom: 56.25%; /* 16/9 ratio */
+padding-top: 30px; /* IE6 workaround*/
+height: 0;
+overflow: hidden;
+}
+ 
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+#catalogo .productos {
+	width:99.3%;
+	float:left;
+	margin-top: 2%;
+	margin-right: 0%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	min-height:10px;
+}
+#catalogo .productosultimo {
+	width:99.3%;
+	float:left;
+	margin-top: 2%;
+	margin-right: 0%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	min-height:10px;
+}
+#catalogo .foto {
+	width:34%;
+	float:left;
+	padding: 3%;
+}
+#catalogo .foto a {
+	margin: 0px;
+	padding: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#catalogo .foto img {
+	width:100%;
+	height:auto;
+	float:left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#catalogo .descripcion {
+	width:50%;
+	float:left;
+	padding-top:3%;
+	padding-bottom:0%;
+	padding-left:5%;
+	padding-right:5%;
+	color: #525252;
+	line-height: normal;
+	font-size:100%;
+}
+#catalogo .precio {
+	width:50%;
+	float:right;
+	line-height: 160%;
+	padding-top: 1%;
+	padding-right: 5%;
+//	padding-bottom: 1%;
+	padding-left: 5%;
+}
+#catalogo span.normal{
+	padding-right: 10px;
+}
+
+#catalogo .detalles {
+	width:50%;
+	float:right;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top:3%;
+	padding-bottom:3%;
+	padding-left:5%;
+	padding-right:5%;
+}
+
+/* Barra lateral ----------------------------------------------------------------------- */
+#barraizq {
+	width: 100%;
+	float:left;
+	font-size: 105%;
+}
+#bloqueslateral {
+	width: 100%;
+	float:left;
+	border: 1px solid #D5D3D0;
+	margin-bottom: 1%;
+}
+#bloqueslateral1 {
+	display:none;
+}
+#bloqueslateral2 {
+	width: 100%;
+	float:left;
+	border: 1px solid #D5D3D0;
+	margin-bottom: 1%;
+}
+#bloqueslateral3 {
+	width: 100%;
+	float:left;
+	border: 1px solid #D5D3D0;
+	margin-bottom: 1%;
+}
+#bloqueslateralaceptamos {
+	width: 100%;
+	float:left;
+	border: 1px solid #D5D3D0;
+	margin-bottom: 1%;
+}
+
+#barraizq .tit{
+	background-color: #69B308 ;
+	color: #FFFFFF;
+	cursor:pointer;
+	font-size: 110%;
+	padding-left:3%;
+	width: 95%;
+}
+
+#barraizq .contieneproductos{
+	width: 89%;
+	float:left;
+	padding-top: 9%;
+	padding-right: 3%;
+	padding-bottom: 3%;
+	padding-left: 3%;
+	display:none;
+}
+#barraizq .productos{
+	width: 100%;
+	float:left;
+	margin-top:3%;
+	margin-bottom:3%;
+}
+#barraizq .productos .foto{
+	width: 20%;
+	min-width: 84px;
+	float:left;
+	padding-right:1%;
+	margin-right:1%;
+}
+#barraizq .productos .foto img{
+	width: 80px;
+	height: auto;
+	float:left;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#barraizq .productos .foto img a{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#barraizq .productos .desc{
+	width: 65%;
+	float:left;
+}
+#barraizq .productos a{
+	font-size:110%;
+}
+#barraizq .productos span.normal{
+	text-decoration: line-through;
+	padding-right: 10px;
+	font-size:110%;
+	line-height:normal;
+}
+#barraizq .productos span.oferta{
+	font-size:110%;
+	line-height:normal;
+	color: #69B308;
+}
+
+#barraizq .generico{
+	width: 94%;
+	float:left;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+	display:none;
+	font-size:120%;
+}
+#barraizq .generico .logos{
+	float:left;
+	width:100%;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#barraizq .generico .logos img{
+	width: 80%;
+	max-width: 174px;
+	height: auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#barraizq .generico ul{
+	list-style-type: none;
+	padding-left:13px;
+}
+#barraizq .generico li{
+	list-style-type: none;
+		padding-bottom: 7%;
+		margin:0px;
+		border-bottom:1px;
+		border-bottom-color:#999;
+		border-bottom-style:solid;
+		padding-top:14px;
+		padding-bottom:14px;
+}
+#barraizq .generico a {
+	font-size: 100%;
+}
+#poll {
+	display:none;
+}
+#encuesta {
+	width: 100;
+}
+#encuesta td{
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+#encuesta td.radio{
+	width: 15%;
+}
+#encuesta td.votar{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#barraizq #banners{
+	width: 100%;
+	float:left;
+	margin-top: 0px;
+	margin-bottom: 18%;
+}
+#barraizq #banners img{
+	width: 100%;
+	height:auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#barraizq .bloquetexto {
+	float:left;
+	width:94%;
+	padding-top: 10px;
+	padding-right: 3%;
+	padding-bottom: 5px;
+	padding-left: 3%;
+	display:none;
+}
+#barraizq .bloquesultimo {
+	width: 100%;
+	float:left;
+	margin-bottom: 1%;
+	border: 1px solid #D5D3D0;
+	background-color: #FFE09F;
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: scroll;
+}
+
+#barraizq input[type=text]{
+	width: 73%;
+	padding-right: 0%;
+	height: 40px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 3%;
+	margin-top: 2%;
+	margin-left:0px;
+	margin-right:3%;
+	font-family: Oswald;
+	font-size: 120%;
+	line-height: 110%;
+	color: #999;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color:#9F9F9F;
+	border-right-color: #9F9F9F;
+	border-bottom-color: #9F9F9F;
+	border-left-color: #9F9F9F;
+	float:left;
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .3em;
+}
+#barraizq .bloquetexto input[type=submit]{
+width: 20%;
+	padding-right: 0%;
+	height: 46px !important;
+	padding-top: 2px !important;
+	padding-bottom: 2px !important;
+	padding-left: 0%;
+	margin: 0px;
+	margin-top: 2%;
+	font-family: Oswald;
+	font-size: 28px !important;
+	line-height: 110% !important;
+	color: #FFF !important;
+	background-color:#333 !important;
+	cursor:pointer;
+	float:right;
+	border: solid 1px #9F9F9F !important;
+	background: #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#999999), to(#333));
+	background: -moz-linear-gradient(top,  #999999,  #333);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr="#999999", endColorstr="#333");
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .3em;
+}
+#barraizq .bloquetexto input[type=submit]:hover{
+	color: #FFF;
+}
+#barraizq  #notitresp {
+	background-image:url();
+	background-color: transparent;
+	color:#666666;
+	width:auto;
+	margin-left:0px;
+	margin-top:25px;
+	padding-left:0px;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-right:15px;
+	float:left;
+}
+#barraizq  .redes {
+	float: left;
+	margin-top:27px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#barraizq  .redes img{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#barraizq  .redes img:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#barraizq  .secure {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	text-align: right;
+	display:none;
+}
+#bloqueslateralcarrito {
+	display:none;
+}
+/* Contenidos generales ----------------------------------------------------------------------- */
+#txtcontenido {
+	width:100%;
+	float:left;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	line-height: 130%;
+}
+#txtcontenido h2 {
+	font-size: 130%;
+	color: #000;
+	line-height: normal;
+}
+
+#mapa {
+	width:100%;
+	float:left;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	height:200px;
+}
+#mapa iframe{
+	width:100%;
+	height:200px;
+}
+/* Contenidos generales ----------------------------------------------------------------------- */
+#contacto {
+	width:98%;
+	float:left;
+}
+
+#contacto input[type=submit] {
+	font-size:120% !important;
+	line-height: 150%;
+}
+#contacto input[type=checkbox] {
+  /* All browsers except webkit*/
+  transform: scale(2);
+  /* Webkit browsers*/
+  -webkit-transform: scale(2);
+  margin-bottom:4%;
+  margin-right:2%;
+}
+#contacto .campos{
+	width:97%;
+	float:left;
+	font-weight: bold;
+	margin-right:0%;
+	margin-bottom: 20px;
+}
+#contacto .camposultimo{
+	width:97%;
+	float:left;
+	font-weight: bold;
+}
+#contacto .comentario{
+	width:100%;
+	float:left;
+	font-weight: bold;
+	margin-top: 20px;
+}
+#contacto .acepta{
+	width:100%;
+	float:left;
+	margin-top: 20px;
+}
+#contacto .captcha{
+	width:100%;
+	float:left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#contacto .captcha input[type=text]{
+	width:20%;
+	padding:6px;
+		font-size:120% !important;
+	line-height: 150%;
+}
+#contacto input[type=text]{
+	width:100%;
+		font-size:120% !important;
+	line-height: 150%;
+}
+#contacto textarea{
+	width:98%;
+	height: 90px;
+		font-size:120% !important;
+	line-height: 150%;
+}
+/* Login ----------------------------------------------------------------------- */
+#login {
+	width:100%;
+	float:left;
+}
+#login .log1 {
+	width:94%;
+	padding: 3%;
+	float:left;
+	margin-right:0%;
+	margin-bottom: 20px;
+}
+#login .log2 {
+	width:94%;
+	padding: 3%;
+	margin-right:0%;
+	float:left;
+	margin-bottom: 20px;
+}
+#login input[type=text]{
+	width:80%;
+}
+#login input[type=password]{
+	width:80%;
+}
+/* Registro ----------------------------------------------------------------------- */
+#registro {
+	width:100%;
+}
+#registro .datos{
+	width:96%;
+	margin-right:0%;
+	margin-top: 2%;
+	float:left;
+}
+
+#registro input[type=text] {
+	padding: 2%;
+	width:100%;
+}
+#registro .continuar{
+	width:100%;
+	margin-right:4%;
+	margin-top: 2%;
+	float:left;
+}
+/* Carrito ----------------------------------------------------------------------- */
+#carrito {
+	font-size:109%;
+	line-height: normal;
+}
+#carrito .alerta{
+	width:82%;
+	float:left;
+	padding-top: 9px;
+	padding-right: 3%;
+	padding-bottom: 9px;
+	padding-left: 15%;
+	margin-bottom:20px;
+}
+#product-container {
+	width:100%;
+	border-bottom:thin;
+	border-bottom-color:#CCCCCC;
+	border-bottom-style:solid;
+	float:left;
+}
+.item {
+	width:59%;
+	float:left;
+	margin-bottom: 1%;
+	padding-left: 3%;
+	text-align:left !important;
+
+}
+#np {
+	width:30%;
+	padding-right: 5%;
+	float:left;
+	min-height:180px;
+}
+#dividecarres {
+	display:block;
+	width:100%;
+	float: left;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #999;
+	padding-bottom: 10px;
+}
+.canttotal1 {
+	display: block;
+	float:left;
+	padding-right:5px;
+}
+.cc {
+	width:20%;
+	float:left;
+	padding-bottom:2%;
+}
+.bc {
+	width:30%;
+	padding-bottom:2%;
+	float:left;
+}
+.uni {
+	display:none;
+}
+
+#carrito .cantfinal{
+	width:auto;
+	float:left;
+	text-align:left;
+	padding-right: 8px;
+}
+#carrito .tablacarrito input[type=text].cant{
+	width: 25px;
+	padding-right: 10px;
+	height: 32px;
+	padding-top: 2px;
+	padding-bottom: 2%;
+	padding-left: 10px;
+	font-size: 16px;
+	line-height: 110%;
+	color: ;
+	border: 1px solid #E5E5E5;
+	text-align: center;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+#carrito input[type=button].borrar{
+	width: 80%;
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3934/carrito_boton_borrar.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 0%;
+	height: 39px !important;
+	padding-top: 2px !important;
+	padding-bottom: 2% !important;
+	padding-left: 0%;
+	margin: 0px;
+	font-family: Oswald;
+	font-size: 120% !important;
+	line-height: 110% !important;
+	color: #666 !important;
+	background-color:#CCCCCC !important;
+	cursor:pointer;
+	float:left;
+	border: solid 1px #9F9F9F !important;
+	background: #CCCCCC;
+	background: url(http://www.tkpartes.com.mx/mystore/style_tmp/3934/carrito_boton_borrar.jpg) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#FFFFFF))!important;
+	background: url(http://www.tkpartes.com.mx/mystore/style_tmp/3934/carrito_boton_borrar.jpg) center center no-repeat, -moz-linear-gradient(top,  #CCCCCC,  #FFFFFF)!important;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3)!important;
+	-webkit-border-radius: .5em!important;
+	-moz-border-radius: .5em!important;
+	border-radius: .3em!important;
+}
+#carrito input[type=button].borrar:hover{
+	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3936/carrito_boton_borrar_hover.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 0%;
+	padding-top: 2px !important;
+	padding-bottom: 2px !important;
+	padding-left: 0%;
+	margin: 0px;
+	font-family: Oswald;
+	font-size: 120% !important;
+	line-height: 110% !important;
+	color: #666 !important;
+	background-color:#CCCCCC !important;
+	cursor:pointer;
+	float:left;
+	border: solid 1px #9F9F9F !important;
+	background: #333;
+	background: url(http://www.tkpartes.com.mx/mystore/style_tmp/3936/carrito_boton_borrar_hover.jpg) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#FFF))!important;
+	background: url(http://www.tkpartes.com.mx/mystore/style_tmp/3936/carrito_boton_borrar_hover.jpg) center center no-repeat, -moz-linear-gradient(top,  #CCCCCC,  #FFF)!important;
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr="#CCCCCC", endColorstr="#FFF")!important;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3)!important;
+	-webkit-border-radius: .5em!important;
+	-moz-border-radius: .5em!important;
+	border-radius: .3em!important;
+}
+#recalcular {
+	float:right;
+	margin-top: 10px;
+	white-space:nowrap;
+}
+#carrito .textocarrito {
+	float:left;
+	width:100%;
+	margin-bottom:15px;
+	font-size:90%;
+}
+
+#carrito .dercarrito {
+	width: 93%;
+	float:left;
+	padding: 2%;
+}
+#carrito .subtotal {
+	float:left;
+	width:48%;
+	margin-bottom:0px;
+	font-weight:bold;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 0%;
+	padding-left: 1%;
+}
+#carrito .subtotal2 {
+	float:left;
+	width:48%;
+	margin-bottom:0px;
+	text-align:right;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 0%;
+	padding-left: 1%;
+	font-weight:bold;
+}
+#carrito .izqcarrito {
+	width: 100%;
+	float:left;
+}
+#carrito .envios {
+	float:left;
+	width:98%;
+	margin-bottom:8px;
+	padding:1%;
+	font-weight:bold;
+}
+#carrito .costoenvio {
+	float:left;
+	width:48%;
+	margin-bottom:0px;
+	font-weight:bold;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 0%;
+	padding-left: 1%;
+}
+#carrito .coddesc {
+	float:left;
+	width:98%;
+	margin-bottom:8px;
+	padding:1%;
+}
+#carrito .coddesc .coding{
+	float:left;
+	margin-right:15px;
+	position:relative;
+	min-height:55px;
+}
+#carrito .coddesc  input[type=text]{
+	font-size:150%;
+	height:auto !important;
+	padding:1% !important;
+	max-width: 200px;
+}
+#carrito .aplicar{
+	float:left;
+	margin-top:9px;
+	margin-bottom:5px;
+	white-space:nowrap;
+}
+#carrito .total1 {
+	float:left;
+	width:48%;
+	margin-bottom:8px;
+	text-align:right;
+	font-weight:bold;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	padding-left: 1%;
+}
+#carrito .envios select {
+	float:left;
+	width:100%;
+	font-size:120%;
+	height:auto !important;
+}
+#carrito .totaltit {
+	float:left;
+	width:58%;
+	margin-bottom:8px;
+	padding:1%;
+}
+#carrito .total2 {
+	float:left;
+	width:36%;
+	margin-bottom:8px;
+	text-align:right;
+	padding:1%;
+}
+#carrito .monedacarrito {
+	float:left;
+	width:98%;
+	margin-bottom:8px;
+	padding:1%;
+	font-weight:bold;
+}
+#carrito .observaciones {
+	float:left;
+	width:98%;
+	margin-bottom:8px;
+	padding:1%;
+}
+#carrito .observaciones textarea {
+	width:98%;
+	height:50px;
+			font-size:150%;
+	height:auto !important;
+}
+#carrito .finalizar {
+	width: 100%;
+	float:left;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#carrito .finalizar .liga {
+	font-size:130%;
+	padding-top: 4%;
+	padding-right: 6%;
+	padding-bottom: 4%;
+	padding-left: 6%;
+}
+#carrito .sitioseguro {
+	width:100%;
+	float:left;
+	font-size:80%;
+	margin-top:10px;
+}
+#carrito .sitioseguro img {
+	float:left;
+	margin-right:10px;
+	vertical-align: text-bottom;
+	margin-bottom: 10px;
+}
+/* Detalle ----------------------------------------------------------------------- */
+#detalle {
+	width:100%;
+	float:left;
+	margin-bottom: 20px;
+	color: #666;
+}
+
+#detalle .contienefotodetalle {
+	width:100%;
+	float:left;
+	margin-top: 2%;
+	margin-right: 3%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	max-width:700px;
+	height: auto;
+}
+#detalle .fotodetalle {
+	width:100%;
+	border: thin solid #D5D3D0;
+	float:left;
+	margin-top: 2%;
+	margin-right: 4%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	max-width:700px;
+	height: auto;
+	cursor:pointer;
+}
+#detalle .fotodetalle img {
+	width:100%;
+	height:auto;
+	float:left;
+}
+#detalle .fotosch {
+	width:30%;
+	border: thin solid #D5D3D0;
+	float:left;
+	margin-top: 2%;
+	margin-right: 4%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	max-width:310px;
+	height: auto;
+}
+#detalle .fotoschultimo {
+	width:29.9%;
+	border: thin solid #D5D3D0;
+	float:left;
+	margin-top: 2%;
+	margin-right: 0%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	max-width:310px;
+	height: auto;
+}
+#detalle .fotosch img {
+	width:100%;
+	height:auto;
+	float:left;
+}
+#detalle .fotoschultimo img {
+	width:100%;
+	height:auto;
+	float:left;
+}
+#detalle .social {
+	width:100%;
+	float:left;
+	margin-top: 3%;
+	margin-right: 4%;
+	margin-bottom: 2%;
+	margin-left: 0%;
+	height: auto;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	padding-top: 3%;
+}
+#detalle .contienesocial {
+	float:left;
+	margin-right:10px;
+
+}
+
+#detalle .descripciondetalle {
+	width:100%;
+	height:auto;
+	float:left;
+	margin-top: 2%;
+	font-size: 110%;
+}
+#detalle .encabezadodetalle {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	padding-top: 0px;
+	padding-bottom: 6px;
+	margin-bottom: 6px;
+	font-size: 105%;
+}
+
+#detalle .especif {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 18px;
+	float:left;
+	width:100%;
+}
+#detalle .especif .e {
+	width:20%;
+	float:none;
+	padding-top:7px;
+	padding-bottom:7px;
+	margin-bottom:10px;
+}
+#detalle .especif .valor {
+	width:79%;
+	float:left;
+	margin-left: 1%;
+	margin-bottom:10px;
+}
+#detalle select{
+	width: 60%;
+	padding-right: 15%;
+	height: 32px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 1%;
+}
+#detalle .comprar1 {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 18px;
+	float:left;
+	width:100%;
+}
+#detalle input[type=text]{
+	width: 25px;
+	padding-right: 10px;
+	height: 32px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	font-size: 150%;
+	line-height:normal;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#detalle a.comprar{
+	width:20%;
+	padding: 10px;
+	text-align: center;
+	font-size: 150%;
+	line-height:normal;
+}
+#detalle .textodetalle{
+	padding-top: 18px;
+	padding-bottom: 8px;
+	float:left;
+	line-height: 140%;
+}
+#texdetprod {
+	display:block;
+}
+#detprod {
+	cursor:pointer;
+}
+.minusdet {
+	background-image:url(../images/menos_det.png) !important;
+	background-repeat:no-repeat;
+	background-position:right;
+	margin-bottom:0px;
+}
+.plusdet {
+	background-image:url(../images/mas_det.png) !important;
+	background-repeat:no-repeat;
+	background-position:right;
+	margin-bottom:10px;
+}
+#detalle .masinfo{
+	display:none;
+}
+#comentdet {
+	cursor:pointer;
+	display:none;
+}
+#btnescribe {
+	display:none;
+}
+#detalle .opiniones {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 18px;;
+	float:left;
+	width:100%;
+	line-height: 130%;
+	display:none;
+}
+#detalle .opiniones .contieneopiniones {
+	float:left;
+	width:100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	margin-bottom: 15px;
+}
+.estrellas {
+	background-image: url(http://mystore.mx/norw/misc/images/estrella_sin.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	width: 100px;
+	height: 20px;
+	padding-bottom: 5px;
+}
+#detalle .opiniones .estrellas img {
+	float:left;
+
+}
+#detalle .opiniones .porcentajeestrella {
+		background-image: url(http://mystore.mx/norw/misc/images/estrella_con.png);
+		background-position: left top;
+		width: 20px;
+		height: 20px;
+		padding: 0px;
+		float:left;
+}
+
+/* Footer ----------------------------------------------------------------------- */
+#footer {
+	width: 100%;
+	float:left;
+	padding-bottom: 3%;
+	text-align:left;
+}
+#footer #micuenta {
+	display:none;
+}
+#footer #cabierto {
+	display:none;
+}
+#footer #sobrenos {
+	display:none;
+}
+#footer .contenido {
+	width: 90%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+#footer .bloquetexto {
+	float:left;
+	width:94%;
+	padding-top: 10px;
+	padding-right: 3%;
+	padding-bottom: 5px;
+	padding-left: 3%;
+	display:none;
+}
+
+
+#footer #notitresp {
+	background-image:url();
+	background-color: transparent;
+	width:auto;
+	margin-left:0px;
+	margin-top:25px;
+	padding-left:0px;
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-right:15px;
+}
+#footer .contenido ul {
+	float:left;
+	margin: 0px;
+	list-style:none;
+	width:89%;
+	padding-top: 0px;
+	padding-right: 3%;
+	padding-bottom: 5px;
+	padding-left: 8%;
+}
+#footer .contenido li {
+	display: block;
+	list-style:none;
+	padding-top: 14px;
+	display:none;
+}
+#footer .textofooter {
+	width: 90%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	clear:both;
+}
+#footer .poweredby {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	padding-top: 3%;
+	width: 100%;
+}
+#footer .textofooter .textf p {
+	float:left;
+	width: 100%;
+}
+#footer .redes {
+	float: left;
+	margin-top:27px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#footer .redes img{
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#footer .redes img:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+#footer .secure {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	text-align: right;
+	display:none;
+}
+/* Checkout ----------------------------------------------------------------------- */
+#checkout {
+	width: 100%;
+	float:left;
+	margin-top: 15px;
+}
+#checkout .alerta {
+	font-color: #FF0000;
+}
+
+#cuerpo h1.checkout{
+	padding-left:2%;
+	width: 95%;
+	float:left;
+}
+#checkout  h2{
+	padding-left:1%;
+	width: 98%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 1%;
+	float:left;
+	line-height: 40px;
+	height:40px;
+}
+#checkout  h1{
+	padding-left:1%;
+	width: 98%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 1%;
+	float:left;
+	line-height: 40px;
+	height:40px;
+	font-size: 130%;
+}
+#checkout  .nopedido{
+	font-size: 180%;
+	line-height: 120%;
+}
+#checkout .logob{
+	padding-bottom: 0px;
+	margin-bottom:0px;
+	margin-top:0px;
+	float:left;
+	width:100%;
+}
+
+#checkout h2 .numeros {
+	padding-left:0%;
+	padding-right: 0%;
+	float:left;
+	font-size:150%;
+	min-width:40px;
+	text-align:center;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#checkout .datos {
+	width: 100%;
+	float:left;
+	margin-bottom: 15px;
+}
+#checkout .datos .pagos{
+	width: 100%;
+	float:left;
+}
+#checkout .contienedatos {
+	width: 97.7%;
+	float:left;
+	padding:1%;
+	margin-top: 15px;
+	border:0px;
+}
+#checkout .campos {
+	width: 90%;
+	float:left;
+	margin-bottom: 9px;
+	margin-top: 9px;
+	margin-right: 5%;
+}
+#checkout .camposcompleto {
+	width: 90%;
+	float:left;
+	margin-bottom: 9px;
+	margin-top: 9px;
+	margin-right: 0%;
+}
+#checkout .campostercio {
+	width: 90%;
+	float:left;
+	margin-bottom: 9px;
+	margin-top: 9px;
+	margin-right: 5.32%;
+}
+#checkout .camposcuarto {
+	width: 90%;
+	float:left;
+	margin-bottom: 9px;
+	margin-top: 9px;
+	margin-right: 5%;
+}
+#checkout .divide {
+	width: 90%;
+	float:left;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	margin-right: 0%;
+}
+
+#barraizqcheckout {
+	width: 20%;
+	float:left;
+	display:none;
+}
+#carrito .izqcarrito .datoscliente {
+	float:left;
+	width:95%;
+	margin-bottom:8px;
+	padding:2%;
+	margin-right:0px;
+}
+#carrito .izqcarrito .datosclientecomp {
+	float:left;
+	width:95%;
+	margin-bottom:8px;
+	padding:2%;
+	margin-right:0px;
+}
+#carrito .contienedercarritoch {
+	width: 92%;
+	float:left;
+	padding: 0%;
+	margin:0px;
+}
+#carrito .contienedercartxt {
+	width: 100%;
+	float:left;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#checkout  .nopedido{
+	font-size: 135%;
+	line-height: 120%;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+#checkout  .subtitch{
+	font-size: 135%;
+	line-height: 120%;
+	margin-bottom:0px;
+}
+
+}
+
+/* jQuery.Rating Plugin CSS */
+div.rating-cancel, div.star-rating {
+	float:left;
+	width:21px;
+	height:19px;
+	text-indent:-999em;
+	cursor:pointer;
+	display:block;
+	background:transparent;
+	overflow:hidden
+}
+div.star-rating, div.star-rating a {
+background:url(http://www.tkpartes.com.mx/mystore/misc/images/estrella.png) no-repeat 0 0px
+}
+div.rating-cancel a, div.star-rating a {
+	display:block;
+	width:20px;
+	height:100%;
+	background-position:0 0px;
+	border:0
+}
+div.star-rating-on a {
+	background-position:0 -20px!important
+}
+div.star-rating-hover a {
+	background-position:0 -40px
+}
+/* Read Only CSS */
+div.star-rating-readonly a {
+	cursor:default !important
+}
+/* Partial Star CSS */
+div.star-rating {
+	background:transparent!important;
+	overflow:hidden!important
+}
+/* END jQuery.Rating Plugin CSS */
