@@ -450,7 +450,7 @@ a.ligaboton:hover {
 }
 #buscador input[type=submit]{
 	width: 35px;
-	background-image: url(/images/general-img/search.png);
+	background-image: url(/images/img-menu/buscar_responsive.png);
 	background-repeat: no-repeat;
 	background-position: right center;
 	padding-right: 0%;
@@ -3487,7 +3487,7 @@ h2{
 }
 #buscador input[type=submit]{
 	width: 20%;
-	background-image: url(/images/general-img/search.png)!important;
+	background-image: url(/images/img-menu/buscar_responsive.png)!important;
 	background-repeat: no-repeat !important;
 	background-position: center center !important;
 	padding-right: 0%;
@@ -3505,8 +3505,8 @@ h2{
 	float:right;
 	border: solid 1px #9F9F9F !important;
 	background: #333333;
-	background: url(/images/general-img/search.png) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#999999), to(#333)) !important;
-	background: url(/images/general-img/search.png) center center no-repeat, -moz-linear-gradient(top,  #999999,  #333) !important;
+	background: url(/images/img-menu/buscar_responsive.png) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#999999), to(#333)) !important;
+	background: url(/images/img-menu/buscar_responsive.png) center center no-repeat, -moz-linear-gradient(top,  #999999,  #333) !important;
 
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
 	-webkit-border-radius: .5em;
@@ -3517,8 +3517,8 @@ h2{
 #buscador input[type=submit]:hover{
 	border: solid 1px #9F9F9F !important;
 	background: #999999;
-	background: url(/images/general-img/search.png) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#999999), to(#333));
-	background: url(/images/general-img/search.png) center center no-repeat, -moz-linear-gradient(top,  #999999,  #333);
+	background: url(/images/img-menu/buscar_responsive.png) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#999999), to(#333));
+	background: url(/images/img-menu/buscar_responsive.png) center center no-repeat, -moz-linear-gradient(top,  #999999,  #333);
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
 	-webkit-border-radius: .5em;
 	-moz-border-radius: .5em;
