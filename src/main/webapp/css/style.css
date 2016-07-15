@@ -450,7 +450,7 @@ a.ligaboton:hover {
 }
 #buscador input[type=submit]{
 	width: 35px;
-	background-image: url(./mystore/general-img/submit_buscador_imagen.jpg);
+	background-image: url(./images/general-img/search.png);
 	background-repeat: no-repeat;
 	background-position: right center;
 	padding-right: 0%;
@@ -3487,7 +3487,7 @@ h2{
 }
 #buscador input[type=submit]{
 	width: 20%;
-	background-image: url(http://www.tkpartes.com.mx/mystore/misc/images/lupa_gde.png)!important;
+	background-image: url(./images/general-img/search.png)!important;
 	background-repeat: no-repeat !important;
 	background-position: center center !important;
 	padding-right: 0%;
@@ -3505,8 +3505,8 @@ h2{
 	float:right;
 	border: solid 1px #9F9F9F !important;
 	background: #333333;
-	background: url(http://www.tkpartes.com.mx/mystore/misc/images/lupa_gde.png) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#999999), to(#333)) !important;
-	background: url(http://www.tkpartes.com.mx/mystore/misc/images/lupa_gde.png) center center no-repeat, -moz-linear-gradient(top,  #999999,  #333) !important;
+	background: url(./images/general-img/search.png) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#999999), to(#333)) !important;
+	background: url(./images/general-img/search.png) center center no-repeat, -moz-linear-gradient(top,  #999999,  #333) !important;
 
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
 	-webkit-border-radius: .5em;
@@ -3517,8 +3517,8 @@ h2{
 #buscador input[type=submit]:hover{
 	border: solid 1px #9F9F9F !important;
 	background: #999999;
-	background: url(http://www.tkpartes.com.mx/mystore/misc/images/lupa_gde.png) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#999999), to(#333));
-	background: url(http://www.tkpartes.com.mx/mystore/misc/images/lupa_gde.png) center center no-repeat, -moz-linear-gradient(top,  #999999,  #333);
+	background: url(./images/general-img/search.png) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#999999), to(#333));
+	background: url(./images/general-img/search.png) center center no-repeat, -moz-linear-gradient(top,  #999999,  #333);
 	text-shadow: 0 1px 1px rgba(0,0,0,.3);
 	-webkit-border-radius: .5em;
 	-moz-border-radius: .5em;
@@ -3563,33 +3563,33 @@ h2{
 	padding-left:4%;
 }
 .minus {
-	background-image:url(http://www.tkpartes.com.mx/mystore/style_tmp/3996/menos_up.jpg) !important;
+	background-image:url(./images/general-img/menos.png) !important;
 	background-repeat:no-repeat;
 	background-position:right;
 }
 .plus {
-	background-image:url(http://www.tkpartes.com.mx/mystore/style_tmp/3998/mas_up.jpg) !important;
+	background-image:url(./images/general-img/plus.png) !important;
 	background-repeat:no-repeat;
 	background-position:right;
 }
 .minus2 {
-	background-image:url(http://www.tkpartes.com.mx/mystore/style_tmp/3997/menos_up2.jpg) !important;
+	background-image:url(./images/general-img/menos.png) !important;
 	background-repeat:no-repeat;
 	background-position: right top;
 }
 .plus2{
-	background-image:url(http://www.tkpartes.com.mx/mystore/style_tmp/3999/mas_up2.jpg) !important;
+	background-image:url(./images/general-img/mas.png) !important;
 	background-repeat:no-repeat;
 	background-position: right top;
 }
 .minus3 {
-	background-image:url(http://www.tkpartes.com.mx/mystore/style_tmp/3996/menos_up.jpg) !important;
+	background-image:url(./images/general-img/menos.png) !important;
 	background-repeat:no-repeat;
 	background-position:right;
 	cursor:pointer;
 }
 .plus3 {
-	background-image:url(http://www.tkpartes.com.mx/mystore/style_tmp/3998/mas_up.jpg) !important;
+	background-image:url(./images/general-img/mas.png) !important;
 	background-repeat:no-repeat;
 	background-position:right;
 	cursor:pointer;
