@@ -304,7 +304,7 @@ a.ligaboton:hover {
 #plecaup .msg .carrito {
 	width: 460px;
 	float:right;
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3789/imagen_carrito.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: left center;
 	padding-left: 2px;
@@ -401,7 +401,7 @@ a.ligaboton:hover {
 #header .carrito {
 	width: 460px;
 	float:right;
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3789/imagen_carrito.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: left center;
 	padding-left: 35px;
@@ -490,7 +490,7 @@ a.ligaboton:hover {
 
 }
 #buscador input[type=submit]:hover{
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3792/submit_buscador_imagen_hover.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-color: #69B308;
@@ -726,7 +726,7 @@ a.ligaboton:hover {
 	text-align: left;
 	padding:15px;
 	background-color: #FFFFFF;
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3817/fondo_imagen_contenedor.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-attachment: scroll;
@@ -741,7 +741,7 @@ a.ligaboton:hover {
 	display: inline-block;
 	text-align: left;
 	background-color: #FFFFFF;
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3817/fondo_imagen_contenedor.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: left top;
 	background-attachment: scroll;
@@ -776,7 +776,7 @@ a.ligaboton:hover {
 #bloqueslateralcarrito .carrito {
 	width: 160px;
 	float:left;
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3789/imagen_carrito.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: left center;
 	padding-left: 35px;
@@ -826,7 +826,7 @@ a.ligaboton:hover {
 }
 #bloqueslateralcarrito #buscador input[type=submit]{
 	width: 35px;
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3790/submit_buscador_imagen.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: right center;
 	padding-right: 0%;
@@ -855,7 +855,7 @@ a.ligaboton:hover {
 	border-left-color: #E5E5E5;
 }
 #bloqueslateralcarrito #buscador input[type=submit]:hover{
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3792/submit_buscador_imagen_hover.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-color: #69B308;
@@ -2014,7 +2014,7 @@ a.ligaboton:hover {
 	color: #FFFFFF;
 	background-color: #69B308;
 	border: 1px solid #69B308;
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3932/carrito_alerta_palomita.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: left center;
 	padding-top: 9px;
@@ -2047,7 +2047,7 @@ a.ligaboton:hover {
 	text-align: right;
 }
 #carrito .tablacarrito input[type=button].borrar{
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3934/carrito_boton_borrar.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-color: #FFFFFF;
@@ -2060,7 +2060,7 @@ a.ligaboton:hover {
 	min-width: 50px;
 }
 #carrito .tablacarrito input[type=button].borrar:hover{
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3936/carrito_boton_borrar_hover.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-color: #FFFFFF;
@@ -2641,7 +2641,7 @@ a.ligaboton:hover {
 	padding-left:0%;
 	padding-right: 0%;
 	float:left;
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3974/checkout_numeracion_encabezados_imagen.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: center center;
 	font-size:150%;
@@ -2805,7 +2805,7 @@ a.ligaboton:hover {
 	color: #FFFFFF;
 }
 #barraizqcheckout .check {
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3982/checkout_pasos_listo_imagen_check.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-color: #949494 !important;
@@ -2816,7 +2816,7 @@ a.ligaboton:hover {
 	padding-left:0%;
 	padding-right: 0%;
 	float:left;
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3985/checkout_pasos_listo_numeros_imagen_fondo.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: center center;
 	font-size:150%;
@@ -3583,13 +3583,13 @@ h2{
 	background-position: right top;
 }
 .minus3 {
-	background-image:url(/images/general-img/minus.png) !important;
+	background-image:url(/images/general-img/minus2.png) !important;
 	background-repeat:no-repeat;
 	background-position:right;
 	cursor:pointer;
 }
 .plus3 {
-	background-image:url(/images/general-img/plus.png) !important;
+	background-image:url(/images/general-img/plus2.png) !important;
 	background-repeat:no-repeat;
 	background-position:right;
 	cursor:pointer;
@@ -4495,7 +4495,7 @@ width: 20%;
 }
 #carrito input[type=button].borrar{
 	width: 80%;
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3934/carrito_boton_borrar.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: right center;
 	padding-right: 0%;
@@ -4513,15 +4513,15 @@ width: 20%;
 	float:left;
 	border: solid 1px #9F9F9F !important;
 	background: #CCCCCC;
-	background: url(http://www.tkpartes.com.mx/mystore/style_tmp/3934/carrito_boton_borrar.jpg) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#FFFFFF))!important;
-	background: url(http://www.tkpartes.com.mx/mystore/style_tmp/3934/carrito_boton_borrar.jpg) center center no-repeat, -moz-linear-gradient(top,  #CCCCCC,  #FFFFFF)!important;
+	background: url(#cambios) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#FFFFFF))!important;
+	background: url(#cambios) center center no-repeat, -moz-linear-gradient(top,  #CCCCCC,  #FFFFFF)!important;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3)!important;
 	-webkit-border-radius: .5em!important;
 	-moz-border-radius: .5em!important;
 	border-radius: .3em!important;
 }
 #carrito input[type=button].borrar:hover{
-	background-image: url(http://www.tkpartes.com.mx/mystore/style_tmp/3936/carrito_boton_borrar_hover.jpg);
+	background-image: url(#cambios);
 	background-repeat: no-repeat;
 	background-position: right center;
 	padding-right: 0%;
@@ -4538,8 +4538,8 @@ width: 20%;
 	float:left;
 	border: solid 1px #9F9F9F !important;
 	background: #333;
-	background: url(http://www.tkpartes.com.mx/mystore/style_tmp/3936/carrito_boton_borrar_hover.jpg) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#FFF))!important;
-	background: url(http://www.tkpartes.com.mx/mystore/style_tmp/3936/carrito_boton_borrar_hover.jpg) center center no-repeat, -moz-linear-gradient(top,  #CCCCCC,  #FFF)!important;
+	background: url(#cambios) center center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#FFF))!important;
+	background: url(#cambios) center center no-repeat, -moz-linear-gradient(top,  #CCCCCC,  #FFF)!important;
 	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr="#CCCCCC", endColorstr="#FFF")!important;
 	text-shadow: 0 1px 1px rgba(0,0,0,.3)!important;
 	-webkit-border-radius: .5em!important;
@@ -5230,7 +5230,7 @@ div.rating-cancel, div.star-rating {
 	overflow:hidden
 }
 div.star-rating, div.star-rating a {
-background:url(http://www.tkpartes.com.mx/mystore/misc/images/estrella.png) no-repeat 0 0px
+background:url(#cambios) no-repeat 0 0px
 }
 div.rating-cancel a, div.star-rating a {
 	display:block;
