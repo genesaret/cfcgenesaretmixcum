@@ -826,7 +826,7 @@ a.ligaboton:hover {
 }
 #bloqueslateralcarrito #buscador input[type=submit]{
 	width: 35px;
-	background-image: url(/images/img-menu/buscar_responsive.png);
+	background-image: url(/images/img-menu/buscar_responsive.png) ¡important;
 	background-repeat: no-repeat;
 	background-position: right center;
 	padding-right: 0%;
