@@ -5,7 +5,7 @@
 		<class>genesaret.clasesEntidad.Gmcomite</class>
 		<class>genesaret.clasesEntidad.Gmcontacto</class>
 		<class>genesaret.clasesEntidad.Gmiglesia</class>
-		<class>genesaret.clasesEntidad.Gmmiembro</class>
+		<class>genesaret.claKsesEntidad.Gmmiembro</class>
 		<class>genesaret.clasesEntidad.Gmpeticione</class>
 		<class>genesaret.clasesEntidad.Gmtesoreria</class>
 		<class>genesaret.clasesEntidad.Gmvisitante</class>
