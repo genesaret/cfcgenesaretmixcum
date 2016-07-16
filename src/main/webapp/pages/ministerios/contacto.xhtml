@@ -498,7 +498,32 @@ $(document).ready(function() {
         	 <h1 class="pos">Contacto</h1>
       	<!--Forma de contacto -->
           <div id="contacto"> 
-			
+			<h:form>
+			<p:growl id="msg" showDetail="true" escape="false" />
+			<p:tabView id="pnl">
+			<p:tab title="Contacto">
+			  <div class="campos">
+			  	<p:outputLabel for="name" value="Nombre (requerido):" /><br/>
+			    <p:inputText class="validate[required,minSize[3],custom[onlyLetterSp]]" maxlength="50" id="name" value="#{genemixContactoControlador.gmContacto.nombre}"/>
+                <p:message for="name" />
+             </div>
+              <div class="campos"> <p:outputLabel for="telefono" value="Tel&eacute;fono con lada:"/><br/>
+              <p:inputText  class="validate[minSize[10],custom[phonedecompras]]" id="telefono" maxlength="40" value="#{genemixContactoControlador.gmContacto.telefono}"/>
+                                <p:message for="telefono" />
+                              </div>
+              <div class="camposultimo"><p:outputLabel for="email" value="E-mail (requerido):"/><br/>
+              <p:inputText class="validate[required,custom[email]] text-input" maxlength="60"  id="email" value="#{genemixContactoControlador.gmContacto.email}"/>
+                                <p:message for="email" /> 
+                              </div>
+              <div class="comentario"> <p:outputLabel value="duda o comentario (requerido):"/><br/>
+              <p:inputTextarea rows="5" cols="30" counter="display" maxlength="100" counterTemplate="{0} characters remaining." autoResize="false"  class="validate[required,minSize[10]]" value="#{genemixContactoControlador.gmContacto.comentario}"></p:inputTextarea>
+                <h:outputText id="display" />
+                              </div>
+              <p:commandButton id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
+			</p:tab>
+			</p:tabView>
+			              
+			</h:form>
           </div>
           <!--Termina Forma de contacto --> 
          
