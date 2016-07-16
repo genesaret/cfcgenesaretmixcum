@@ -512,7 +512,17 @@ $(document).ready(function() {
              	 <p:inputText  class="validate[minSize[10],custom[phonedecompras]]" id="telefono" maxlength="40" value="#{genemixContactoControlador.gmContacto.telefono}"/>
                  <p:message for="telefono" />
               </div>
-              
+              <div class="camposultimo">
+              	  <p:outputLabel for="email" value="E-mail (requerido):"/><br/>
+              	   <p:inputText class="validate[required,custom[email]] text-input" maxlength="60"  id="email" value="#{genemixContactoControlador.gmContacto.email}"/>
+                   <p:message for="email" /> 
+              </div>
+              <div class="comentario"> 
+             	   <p:outputLabel value="duda o comentario (requerido):"/><br/>
+              	   <p:inputTextarea rows="5" cols="30" counter="display" maxlength="100" counterTemplate="{0} characters remaining." autoResize="false"  class="validate[required,minSize[10]]" value="#{genemixContactoControlador.gmContacto.comentario}"></p:inputTextarea>
+                    <h:outputText id="display" />
+               </div>
+       
 			</p:tab>
 			</p:tabView>
 			              
