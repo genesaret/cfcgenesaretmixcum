@@ -494,41 +494,7 @@ $(document).ready(function() {
         	<div id="banners">
         		<div class="particion1"><img src="/images/banner/Avisos.jpg" width="520" height="900" border="0" /></div>
         	</div>
-        	<h1 class="pos">Contacto</h1>
-        
-        <!-- Empieza texto  -->
-       
-          
-          <!--Forma de contacto -->
-          <div id="contacto"> 
-			<h:form>
-			<p:growl id="msg" showDetail="true" escape="false" />
-			<p:tabView id="pnl">
-			<p:tab title="Contacto">
-			  <div class="campos">
-			  	<p:outputLabel for="a" value="Nombre (requerido):" /><br/>
-			    <p:inputText class="validate[required,minSize[3],custom[onlyLetterSp]]" maxlength="50" id="a" value="#{genemixContactoControlador.gmContacto.nombre}"/>
-                <p:message for="a" />
-             </div>
-              <div class="campos"> <p:outputLabel for="b" value="Tel&eacute;fono con lada:"/><br/>
-              <p:inputText  class="validate[minSize[10],custom[phonedecompras]]" id="b" maxlength="40" value="#{genemixContactoControlador.gmContacto.telefono}"/>
-                                <p:message for="b" />
-                              </div>
-              <div class="camposultimo"><p:outputLabel for="c" value="E-mail (requerido):"/><br/>
-              <p:inputText class="validate[required,custom[email]] text-input" maxlength="60"  id="c" value="#{genemixContactoControlador.gmContacto.email}"/>
-                                <p:message for="c" /> 
-                              </div>
-              <div class="comentario"> <p:outputLabel value="duda o comentario (requerido):"/><br/>
-              <p:inputTextarea rows="5" cols="30" counter="display" maxlength="100" counterTemplate="{0} characters remaining." autoResize="false"  class="validate[required,minSize[10]]" value="#{genemixContactoControlador.gmContacto.comentario}"></p:inputTextarea>
-                <h:outputText id="display" />
-                              </div>
-              <p:commandButton id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
-			</p:tab>
-			</p:tabView>
-			              
-			</h:form>
-          </div>
-          <!--Termina Forma de contacto --> 
+        	
       
           
         	<!-- Termina Banner central superior -->
