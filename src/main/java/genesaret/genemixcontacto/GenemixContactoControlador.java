@@ -62,7 +62,10 @@ public class GenemixContactoControlador implements Serializable{
             em.persist(gmContacto);
             utx.commit();
             
-            addInfo(null, "Comentario enviado con exito!", gmContacto.getEmail());
+            //addInfo(null, "Comentario enviado con exito!", gmContacto.getEmail());
+            
+            FacesMessage msg1 = new FacesMessage(FacesMessage.SEVERITY_INFO, "Comentario enviado con exito! ",gmContacto.getEmail());
+            FacesContext.getCurrentInstance().addMessage(null, msg1);
             gmContacto=null;
         } catch (IllegalStateException | SecurityException | HeuristicMixedException | HeuristicRollbackException | NotSupportedException | RollbackException | SystemException ex) {
             FacesMessage msg = new FacesMessage(FacesMessage.SEVERITY_WARN, "Algo va mal con la transaccion ","");
