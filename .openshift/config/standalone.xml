@@ -147,7 +147,7 @@
                     </security>
                 </datasource>
                 <datasource jndi-name="java:jboss/datasources/MySQLDS" enabled="${mysql.enabled}" use-java-context="true" pool-name="MySQLDS" use-ccm="true">
-                    <connection-url>jdbc:mysql://127.7.101.130:3306/genesaret</connection-url>
+                    <connection-url>jdbc:mysql://localhost:3306/genesaret</connection-url>
                     <driver>mysql</driver>
                     <security>
                       <user-name>adminkXNXxcg</user-name>
