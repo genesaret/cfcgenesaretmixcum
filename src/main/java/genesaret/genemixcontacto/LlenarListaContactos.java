@@ -11,7 +11,7 @@ import genesaret.clasesEntidad.Gmcontacto;
 @ManagedBean(name = "LlenarListaContactos")
 @ApplicationScoped
 public class LlenarListaContactos {
-	 @PersistenceContext(unitName = "genesaretPU")
+	 @PersistenceContext(unitName = "GENESARETPU")
 	    private EntityManager em;
 	     
 	      public List<Gmcontacto> ListaContactos(){

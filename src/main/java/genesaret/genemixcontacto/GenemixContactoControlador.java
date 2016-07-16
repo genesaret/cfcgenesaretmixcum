@@ -31,7 +31,7 @@ public class GenemixContactoControlador implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	@PersistenceContext(unitName = "genesaretPU")
+	@PersistenceContext(unitName = "GENESARETPU")
     private EntityManager em;
     @Resource
     private javax.transaction.UserTransaction utx;
