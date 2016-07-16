@@ -512,6 +512,11 @@ $(document).ready(function() {
              	 <p:inputText  class="validate[minSize[10],custom[phonedecompras]]" id="telefono" maxlength="40" value="#{genemixContactoControlador.gmContacto.telefono}"/>
                  <p:message for="telefono" />
               </div>
+              <div class="camposultimo">
+              	  <p:outputLabel for="email" value="E-mail (requerido):"/><br/>
+              	   <p:inputText class="validate[required,custom[email]] text-input" maxlength="60"  id="email" value="#{genemixContactoControlador.gmContacto.email}"/>
+                   <p:message for="email" /> 
+              </div>
               
               <p:commandButton id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
 			</p:tab>
