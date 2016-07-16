@@ -522,6 +522,7 @@ $(document).ready(function() {
               	   <p:inputTextarea rows="5" cols="30" maxlength="100"  class="validate[required,minSize[10]]" id="coment" value="#{genemixContactoControlador.gmContacto.comentario}"/>
               	   <p:message for="coment" /> 
                </div>
+               <br/>
               <p:commandButton id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
 			</p:tab>
 			</p:tabView>
