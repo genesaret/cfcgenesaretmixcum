@@ -509,12 +509,12 @@ $(document).ready(function() {
              </div>
               <div class="campos"> 
               	 <p:outputLabel for="telefono" value="Teléfono con lada:"/><br/>
-             	 <p:inputText  class="validate[minSize[10],custom[phonedecompras]]" id="telefono" maxlength="40" value="#{genemixContactoControlador.gmContacto.telefono}"/>
+             	 <p:inputText  id="telefono" maxlength="40" value="#{genemixContactoControlador.gmContacto.telefono}"/>
                  <p:message for="telefono" />
               </div>
               <div class="camposultimo">
               	  <p:outputLabel for="email" value="E-mail (requerido):"/><br/>
-              	   <p:inputText class="validate[required,custom[email]] text-input" maxlength="60"  id="email" value="#{genemixContactoControlador.gmContacto.email}"/>
+              	   <p:inputText maxlength="60"  id="email" value="#{genemixContactoControlador.gmContacto.email}"/>
                    <p:message for="email" /> 
               </div>
               <div class="comentario"> 
