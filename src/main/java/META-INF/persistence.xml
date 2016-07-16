@@ -2,14 +2,12 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="genesaretPU" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<non-jta-data-source>genemix</non-jta-data-source>
 		
 		<properties>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/genemixcum"/>
 			<property name="javax.persistence.jdbc.user" value="adminkXNXxcg"/>
 			<property name="javax.persistence.jdbc.password" value="1L9UzpQ9m2s8"/>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-			<property name="javax.persistence.validation.group.pre-persist" value="genesaret.clasesEntidad.Gmcelula,genesaret.clasesEntidad.Gmcomite,genesaret.clasesEntidad.Gmcontacto,genesaret.clasesEntidad.Gmiglesia,genesaret.clasesEntidad.Gmmiembro,genesaret.clasesEntidad.Gmpeticione,genesaret.clasesEntidad.Gmtesoreria,genesaret.clasesEntidad.Gmvisitante"/>
 		</properties>
 	</persistence-unit>
 </persistence>
