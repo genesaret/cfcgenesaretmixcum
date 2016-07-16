@@ -519,7 +519,7 @@ $(document).ready(function() {
               </div>
               <div class="campos"> 
              	   <p:outputLabel value="duda o comentario (requerido):"/><br/>
-              	   <p:inputTextarea rows="5" cols="30" counter="display" maxlength="100" counterTemplate="{0} characters remaining." autoResize="false"  class="validate[required,minSize[10]]" value="#{genemixContactoControlador.gmContacto.comentario}"></p:inputTextarea>
+              	   <p:inputTextarea rows="5" cols="30" counter="display" maxlength="100" counterTemplate="{0} characters remaining." autoResize="false"  class="validate[required,minSize[10]]" value="#{genemixContactoControlador.gmContacto.comentario}"/>
                     <h:outputText id="display" />
                </div>
               <p:commandButton id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
