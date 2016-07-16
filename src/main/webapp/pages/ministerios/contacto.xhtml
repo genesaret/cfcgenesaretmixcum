@@ -520,7 +520,7 @@ $(document).ready(function() {
               <p:inputText class="validate[required,custom[email]] text-input" maxlength="60"  id="c" value="#{genemixContactoControlador.gmcontacto.email}"/>
                                 <p:message for="c" /> 
                               </div>
-              <div class="comentario"> <p:outputLabel for="d" value="duda o comentario (requerido):"/><br/>
+              <div class="comentario"> <p:outputLabel value="duda o comentario (requerido):"/><br/>
               <p:inputTextarea rows="5" cols="30" counter="display" maxlength="100" counterTemplate="{0} characters remaining." autoResize="false"  class="validate[required,minSize[10]]" value="#{sgenemixContactoControlador.gmcontacto.comentario}"></p:inputTextarea>
                 <h:outputText id="display" />
                               </div>
