@@ -519,7 +519,7 @@ $(document).ready(function() {
               </div>
               <div class="comentario"> 
               	   <p:outputLabel  value="Duda o comentario"></p:outputLabel><br />
-              	   <textarea rows="6" cols="33" value="#{genemixContactoControlador.gmContacto.comentario}"></textarea>
+              	   <p:inputTextarea rows="6" cols="33" value="#{genemixContactoControlador.gmContacto.comentario}"></p:inputTextarea>
                </div>
               <p:commandButton id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
 			</p:tab>
