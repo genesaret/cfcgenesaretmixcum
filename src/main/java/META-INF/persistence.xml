@@ -4,6 +4,7 @@
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<jta-data-source>java:jboss/datasources/MySQLDS</jta-data-source>
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
-  <properties/>
+  <properties>
+  	<property name="javax.persistence.schema-generation.scripts.action" value="drop-and-create"/></properties>
 	</persistence-unit>
 </persistence>
