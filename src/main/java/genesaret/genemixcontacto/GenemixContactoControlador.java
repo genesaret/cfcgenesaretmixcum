@@ -52,7 +52,7 @@ public class GenemixContactoControlador implements Serializable{
     public void enviarcoment(){
         
         try {
-            int id = 1;
+            int id = 0;
 
             Query id2 = em.createQuery("SELECT MAX(s.idContacto) FROM Gmcontacto s");
             if (id2.getSingleResult() != null) {
