@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
-	<persistence-unit name="GENESARETPU" transaction-type="JTA">
-		<jta-data-source>java:jboss/datasources/MySQLDS</jta-data-source>
+	<persistence-unit name="GENESARETPU" transaction-type="RESOURCE_LOCAL">
 		
 		
    <properties>
@@ -11,7 +10,11 @@
             <property name="javax.persistence.schema-generation.drop-script-source" value="META-INF/drop-script.sql"/>
             <property name="javax.persistence.schema-generation.create-script-source" value="META-INF/create-script.sql"/>
             <property name="javax.persistence.sql-load-script-source" value="META-INF/load-script.sql"/>
-            <property name="eclipselink.logging.level" value="FINE"/> 
+            <property name="eclipselink.logging.level" value="FINE"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/genemixcum"/>
+            <property name="javax.persistence.jdbc.user" value="adminkXNXxcg"/>
+            <property name="javax.persistence.jdbc.password" value="1L9UzpQ9m2s8"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/> 
         </properties>
 	</persistence-unit>
 </persistence>
