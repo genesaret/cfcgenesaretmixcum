@@ -504,19 +504,19 @@ $(document).ready(function() {
 			<p:tab title="Contacto">
 			  <div class="campos">
 			  	<p:outputLabel for="name" value="Nombre (requerido):" /><br/>
-			    <p:inputText required="true"  maxlength="50" id="name" value="#{genemixContactoControlador.gmContacto.nombre}"/>
+			    <p:inputText required="true" requiredMessage="Nombre requerido" maxlength="50" id="name" value="#{genemixContactoControlador.gmContacto.nombre}"/>
                 <p:message for="name" />
              </div>
               <div class="campos"> 
               	 <p:outputLabel for="telefono" value="Teléfono con lada:"/><br/>
-             	 <p:inputText  required="true"  id="telefono" validatorMessage="Numero Incorrecto" maxlength="40" value="#{genemixContactoControlador.gmContacto.telefono}">
+             	 <p:inputText  required="true"  id="telefono" requiredMessage="Telefono requerido" validatorMessage="Numero Incorrecto" maxlength="40" value="#{genemixContactoControlador.gmContacto.telefono}">
              	  <f:validateRegex pattern="^([+]?[\d]+)?$" />
              	 </p:inputText>
                  <p:message for="telefono" />
               </div>
               <div class="camposultimo">
               	  <p:outputLabel for="email" value="E-mail (requerido):"/><br/>
-              	   <p:inputText required="true" validatorMessage="Email Incorecto" maxlength="60"  id="email" value="#{genemixContactoControlador.gmContacto.email}">
+              	   <p:inputText required="true" requiredMessage="Email requerido" validatorMessage="Email Incorecto" maxlength="60"  id="email" value="#{genemixContactoControlador.gmContacto.email}">
               	   <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
               	   
               	   </p:inputText>
@@ -524,7 +524,7 @@ $(document).ready(function() {
               </div>
               <div class="comentario"> 
               	   <p:outputLabel for="come"  value="Duda o comentario  (requerido):"></p:outputLabel><br />
-              	   <h:inputTextarea rows="6" required="true" id="come"  cols="33" value="#{genemixContactoControlador.gmContacto.comentario}"></h:inputTextarea>
+              	   <h:inputTextarea rows="6" requiredMessage="Comentario requerido" required="true" id="come"  cols="33" value="#{genemixContactoControlador.gmContacto.comentario}"></h:inputTextarea>
               	    <p:message for="come" />
                </div>
               <p:commandButton id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
