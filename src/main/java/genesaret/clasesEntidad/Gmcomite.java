@@ -29,7 +29,7 @@ public class Gmcomite implements Serializable {
 
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id_comite")
 	public int getIdComite() {
 		return this.idComite;
