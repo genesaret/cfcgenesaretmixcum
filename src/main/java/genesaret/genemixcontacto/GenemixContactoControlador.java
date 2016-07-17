@@ -54,7 +54,7 @@ public class GenemixContactoControlador implements Serializable{
         try {
             int id = 1;
 
-            Query id2 = em.createQuery("SELECT MAX(s.id_contacto) FROM gmcontacto s");
+            Query id2 = em.createQuery("SELECT MAX(s.idContacto) FROM Gmcontacto s");
             if (id2.getSingleResult() != null) {
                 id= ((Integer) id2.getSingleResult()).intValue() + 1;
             }
