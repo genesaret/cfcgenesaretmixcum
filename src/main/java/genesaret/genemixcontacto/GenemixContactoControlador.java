@@ -20,6 +20,10 @@ import javax.transaction.NotSupportedException;
 import javax.transaction.RollbackException;
 import javax.transaction.SystemException;
 
+import org.eclipse.persistence.sessions.factories.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
 import genesaret.clasesEntidad.Gmcontacto;
 @ManagedBean
 @RequestScoped
@@ -35,6 +39,7 @@ public class GenemixContactoControlador implements Serializable{
     private EntityManager em;
     @Resource
     private javax.transaction.UserTransaction utx;
+    
     
     Gmcontacto gmContacto = new Gmcontacto();
 
