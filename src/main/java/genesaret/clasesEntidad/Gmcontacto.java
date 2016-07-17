@@ -13,23 +13,19 @@ import javax.persistence.*;
 @NamedQuery(name="Gmcontacto.findAll", query="SELECT g FROM Gmcontacto g")
 public class Gmcontacto implements Serializable {
 	private static final long serialVersionUID = 1L;
-
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="id_contacto")
 	private int idContacto;
-
 	private String comentario;
-
 	private String email;
-
 	private String nombre;
-
 	private String telefono;
 
 	public Gmcontacto() {
 	}
 
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="id_contacto")
 	public int getIdContacto() {
 		return this.idContacto;
 	}
@@ -37,6 +33,7 @@ public class Gmcontacto implements Serializable {
 	public void setIdContacto(int idContacto) {
 		this.idContacto = idContacto;
 	}
+
 
 	public String getComentario() {
 		return this.comentario;
@@ -46,6 +43,7 @@ public class Gmcontacto implements Serializable {
 		this.comentario = comentario;
 	}
 
+
 	public String getEmail() {
 		return this.email;
 	}
@@ -54,6 +52,7 @@ public class Gmcontacto implements Serializable {
 		this.email = email;
 	}
 
+
 	public String getNombre() {
 		return this.nombre;
 	}
@@ -61,6 +60,7 @@ public class Gmcontacto implements Serializable {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
 
 	public String getTelefono() {
 		return this.telefono;

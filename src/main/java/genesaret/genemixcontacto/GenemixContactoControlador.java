@@ -49,7 +49,7 @@ public class GenemixContactoControlador implements Serializable{
     }
 
     
-    public void enviaardacoment(){
+    public void enviarcoment(){
         
         try {
             int id = 1;

@@ -14,31 +14,22 @@ import java.util.Date;
 @NamedQuery(name="Gmiglesia.findAll", query="SELECT g FROM Gmiglesia g")
 public class Gmiglesia implements Serializable {
 	private static final long serialVersionUID = 1L;
-
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int idiglesia;
-
 	private String colonia;
-
 	private String direccion;
-
-	@Temporal(TemporalType.DATE)
 	private Date fecha;
-
 	private String miembros;
-
 	private String municipio;
-
 	private String nombre;
-
 	private String pastor;
-
 	private String telefono;
 
 	public Gmiglesia() {
 	}
 
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	public int getIdiglesia() {
 		return this.idiglesia;
 	}
@@ -46,6 +37,7 @@ public class Gmiglesia implements Serializable {
 	public void setIdiglesia(int idiglesia) {
 		this.idiglesia = idiglesia;
 	}
+
 
 	public String getColonia() {
 		return this.colonia;
@@ -55,6 +47,7 @@ public class Gmiglesia implements Serializable {
 		this.colonia = colonia;
 	}
 
+
 	public String getDireccion() {
 		return this.direccion;
 	}
@@ -63,6 +56,8 @@ public class Gmiglesia implements Serializable {
 		this.direccion = direccion;
 	}
 
+
+	@Temporal(TemporalType.DATE)
 	public Date getFecha() {
 		return this.fecha;
 	}
@@ -70,6 +65,7 @@ public class Gmiglesia implements Serializable {
 	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
+
 
 	public String getMiembros() {
 		return this.miembros;
@@ -79,6 +75,7 @@ public class Gmiglesia implements Serializable {
 		this.miembros = miembros;
 	}
 
+
 	public String getMunicipio() {
 		return this.municipio;
 	}
@@ -86,6 +83,7 @@ public class Gmiglesia implements Serializable {
 	public void setMunicipio(String municipio) {
 		this.municipio = municipio;
 	}
+
 
 	public String getNombre() {
 		return this.nombre;
@@ -95,6 +93,7 @@ public class Gmiglesia implements Serializable {
 		this.nombre = nombre;
 	}
 
+
 	public String getPastor() {
 		return this.pastor;
 	}
@@ -102,6 +101,7 @@ public class Gmiglesia implements Serializable {
 	public void setPastor(String pastor) {
 		this.pastor = pastor;
 	}
+
 
 	public String getTelefono() {
 		return this.telefono;

@@ -14,34 +14,23 @@ import java.util.Date;
 @NamedQuery(name="Gmtesoreria.findAll", query="SELECT g FROM Gmtesoreria g")
 public class Gmtesoreria implements Serializable {
 	private static final long serialVersionUID = 1L;
-
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="id_tesor")
 	private int idTesor;
-
 	private String amaterno;
-
 	private String apaterno;
-
-	@Temporal(TemporalType.DATE)
 	private Date fecha;
-
 	private String nombre;
-
 	private String tesoreria;
-
 	private String total;
-
-	@Column(name="total_entradas")
 	private String totalEntradas;
-
-	@Column(name="total_salidas")
 	private String totalSalidas;
 
 	public Gmtesoreria() {
 	}
 
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="id_tesor")
 	public int getIdTesor() {
 		return this.idTesor;
 	}
@@ -49,6 +38,7 @@ public class Gmtesoreria implements Serializable {
 	public void setIdTesor(int idTesor) {
 		this.idTesor = idTesor;
 	}
+
 
 	public String getAmaterno() {
 		return this.amaterno;
@@ -58,6 +48,7 @@ public class Gmtesoreria implements Serializable {
 		this.amaterno = amaterno;
 	}
 
+
 	public String getApaterno() {
 		return this.apaterno;
 	}
@@ -66,6 +57,8 @@ public class Gmtesoreria implements Serializable {
 		this.apaterno = apaterno;
 	}
 
+
+	@Temporal(TemporalType.DATE)
 	public Date getFecha() {
 		return this.fecha;
 	}
@@ -73,6 +66,7 @@ public class Gmtesoreria implements Serializable {
 	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
+
 
 	public String getNombre() {
 		return this.nombre;
@@ -82,6 +76,7 @@ public class Gmtesoreria implements Serializable {
 		this.nombre = nombre;
 	}
 
+
 	public String getTesoreria() {
 		return this.tesoreria;
 	}
@@ -89,6 +84,7 @@ public class Gmtesoreria implements Serializable {
 	public void setTesoreria(String tesoreria) {
 		this.tesoreria = tesoreria;
 	}
+
 
 	public String getTotal() {
 		return this.total;
@@ -98,6 +94,8 @@ public class Gmtesoreria implements Serializable {
 		this.total = total;
 	}
 
+
+	@Column(name="total_entradas")
 	public String getTotalEntradas() {
 		return this.totalEntradas;
 	}
@@ -106,6 +104,8 @@ public class Gmtesoreria implements Serializable {
 		this.totalEntradas = totalEntradas;
 	}
 
+
+	@Column(name="total_salidas")
 	public String getTotalSalidas() {
 		return this.totalSalidas;
 	}

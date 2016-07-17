@@ -14,26 +14,20 @@ import java.util.Date;
 @NamedQuery(name="Gmvisitante.findAll", query="SELECT g FROM Gmvisitante g")
 public class Gmvisitante implements Serializable {
 	private static final long serialVersionUID = 1L;
-
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="id_visitante")
 	private int idVisitante;
-
 	private String direcion;
-
-	@Temporal(TemporalType.DATE)
 	private Date fecha;
-
 	private String genero;
-
 	private String nombre;
-
 	private String telefono;
 
 	public Gmvisitante() {
 	}
 
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="id_visitante")
 	public int getIdVisitante() {
 		return this.idVisitante;
 	}
@@ -41,6 +35,7 @@ public class Gmvisitante implements Serializable {
 	public void setIdVisitante(int idVisitante) {
 		this.idVisitante = idVisitante;
 	}
+
 
 	public String getDirecion() {
 		return this.direcion;
@@ -50,6 +45,8 @@ public class Gmvisitante implements Serializable {
 		this.direcion = direcion;
 	}
 
+
+	@Temporal(TemporalType.DATE)
 	public Date getFecha() {
 		return this.fecha;
 	}
@@ -57,6 +54,7 @@ public class Gmvisitante implements Serializable {
 	public void setFecha(Date fecha) {
 		this.fecha = fecha;
 	}
+
 
 	public String getGenero() {
 		return this.genero;
@@ -66,6 +64,7 @@ public class Gmvisitante implements Serializable {
 		this.genero = genero;
 	}
 
+
 	public String getNombre() {
 		return this.nombre;
 	}
@@ -73,6 +72,7 @@ public class Gmvisitante implements Serializable {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
 
 	public String getTelefono() {
 		return this.telefono;
