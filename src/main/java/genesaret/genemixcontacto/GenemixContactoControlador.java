@@ -66,7 +66,7 @@ public class GenemixContactoControlador implements Serializable{
             
             //addInfo(null, "Comentario enviado con exito!", gmContacto.getEmail());
             
-            FacesMessage msg1 = new FacesMessage(FacesMessage.SEVERITY_INFO, "Comentario enviado con exito! ",gmContacto.getEmail());
+            FacesMessage msg1 = new FacesMessage(FacesMessage.SEVERITY_INFO, "Comentario enviado con exito! ","Gracias!");
             FacesContext.getCurrentInstance().addMessage(null, msg1);
             gmContacto=null;
         } catch (IllegalStateException | SecurityException | HeuristicMixedException | HeuristicRollbackException | NotSupportedException | RollbackException | SystemException ex) {
