@@ -518,8 +518,8 @@ $(document).ready(function() {
                    <p:message for="email" /> 
               </div>
               <div class="comentario"> 
-              	   <p:outputLabel for="come" value="Duda o comentario"></p:outputLabel><br />
-             	   <p:inputTextarea autoResize="false" id="come" rows="6" cols="33"></p:inputTextarea>
+              	   <p:outputLabel  value="Duda o comentario"></p:outputLabel><br />
+              	   <textarea rows="6" cols="33"></textarea>
                </div>
               <p:commandButton id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
 			</p:tab>
