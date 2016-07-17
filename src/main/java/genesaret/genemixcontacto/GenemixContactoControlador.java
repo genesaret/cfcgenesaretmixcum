@@ -47,7 +47,7 @@ public class GenemixContactoControlador implements Serializable{
     }
 
     
-    public void enviadrcogfment(){
+    public void enviarcoment(){
         
         try {
             int id = 1;
