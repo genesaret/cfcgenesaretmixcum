@@ -7,7 +7,9 @@
 	xmlns:p="http://primefaces.org/ui">
 <f:view contentType="text/html">
 	<h:head>
+	 <h:outputScript library="primefaces" name="jquery/jquery.js" target="head"/>
 	<script type="text/javascript">
+	$ = jQuery;
 $(window).load(function () {
   // Una vez se cargue al completo la pÃ¡gina desaparecerÃ¡ el div "cargando"
   $('.cargando').hide();
@@ -51,6 +53,7 @@ $(window).load(function () {
 </script>
 <!-- End Google Tag Manager -->
 		<script>
+		$ = jQuery;
 		var x=5;
 		var y=20;
 		if(x&lt;=10&amp;&amp;y&lt;3)
@@ -148,6 +151,7 @@ $(window).load(function () {
 		<!--Acciones el menu horizontal -->
 <script>
 //<![CDATA[
+           $ = jQuery;
 $(document).ready(function() {
 	if (jQuery(window).width() > 700) {
 		<!--Menu horizontal fixed -->
@@ -311,6 +315,7 @@ $(document).ready(function() {
 </div>
 <script>
 //<![CDATA[
+           $ = jQuery;
         jQuery(document).ready(function ($) {
 
             var _CaptionTransitions = [];
@@ -482,6 +487,7 @@ $(document).ready(function() {
  		</div>
  		<!--Acciones del menu vertical -->
 <script>
+$ = jQuery;
 $(document).ready(function() {
     $('#bloqueslateral ul ul').slideUp();
     $('ul>li').click(function(){
@@ -656,6 +662,7 @@ $(document).ready(function() {
 <link rel="icon" sizes="16x16 32x32" href="http://grupocreativo.com.mx/iconotk/iconotk2.png"/>
 <!-- Carga imagenes conforme se necesita -->
 <script>
+$ = jQuery;
 	$(function() {
 		$("img.lazy").lazyload();
 	});
@@ -664,6 +671,7 @@ $(document).ready(function() {
 <!--Mismo alto de divs -->
 <script>
 //<![CDATA[
+           $ = jQuery;
 $(document).ready(function(){
 
 
@@ -716,6 +724,7 @@ if (jQuery(window).width() > 700) {
 <!--Acciones el menu horizontal -->
 <script>
 //<![CDATA[
+           $ = jQuery;
 $(document).ready(myfunction);
 $(window).resize(myfunction);
 $(document).ready(menus);
