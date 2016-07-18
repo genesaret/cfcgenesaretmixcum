@@ -7,7 +7,8 @@
 	xmlns:p="http://primefaces.org/ui">
 <f:view contentType="text/html">
 	<h:head>
-	 <h:outputScript library="primefaces" name="jquery/jquery.js"/>
+	<h:outputScript library="primefaces" name="jquery/jquerghy.js"  />
+<h:outputScript library="primefaces" name="jquery/jquery-plughgins.js"  />
 	<script type="text/javascript">
 $(window).load(function () {
   // Una vez se cargue al completo la pÃ¡gina desaparecerÃ¡ el div "cargando"
@@ -401,7 +402,6 @@ $(document).ready(function() {
         		<div id ="bloqueslateralcarrito">
               		<div id="buscador">
       	  				<form method="get" action="http://genesaretmixcum.260mb.net/" name="frmbusq" onsubmit="return valida_busq();">
-      	  				<h:outputScript library="primefaces" name="jquery/jquery.js"/>
             				<p:inputText placeholder="Buscar" name="kw" id="kw" ></p:inputText>
             				<input name="" type="submit" value="."/>
             			</form>
@@ -620,7 +620,7 @@ $(document).ready(function() {
 	    <script language="JavaScript">
         boletin_flag = true;
         </script>
-       <h:outputScript library="primefaces" name="jquery/jquery.js"/>
+       
           <p:inputText name="boletin" id="boletin" class="validate[required,custom[email]]" value="Tu e-mail aqu&iacute;" onfocus="if (boletin_flag) {boletin_flag=false; this.value='';};" ></p:inputText><input name="" type="submit" value=">"/>
         </form>
 
