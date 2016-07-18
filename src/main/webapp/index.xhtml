@@ -18,7 +18,7 @@ $(window).load(function () {
 		<link rel="icon"  href="https://dl.dropbox.com/s/2cx1a3qzspj8za0/icon.ico" type="image/x-icon"/>
 		<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
-		
+		<script type="text/javascript" src="./js/jquery-144min.js"></script>
 		<script type="text/javascript" src="./js/jssor.js"></script>
 		<script type="text/javascript" src="./js/jssor.slider.js"></script>
 		<script type="text/html" src="jquery.lazyload.js?v=1.9.1"></script>
@@ -401,6 +401,7 @@ $(document).ready(function() {
         		<div id ="bloqueslateralcarrito">
               		<div id="buscador">
       	  				<form method="get" action="http://genesaretmixcum.260mb.net/" name="frmbusq" onsubmit="return valida_busq();">
+      	  				<h:outputScript library="primefaces" name="jquery/jquery.js"/>
             				<p:inputText placeholder="Buscar" name="kw" id="kw" ></p:inputText>
             				<input name="" type="submit" value="."/>
             			</form>
@@ -619,7 +620,7 @@ $(document).ready(function() {
 	    <script language="JavaScript">
         boletin_flag = true;
         </script>
-       
+       <h:outputScript library="primefaces" name="jquery/jquery.js"/>
           <p:inputText name="boletin" id="boletin" class="validate[required,custom[email]]" value="Tu e-mail aqu&iacute;" onfocus="if (boletin_flag) {boletin_flag=false; this.value='';};" ></p:inputText><input name="" type="submit" value=">"/>
         </form>
 
