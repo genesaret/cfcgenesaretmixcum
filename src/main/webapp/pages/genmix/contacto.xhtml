@@ -6,12 +6,14 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 	<h:head>
-	<script type="text/javascript">
+	<h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
+	<h:outputScript target="head">
+	 $ = jQuery;
 $(window).load(function () {
   // Una vez se cargue al completo la pÃ¡gina desaparecerÃ¡ el div "cargando"
   $('.cargando').hide();
 });
-</script>
+</h:outputScript>
 		<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
 		<script type="text/javascript" src="/js/jquery-144min.js"></script>
@@ -31,7 +33,9 @@ $(window).load(function () {
 <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WMCSGS" height="0" width="0" style="display:none;visibility:hidden">
 </iframe>
 </noscript>
-<script>
+<h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
+<h:outputScript target="head">
+$ = jQuery;
 //<![CDATA[
 (
 		function(w,d,s,l,i)
@@ -45,9 +49,11 @@ $(window).load(function () {
 })
 (window,document,'script','dataLayer','GTM-WMCSGS');
 //]]>
-</script>
+</h:outputScript>
 <!-- End Google Tag Manager -->
-		<script>
+<h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
+		<h:outputScript target="head">
+		 $ = jQuery;
 		var x=5;
 		var y=20;
 		if(x&lt;=10&amp;&amp;y&lt;3)
@@ -63,7 +69,7 @@ $(window).load(function () {
 					effect : "fadeIn"
 				});
 			});
-		</script>
+		</h:outputScript>
 
 		<f:facet name="first">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -308,7 +314,9 @@ $(document).ready(function() {
     </div>
   </div>
 </div>
-<script>
+<h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
+<h:outputScript target="head">
+$ = jQuery;
 //<![CDATA[
         jQuery(document).ready(function ($) {
 
@@ -389,7 +397,7 @@ $(document).ready(function() {
         //termina c?digo responsivo
         });
       //]]>
-    </script>
+    </h:outputScript>
     <!--Termina Banner Rotativo  -->
 		<!-- Empieza contenedor -->
     	<div id ="contenedor">
@@ -479,14 +487,16 @@ $(document).ready(function() {
  			<!--Termina Banners Lateral -->
  		</div>
  		<!--Acciones del menu vertical -->
-<script>
+ 		<h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
+<h:outputScript target="head">
+ $ = jQuery;
 $(document).ready(function() {
     $('#bloqueslateral ul ul').slideUp();
     $('ul>li').click(function(){
         $(this).next('ul').slideToggle();
     });
 });
-</script>
+</h:outputScript>
  		<!--Termina acciones del menu vertical -->      <!-- Termina barra lateral -->
  		<!-- Empieza cuerpo  -->
  		<div id="cuerpo" >
@@ -616,14 +626,18 @@ $(document).ready(function() {
 
 <link rel="icon" sizes="16x16 32x32" href="http://grupocreativo.com.mx/iconotk/iconotk2.png"/>
 <!-- Carga imagenes conforme se necesita -->
-<script>
+<h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
+<h:outputScript target="head">
+$ = jQuery;
 	$(function() {
 		$("img.lazy").lazyload();
 	});
-</script>
+</h:outputScript>
 
 <!--Mismo alto de divs -->
-<script>
+<h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
+<h:outputScript target="head">
+ $ = jQuery;
 //<![CDATA[
 $(document).ready(function(){
 
@@ -668,14 +682,16 @@ if (jQuery(window).width() > 700) {
 }
 });
 //]]>
-</script>
+</h:outputScript>
 <!--Termina mismo alto de divs -->    <!-- Termina footer  -->
 
     <!-- Termina border --> </div>
   <!-- Termina wrapper --></div>
 <!--Menu horizontal de catalogo de productos -->
 <!--Acciones el menu horizontal -->
-<script>
+<h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
+<h:outputScript target="head">
+$ = jQuery;
 //<![CDATA[
 $(document).ready(myfunction);
 $(window).resize(myfunction);
@@ -861,7 +877,7 @@ if (jQuery(window).width() > 1024) {
 	}
 }
 //]]>
-</script>
+</h:outputScript>
 
 <!--Termina Menu horizontal de catalogo de productos -->
 <!--Pleca superior -->
