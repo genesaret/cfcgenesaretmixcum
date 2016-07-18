@@ -72,15 +72,6 @@ $(window).load(function () {
 			<title>CFCG - Mixcum</title>
 		</f:facet>
 	</h:head>
-	<h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
-	<h:outputScript target="head">
-    // Add the $() function
-    $ = jQuery;
-    // Now you can use it
-    $(document).ready(function() {
-        ...
-    });
-</h:outputScript>
 	<h:body>
 	<div class="cargando"></div>
 	<!--Acciones el menu horizontal -->
@@ -152,7 +143,9 @@ $(window).load(function () {
   			 </div>
 		</div>
 		<!--Acciones el menu horizontal -->
-<script>
+<h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
+<h:outputScript target="head">
+ $ = jQuery;
 //<![CDATA[
 $(document).ready(function() {
 	if (jQuery(window).width() > 700) {
@@ -208,7 +201,7 @@ $(document).ready(function() {
 		}
 });
 //]]>
-</script>
+</h:outputScript>
 <!--Termina Acciones el menu horizontal -->    <!--Termina Menu Horizontal  -->
     	<!--Empieza Benner Rotativo  -->
   		<div id ="bannerprincipal">
