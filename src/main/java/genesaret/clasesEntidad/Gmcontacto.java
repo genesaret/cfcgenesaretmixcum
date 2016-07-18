@@ -2,6 +2,7 @@ package genesaret.clasesEntidad;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import java.util.Date;
 
 
 /**
@@ -16,6 +17,7 @@ public class Gmcontacto implements Serializable {
 	private int idContacto;
 	private String comentario;
 	private String email;
+	private Date fecha;
 	private String nombre;
 	private String telefono;
 
@@ -50,6 +52,16 @@ public class Gmcontacto implements Serializable {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+
+	@Temporal(TemporalType.DATE)
+	public Date getFecha() {
+		return this.fecha;
+	}
+
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
 	}
 
 

@@ -2,6 +2,7 @@ package genesaret.genemixcontacto;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.sql.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.Resource;
@@ -61,6 +62,7 @@ public class GenemixContactoControlador implements Serializable{
         
             utx.begin();
             //gmContacto.setIdContacto(id);
+            gmContacto.setFecha(fecha());
             em.persist(gmContacto);
             utx.commit();
             
@@ -76,5 +78,11 @@ public class GenemixContactoControlador implements Serializable{
             System.out.println("Error al enviar  Comentarios  :" +ex.getMessage());
         } 
     }
-    
+    public Date fecha()
+    {
+    java.util.Date dates=new java.util.Date();
+    long fechaSis = dates.getTime();
+    java.sql.Date d=new java.sql.Date(fechaSis);
+    return d;
+    }
 }
