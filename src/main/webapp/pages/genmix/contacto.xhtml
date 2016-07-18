@@ -7,7 +7,6 @@
 	xmlns:p="http://primefaces.org/ui">
 	<h:head>
 	<script type="text/javascript">
-	jQuery.noConflict();
 $(window).load(function () {
   // Una vez se cargue al completo la pÃ¡gina desaparecerÃ¡ el div "cargando"
   $('.cargando').hide();
@@ -25,7 +24,7 @@ $(window).load(function () {
 		<script type="text/javascript" src="/js/jquery-validationEngine.js"></script>
 		<script type="text/javascript" src="/js/jquery.lazyload.js"></script>
 		
-		
+		<h:outputScript library="primefaces" name="jquery/jquery.js" />
 		
 		<!-- Google Tag Manager -->
 <noscript>
@@ -49,7 +48,6 @@ $(window).load(function () {
 </script>
 <!-- End Google Tag Manager -->
 		<script>
-		jQuery.noConflict();
 		var x=5;
 		var y=20;
 		if(x&lt;=10&amp;&amp;y&lt;3)
@@ -147,7 +145,6 @@ $(window).load(function () {
 		<!--Acciones el menu horizontal -->
 <script>
 //<![CDATA[
-           jQuery.noConflict();
 $(document).ready(function() {
 	if (jQuery(window).width() > 700) {
 		<!--Menu horizontal fixed -->
@@ -311,7 +308,6 @@ $(document).ready(function() {
 </div>
 <script>
 //<![CDATA[
-           jQuery.noConflict();
         jQuery(document).ready(function ($) {
 
             var _CaptionTransitions = [];
@@ -482,7 +478,6 @@ $(document).ready(function() {
  		</div>
  		<!--Acciones del menu vertical -->
 <script>
-jQuery.noConflict();
 $(document).ready(function() {
     $('#bloqueslateral ul ul').slideUp();
     $('ul>li').click(function(){
@@ -620,7 +615,6 @@ $(document).ready(function() {
 <link rel="icon" sizes="16x16 32x32" href="http://grupocreativo.com.mx/iconotk/iconotk2.png"/>
 <!-- Carga imagenes conforme se necesita -->
 <script>
-jQuery.noConflict();
 	$(function() {
 		$("img.lazy").lazyload();
 	});
@@ -629,7 +623,6 @@ jQuery.noConflict();
 <!--Mismo alto de divs -->
 <script>
 //<![CDATA[
-           jQuery.noConflict();
 $(document).ready(function(){
 
 
@@ -682,7 +675,6 @@ if (jQuery(window).width() > 700) {
 <!--Acciones el menu horizontal -->
 <script>
 //<![CDATA[
-           jQuery.noConflict();
 $(document).ready(myfunction);
 $(window).resize(myfunction);
 $(document).ready(menus);
