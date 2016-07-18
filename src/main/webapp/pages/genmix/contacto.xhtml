@@ -7,9 +7,10 @@
 	xmlns:p="http://primefaces.org/ui">
 	<h:head>
 	<script type="text/javascript">
-jQuery(window).load(function () {
+	jQuery.noConflict();
+$(window).load(function () {
   // Una vez se cargue al completo la pÃ¡gina desaparecerÃ¡ el div "cargando"
-  jQuery('.cargando').hide();
+  $('.cargando').hide();
 });
 </script>
 		<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -48,6 +49,7 @@ jQuery(window).load(function () {
 </script>
 <!-- End Google Tag Manager -->
 		<script>
+		jQuery.noConflict();
 		var x=5;
 		var y=20;
 		if(x&lt;=10&amp;&amp;y&lt;3)
@@ -58,8 +60,8 @@ jQuery(window).load(function () {
 		        // cuando se hace el submit, es lo que dispara la validaci?n
 		        jQuery("#frmboletin").validationEngine();
 		    });
-			jQuery(function() {
-				jQuery("img.lazy").lazyload({
+			$(function() {
+				$("img.lazy").lazyload({
 					effect : "fadeIn"
 				});
 			});
@@ -145,55 +147,56 @@ jQuery(window).load(function () {
 		<!--Acciones el menu horizontal -->
 <script>
 //<![CDATA[
-jQuery(document).ready(function() {
+           jQuery.noConflict();
+$(document).ready(function() {
 	if (jQuery(window).width() > 700) {
 		<!--Menu horizontal fixed -->
-		num = jQuery('#header').outerHeight() + jQuery('#plecaup').outerHeight();
+		num = $('#header').outerHeight() + $('#plecaup').outerHeight();
 
-		jQuery(window).bind('scroll', function() {
+		$(window).bind('scroll', function() {
 			  if (jQuery(window).width() > 700) {
-				 if (jQuery(window).scrollTop() > num) {
-					 jQuery('#menuhoriz').addClass('fixed');
+				 if ($(window).scrollTop() > num) {
+					 $('#menuhoriz').addClass('fixed');
 				 }
 				 else {
-					 jQuery('#menuhoriz').removeClass('fixed');
+					 $('#menuhoriz').removeClass('fixed');
 				 }
 			  }
 			  else {
-				jQuery('#menuhoriz').removeClass('fixed');
+				$('#menuhoriz').removeClass('fixed');
 			  }
 		});
 
 		<!--Termina menu horizontal fixed -->
-		altomenu = jQuery('#menuhoriz .opciones li').outerHeight()
+		altomenu = $('#menuhoriz .opciones li').outerHeight()
 
-		jQuery('#menuhoriz li').hover(
+		$('#menuhoriz li').hover(
 			function () {
 				if (jQuery(window).width() > 700) {
-					jQuery('ul', this).fadeIn();
-					jQuery('ul', this).css("top", altomenu + "px");
+					$('ul', this).fadeIn();
+					$('ul', this).css("top", altomenu + "px");
 				}
 				else {
-					jQuery('ul', this).css("top", 0);
+					$('ul', this).css("top", 0);
 				}
 			},
 			function () {
 				if (jQuery(window).width() > 700) {
-					jQuery('ul', this).fadeOut();
+					$('ul', this).fadeOut();
 				}
 			}
 		);
 
-		jQuery('#menuhoriz').each(function(){
+		$('#menuhoriz').each(function(){
 		        var highestBox = 0;
 
-		        jQuery(this).find('.lilineav').each(function(){
-		            if(jQuery(this).height() > highestBox){
-		                highestBox = jQuery(this).height();
+		        $(this).find('.lilineav').each(function(){
+		            if($(this).height() > highestBox){
+		                highestBox = $(this).height();
 		            }
 		        })
 
-        		jQuery(this).find('.lilineav').height(highestBox);
+        		$(this).find('.lilineav').height(highestBox);
 		    });
 
 		}
@@ -308,82 +311,83 @@ jQuery(document).ready(function() {
 </div>
 <script>
 //<![CDATA[
-        jQuery(document).ready(function (jQuery) {
+           jQuery.noConflict();
+        jQuery(document).ready(function ($) {
 
             var _CaptionTransitions = [];
-            _CaptionTransitions["L"] = { jQueryDuration: 900, x: 0.6, jQueryEasing: { jQueryLeft: jQueryJssorEasingjQuery.jQueryEaseInOutSine }, jQueryOpacity: 2 };
-            _CaptionTransitions["R"] = { jQueryDuration: 900, x: -0.6, jQueryEasing: { jQueryLeft: jQueryJssorEasingjQuery.jQueryEaseInOutSine }, jQueryOpacity: 2 };
-            _CaptionTransitions["T"] = { jQueryDuration: 900, y: 0.6, jQueryEasing: { jQueryTop: jQueryJssorEasingjQuery.jQueryEaseInOutSine }, jQueryOpacity: 2 };
-            _CaptionTransitions["B"] = { jQueryDuration: 900, y: -0.6, jQueryEasing: { jQueryTop: jQueryJssorEasingjQuery.jQueryEaseInOutSine }, jQueryOpacity: 2 };
-            _CaptionTransitions["ZMF|10"] = { jQueryDuration: 900, jQueryZoom: 11, jQueryEasing: { jQueryZoom: jQueryJssorEasingjQuery.jQueryEaseOutQuad, jQueryOpacity: jQueryJssorEasingjQuery.jQueryEaseLinear }, jQueryOpacity: 2 };
-            _CaptionTransitions["RTT|10"] = { jQueryDuration: 900, jQueryZoom: 11, jQueryRotate: 1, jQueryEasing: { jQueryZoom: jQueryJssorEasingjQuery.jQueryEaseOutQuad, jQueryOpacity: jQueryJssorEasingjQuery.jQueryEaseLinear, jQueryRotate: jQueryJssorEasingjQuery.jQueryEaseInExpo }, jQueryOpacity: 2, jQueryRound: { jQueryRotate: 0.8} };
-            _CaptionTransitions["RTT|2"] = { jQueryDuration: 900, jQueryZoom: 3, jQueryRotate: 1, jQueryEasing: { jQueryZoom: jQueryJssorEasingjQuery.jQueryEaseInQuad, jQueryOpacity: jQueryJssorEasingjQuery.jQueryEaseLinear, jQueryRotate: jQueryJssorEasingjQuery.jQueryEaseInQuad }, jQueryOpacity: 2, jQueryRound: { jQueryRotate: 0.5} };
-            _CaptionTransitions["RTTL|BR"] = { jQueryDuration: 900, x: -0.6, y: -0.6, jQueryZoom: 11, jQueryRotate: 1, jQueryEasing: { jQueryLeft: jQueryJssorEasingjQuery.jQueryEaseInCubic, jQueryTop: jQueryJssorEasingjQuery.jQueryEaseInCubic, jQueryZoom: jQueryJssorEasingjQuery.jQueryEaseInCubic, jQueryOpacity: jQueryJssorEasingjQuery.jQueryEaseLinear, jQueryRotate: jQueryJssorEasingjQuery.jQueryEaseInCubic }, jQueryOpacity: 2, jQueryRound: { jQueryRotate: 0.8} };
-            _CaptionTransitions["CLIP|LR"] = { jQueryDuration: 900, jQueryClip: 15, jQueryEasing: { jQueryClip: jQueryJssorEasingjQuery.jQueryEaseInOutCubic }, jQueryOpacity: 2 };
-            _CaptionTransitions["MCLIP|L"] = { jQueryDuration: 900, jQueryClip: 1, jQueryMove: true, jQueryEasing: { jQueryClip: jQueryJssorEasingjQuery.jQueryEaseInOutCubic} };
-            _CaptionTransitions["MCLIP|R"] = { jQueryDuration: 900, jQueryClip: 2, jQueryMove: true, jQueryEasing: { jQueryClip: jQueryJssorEasingjQuery.jQueryEaseInOutCubic} };
+            _CaptionTransitions["L"] = { $Duration: 900, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["R"] = { $Duration: 900, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["T"] = { $Duration: 900, y: 0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["B"] = { $Duration: 900, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["ZMF|10"] = { $Duration: 900, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 };
+            _CaptionTransitions["RTT|10"] = { $Duration: 900, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["RTT|2"] = { $Duration: 900, $Zoom: 3, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Round: { $Rotate: 0.5} };
+            _CaptionTransitions["RTTL|BR"] = { $Duration: 900, x: -0.6, y: -0.6, $Zoom: 11, $Rotate: 1, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["CLIP|LR"] = { $Duration: 900, $Clip: 15, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic }, $Opacity: 2 };
+            _CaptionTransitions["MCLIP|L"] = { $Duration: 900, $Clip: 1, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+            _CaptionTransitions["MCLIP|R"] = { $Duration: 900, $Clip: 2, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
 
             var options = {
-                jQueryFillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
-                jQueryAutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-                jQueryAutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-                jQueryPauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
 
-                jQueryArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
-                jQuerySlideEasing: jQueryJssorEasingjQuery.jQueryEaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is jQueryJssorEasingjQuery.jQueryEaseOutQuad
-                jQuerySlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-                jQueryMinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                $SlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
                 //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
                 //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
-                jQuerySlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
-                jQueryDisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-                jQueryParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
-                jQueryUISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
-                jQueryPlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
-                jQueryDragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the jQueryDragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
 
-                jQueryCaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
-                    jQueryClass: jQueryJssorCaptionSliderjQuery,                   //[Required] Class to create instance to animate caption
-                    jQueryCaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
-                    jQueryPlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
-                    jQueryPlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
                 },
 
-                jQueryBulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
-                    jQueryClass: jQueryJssorBulletNavigatorjQuery,                 //[Required] Class to create navigator instance
-                    jQueryChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-                    jQueryAutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-                    jQuerySteps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
-                    jQueryLanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
-                    jQuerySpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
-                    jQuerySpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
-                    jQueryOrientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
                 },
 
-                jQueryArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
-                    jQueryClass: jQueryJssorArrowNavigatorjQuery,                  //[Requried] Class to create arrow navigator instance
-                    jQueryChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-                    jQueryAutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-                    jQuerySteps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
                 }
             };
 
-            var jssor_slider1 = new jQueryJssorSliderjQuery("slider1_container", options);
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
 
             //tienda con dise?o responsivo
         function ScaleSlider() {
-            var parentWidth = jssor_slider1.jQueryElmt.parentNode.clientWidth;
+            var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
             if (parentWidth)
-                jssor_slider1.jQueryScaleWidth(parentWidth);
+                jssor_slider1.$ScaleWidth(parentWidth);
             else
                 window.setTimeout(ScaleSlider, 30);
         }
 
         ScaleSlider();
 
-       jQuery(window).bind("load", ScaleSlider);
-        jQuery(window).bind("resize", ScaleSlider);
-        jQuery(window).bind("orientationchange", ScaleSlider);
+       $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
         //termina c?digo responsivo
         });
       //]]>
@@ -478,10 +482,11 @@ jQuery(document).ready(function() {
  		</div>
  		<!--Acciones del menu vertical -->
 <script>
-jQuery(document).ready(function() {
-    jQuery('#bloqueslateral ul ul').slideUp();
-    jQuery('ul>li').click(function(){
-        jQuery(this).next('ul').slideToggle();
+jQuery.noConflict();
+$(document).ready(function() {
+    $('#bloqueslateral ul ul').slideUp();
+    $('ul>li').click(function(){
+        $(this).next('ul').slideToggle();
     });
 });
 </script>
@@ -615,53 +620,55 @@ jQuery(document).ready(function() {
 <link rel="icon" sizes="16x16 32x32" href="http://grupocreativo.com.mx/iconotk/iconotk2.png"/>
 <!-- Carga imagenes conforme se necesita -->
 <script>
-	jQuery(function() {
-		jQuery("img.lazy").lazyload();
+jQuery.noConflict();
+	$(function() {
+		$("img.lazy").lazyload();
 	});
 </script>
 
 <!--Mismo alto de divs -->
 <script>
 //<![CDATA[
-jQuery(document).ready(function(){
+           jQuery.noConflict();
+$(document).ready(function(){
 
 
 if (jQuery(window).width() > 700) {
-    jQuery('#plecaup').each(function(){
+    $('#plecaup').each(function(){
         var highestBox = 0;
 
-        jQuery(this).find('.menualto').each(function(){
-            if(jQuery(this).height() > highestBox){
-                highestBox = jQuery(this).height();
+        $(this).find('.menualto').each(function(){
+            if($(this).height() > highestBox){
+                highestBox = $(this).height();
             }
         })
 
-        jQuery(this).find('.menualto').height(highestBox);
+        $(this).find('.menualto').height(highestBox);
     });
 
 
-    jQuery('.contenido').each(function(){
+    $('.contenido').each(function(){
         var highestBox = 0;
 
-        jQuery(this).find('.bloques').each(function(){
-            if(jQuery(this).height() > highestBox){
-                highestBox = jQuery(this).height();
+        $(this).find('.bloques').each(function(){
+            if($(this).height() > highestBox){
+                highestBox = $(this).height();
             }
         })
 
-        jQuery(this).find('.bloques').height(highestBox);
+        $(this).find('.bloques').height(highestBox);
     });
 
-   jQuery('.textofooter').each(function(){
+   $('.textofooter').each(function(){
         var highestBox = 0;
 
-        jQuery(this).find('.altofooter').each(function(){
-            if(jQuery(this).height() > highestBox){
-                highestBox = jQuery(this).height();
+        $(this).find('.altofooter').each(function(){
+            if($(this).height() > highestBox){
+                highestBox = $(this).height();
             }
         })
 
-        jQuery(this).find('.altofooter').height(highestBox);
+        $(this).find('.altofooter').height(highestBox);
     });
 }
 });
@@ -675,9 +682,10 @@ if (jQuery(window).width() > 700) {
 <!--Acciones el menu horizontal -->
 <script>
 //<![CDATA[
-jQuery(document).ready(myfunction);
-jQuery(window).resize(myfunction);
-jQuery(document).ready(menus);
+           jQuery.noConflict();
+$(document).ready(myfunction);
+$(window).resize(myfunction);
+$(document).ready(menus);
 
 var estoy_chico;
 var resizeTimer;
@@ -688,168 +696,168 @@ function doSomething() {
 };
 
 function menus() {
-	jQuery('#menuhoriz .opciones .titcatresponsive').click(function(){
+	$('#menuhoriz .opciones .titcatresponsive').click(function(){
 		if (jQuery(window).width() <= 700) {
-				jQuery('#menuhoriz .opciones li').slideToggle();
-				jQuery('#menuhoriz .opciones .titcatresponsive').toggleClass('minus plus');
-				jQuery('#menuhoriz .opciones li:has(ul)').addClass('plus2');
+				$('#menuhoriz .opciones li').slideToggle();
+				$('#menuhoriz .opciones .titcatresponsive').toggleClass('minus plus');
+				$('#menuhoriz .opciones li:has(ul)').addClass('plus2');
 
 			return false;
 		}
 	});
 
-	jQuery('#menuhoriz .opciones li:has(ul)').click(function(){
+	$('#menuhoriz .opciones li:has(ul)').click(function(){
 		if (jQuery(window).width() <= 700) {
-			jQuery('ul', this).slideToggle();
-			jQuery(this).toggleClass('minus2 plus2');
+			$('ul', this).slideToggle();
+			$(this).toggleClass('minus2 plus2');
 			stopPropagation();
 			 return false;
 		}
 	});
 
-	jQuery('#detprod').click(function(){
+	$('#detprod').click(function(){
 		if (jQuery(window).width() <= 700) {
-			jQuery('#texdetprod').slideToggle();
-			jQuery('#detprod').toggleClass('minusdet plusdet');
+			$('#texdetprod').slideToggle();
+			$('#detprod').toggleClass('minusdet plusdet');
 			return false;
 		}
 	});
-	jQuery('#comentdet').click(function(){
+	$('#comentdet').click(function(){
 		if (jQuery(window).width() <= 700) {
-			jQuery('#detalle .opiniones').slideToggle();
-			jQuery('#btnescribe').slideToggle();
-			jQuery('#comentdet').toggleClass('minusdet plusdet');
+			$('#detalle .opiniones').slideToggle();
+			$('#btnescribe').slideToggle();
+			$('#comentdet').toggleClass('minusdet plusdet');
 			return false;
 		}
 	});
-	jQuery('#menusupcel').click(function(){
+	$('#menusupcel').click(function(){
 		if (jQuery(window).width() <= 700) {
-			jQuery('#plecaup .menu li').slideToggle();
+			$('#plecaup .menu li').slideToggle();
 			return false;
 		}
 	});
-	jQuery('#bloqueslateral2 .tit').click(function(){
+	$('#bloqueslateral2 .tit').click(function(){
 		if (jQuery(window).width() <= 700) {
-			jQuery(this).toggleClass('minus3 plus3');
-			jQuery('#bloqueslateral2 .generico').slideToggle();
+			$(this).toggleClass('minus3 plus3');
+			$('#bloqueslateral2 .generico').slideToggle();
 			return false;
 		}
 	});
-	jQuery('#bloqueslateral3 .tit').click(function(){
+	$('#bloqueslateral3 .tit').click(function(){
 		if (jQuery(window).width() <= 700) {
-			jQuery(this).toggleClass('minus3 plus3');
-			jQuery('#bloqueslateral3 .contieneproductos').slideToggle();
+			$(this).toggleClass('minus3 plus3');
+			$('#bloqueslateral3 .contieneproductos').slideToggle();
 			return false;
 		}
 	});
-	jQuery('#bloqueslateralaceptamos .tit').click(function(){
+	$('#bloqueslateralaceptamos .tit').click(function(){
 		if (jQuery(window).width() <= 700) {
-			jQuery(this).toggleClass('minus3 plus3');
-			jQuery('#bloqueslateralaceptamos .generico').slideToggle();
+			$(this).toggleClass('minus3 plus3');
+			$('#bloqueslateralaceptamos .generico').slideToggle();
 			return false;
 		}
 	});
-	jQuery('#bloqueslateral .tit').click(function(){
+	$('#bloqueslateral .tit').click(function(){
 		if (jQuery(window).width() <= 700) {
-			jQuery(this).toggleClass('minus3 plus3');
-			jQuery('#bloqueslateral .generico').slideToggle();
+			$(this).toggleClass('minus3 plus3');
+			$('#bloqueslateral .generico').slideToggle();
 			return false;
 		}
 	});
-	jQuery('#boletinfooter').click(function(){
+	$('#boletinfooter').click(function(){
 		if (jQuery(window).width() <= 700) {
-			jQuery(this).toggleClass('minus3 plus3');
-			jQuery('#boletinf2').slideToggle();
+			$(this).toggleClass('minus3 plus3');
+			$('#boletinf2').slideToggle();
 			return false;
 		}
 	});
 }
 
 function myfunction() {
-jQuery('#catalogo .productos').css('height', 'auto');
-jQuery('#catalogo .productosultimo').css('height', 'auto');
+$('#catalogo .productos').css('height', 'auto');
+$('#catalogo .productosultimo').css('height', 'auto');
 
 if (jQuery(window).width() > 1024) {
 
-		 jQuery('#catalogo').each(function(){
+		 $('#catalogo').each(function(){
         var highestBox = 0;
 
-        jQuery(this).find('.productos').each(function(){
-            if(jQuery(this).height() > highestBox){
-                highestBox = jQuery(this).height();
+        $(this).find('.productos').each(function(){
+            if($(this).height() > highestBox){
+                highestBox = $(this).height();
             }
         })
-        jQuery(this).find('.productosultimo').each(function(){
-            if(jQuery(this).height() > highestBox){
-                highestBox = jQuery(this).height();
+        $(this).find('.productosultimo').each(function(){
+            if($(this).height() > highestBox){
+                highestBox = $(this).height();
             }
         })
 
-        jQuery(this).find('.productos').height(highestBox);
-        jQuery(this).find('.productosultimo').height(highestBox);
+        $(this).find('.productos').height(highestBox);
+        $(this).find('.productosultimo').height(highestBox);
     });
 }
 	if ((jQuery(window).width() <= 700) &&(estoy_chico !='si')) 
 	{
 		estoy_chico = 'si';
-		jQuery( '#plecaup' ).insertBefore( '#header' );
-		jQuery('#menuhoriz').removeClass('fixed');
-		jQuery('#menuhoriz').css('display','block');
-		jQuery( '#mensup' ).insertBefore( '#plecaup .menu' );
-		//jQuery( '.textobanner' ).insertAfter( '#bannerprincipal' );
+		$( '#plecaup' ).insertBefore( '#header' );
+		$('#menuhoriz').removeClass('fixed');
+		$('#menuhoriz').css('display','block');
+		$( '#mensup' ).insertBefore( '#plecaup .menu' );
+		//$( '.textobanner' ).insertAfter( '#bannerprincipal' );
 		//$( '#cuerpo' ).insertBefore( '#barraizq' );
-		jQuery( '#barraizq' ).insertAfter( '#cuerpo' );
-		jQuery( '#buscador' ).insertAfter( '#cuerpo' );
-		jQuery( '#msx' ).insertAfter( '#txtft' );
-		jQuery( '#login .log2' ).insertBefore( '#login .log1' );
-		jQuery( '#barraizq #banners' ).insertBefore( '#footer #txtft' );
+		$( '#barraizq' ).insertAfter( '#cuerpo' );
+		$( '#buscador' ).insertAfter( '#cuerpo' );
+		$( '#msx' ).insertAfter( '#txtft' );
+		$( '#login .log2' ).insertBefore( '#login .log1' );
+		$( '#barraizq #banners' ).insertBefore( '#footer #txtft' );
 
 		anchopantalla = jQuery(window).width();
-		jQuery('#bannerprincipal').css('min-width','250px');
-		jQuery('#slider1_container').css ('width',anchopantalla);
-		jQuery('#slider1_container').css ('height','400px');
-		jQuery('#bannerprincipal.contienebannerr').css ('width','100%');
-		jQuery('#bannerprincipal.contienebannerr').css ('height','400px');
+		$('#bannerprincipal').css('min-width','250px');
+		$('#slider1_container').css ('width',anchopantalla);
+		$('#slider1_container').css ('height','400px');
+		$('#bannerprincipal.contienebannerr').css ('width','100%');
+		$('#bannerprincipal.contienebannerr').css ('height','400px');
 
 
 		<!--Pleca fixed -->
-		num = jQuery('#plecaup').outerHeight();
-			 if (jQuery(window).scrollTop() > num) {
-				 jQuery('#plecaup').addClass('fixed');
+		num = $('#plecaup').outerHeight();
+			 if ($(window).scrollTop() > num) {
+				 $('#plecaup').addClass('fixed');
 			 }
 
-		jQuery(window).bind('scroll', function() {
-			 if (jQuery(window).scrollTop() > num) {
-				 jQuery('#plecaup').addClass('fixed');
+		$(window).bind('scroll', function() {
+			 if ($(window).scrollTop() > num) {
+				 $('#plecaup').addClass('fixed');
 			 }
 			 else {
-				 jQuery('#plecaup').removeClass('fixed');
+				 $('#plecaup').removeClass('fixed');
 			 }
 		});
 
 		<!--Termina Pleca fixed -->
-		jQuery('a[href*=#buscador]').click(function(event){
-			jQuery('#plecaup').addClass('fixed');
-			jQuery('html, body').animate({
-				scrollTop: jQuery( jQuery.attr(this, 'href') ).offset().top -num-5
+		$('a[href*=#buscador]').click(function(event){
+			$('#plecaup').addClass('fixed');
+			$('html, body').animate({
+				scrollTop: $( $.attr(this, 'href') ).offset().top -num-5
 			}, 500);
 			event.preventDefault();
 		});
 
 		<!--Remplaza tablas carrito -->
-		jQuery('.tablacarrito table').after('<div id="product-container"></div>');
-		jQuery('.tablacarrito .item').appendTo("#product-container").each(function() {});
-		jQuery('<div id="recalcular"></div>').appendTo('#carrito .tablacarrito');
-		jQuery('.tablacarrito .actualizar').appendTo("#recalcular");
-		jQuery('.tablacarrito table').remove();
+		$('.tablacarrito table').after('<div id="product-container"></div>');
+		$('.tablacarrito .item').appendTo("#product-container").each(function() {});
+		$('<div id="recalcular"></div>').appendTo('#carrito .tablacarrito');
+		$('.tablacarrito .actualizar').appendTo("#recalcular");
+		$('.tablacarrito table').remove();
 
 		<!--Termina Remplaza tablas carrito -->
 
 		<!--Textos footer a pleca superior -->
-		jQuery('#footer #nos li').appendTo("#plecaup .menu ul");
+		$('#footer #nos li').appendTo("#plecaup .menu ul");
 		<!--Termona Textos footer a pleca superior -->
 
-		jQuery('#footer #contieneboletin').appendTo("#barraizq");
+		$('#footer #contieneboletin').appendTo("#barraizq");
 	}
 	else {
 		if ((estoy_chico=='si')&& jQuery(window).width() > 700) {
