@@ -58,9 +58,9 @@ jq144(window).load(function () {
 			{
 			alert("Dios te Bendice");
 			}
-		jQuery(document).ready(function(){
+		jq144(document).ready(function(){
 		        // cuando se hace el submit, es lo que dispara la validaci?n
-		        jQuery("#frmboletin").validationEngine();
+		        jq144("#frmboletin").validationEngine();
 		    });
 			jq144(function() {
 				jq144("img.lazy").lazyload({
@@ -150,12 +150,12 @@ jq144(window).load(function () {
 <script>
 //<![CDATA[
 jq144(document).ready(function() {
-	if (jQuery(window).width() > 700) {
+	if (jq144(window).width() > 700) {
 		<!--Menu horizontal fixed -->
 		num = jq144('#header').outerHeight() + jq144('#plecaup').outerHeight();
 
 		jq144(window).bind('scroll', function() {
-			  if (jQuery(window).width() > 700) {
+			  if (jq144(window).width() > 700) {
 				 if (jq144(window).scrollTop() > num) {
 					 jq144('#menuhoriz').addClass('fixed');
 				 }
@@ -173,7 +173,7 @@ jq144(document).ready(function() {
 
 		jq144('#menuhoriz li').hover(
 			function () {
-				if (jQuery(window).width() > 700) {
+				if (jq144(window).width() > 700) {
 					jq144('ul', this).fadeIn();
 					jq144('ul', this).css("top", altomenu + "px");
 				}
@@ -182,7 +182,7 @@ jq144(document).ready(function() {
 				}
 			},
 			function () {
-				if (jQuery(window).width() > 700) {
+				if (jq144(window).width() > 700) {
 					jq144('ul', this).fadeOut();
 				}
 			}
@@ -312,7 +312,7 @@ jq144(document).ready(function() {
 </div>
 <script>
 //<![CDATA[
-        jQuery(document).ready(function ($) {
+        jq144(document).ready(function ($) {
 
             var _CaptionTransitions = [];
             _CaptionTransitions["L"] = { $Duration: 900, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
@@ -668,7 +668,7 @@ jq144(document).ready(function() {
 jq144(document).ready(function(){
 
 
-if (jQuery(window).width() > 700) {
+if (jq144(window).width() > 700) {
     jq144('#plecaup').each(function(){
         var highestBox = 0;
 
@@ -731,7 +731,7 @@ function doSomething() {
 
 function menus() {
 	jq144('#menuhoriz .opciones .titcatresponsive').click(function(){
-		if (jQuery(window).width() <= 700) {
+		if (jq144(window).width() <= 700) {
 				jq144('#menuhoriz .opciones li').slideToggle();
 				jq144('#menuhoriz .opciones .titcatresponsive').toggleClass('minus plus');
 				jq144('#menuhoriz .opciones li:has(ul)').addClass('plus2');
@@ -741,7 +741,7 @@ function menus() {
 	});
 
 	jq144('#menuhoriz .opciones li:has(ul)').click(function(){
-		if (jQuery(window).width() <= 700) {
+		if (jq144(window).width() <= 700) {
 			jq144('ul', this).slideToggle();
 			jq144(this).toggleClass('minus2 plus2');
 			stopPropagation();
@@ -750,14 +750,14 @@ function menus() {
 	});
 
 	jq144('#detprod').click(function(){
-		if (jQuery(window).width() <= 700) {
+		if (jq144(window).width() <= 700) {
 			jq144('#texdetprod').slideToggle();
 			jq144('#detprod').toggleClass('minusdet plusdet');
 			return false;
 		}
 	});
 	jq144('#comentdet').click(function(){
-		if (jQuery(window).width() <= 700) {
+		if (jq144(window).width() <= 700) {
 			jq144('#detalle .opiniones').slideToggle();
 			jq144('#btnescribe').slideToggle();
 			jq144('#comentdet').toggleClass('minusdet plusdet');
@@ -765,41 +765,41 @@ function menus() {
 		}
 	});
 	jq144('#menusupcel').click(function(){
-		if (jQuery(window).width() <= 700) {
+		if (jq144(window).width() <= 700) {
 			jq144('#plecaup .menu li').slideToggle();
 			return false;
 		}
 	});
 	jq144('#bloqueslateral2 .tit').click(function(){
-		if (jQuery(window).width() <= 700) {
+		if (jq144(window).width() <= 700) {
 			jq144(this).toggleClass('minus3 plus3');
 			jq144('#bloqueslateral2 .generico').slideToggle();
 			return false;
 		}
 	});
 	jq144('#bloqueslateral3 .tit').click(function(){
-		if (jQuery(window).width() <= 700) {
+		if (jq144(window).width() <= 700) {
 			jq144(this).toggleClass('minus3 plus3');
 			jq144('#bloqueslateral3 .contieneproductos').slideToggle();
 			return false;
 		}
 	});
 	jq144('#bloqueslateralaceptamos .tit').click(function(){
-		if (jQuery(window).width() <= 700) {
+		if (jq144(window).width() <= 700) {
 			jq144(this).toggleClass('minus3 plus3');
 			jq144('#bloqueslateralaceptamos .generico').slideToggle();
 			return false;
 		}
 	});
 	jq144('#bloqueslateral .tit').click(function(){
-		if (jQuery(window).width() <= 700) {
+		if (jq144(window).width() <= 700) {
 			jq144(this).toggleClass('minus3 plus3');
 			jq144('#bloqueslateral .generico').slideToggle();
 			return false;
 		}
 	});
 	jq144('#boletinfooter').click(function(){
-		if (jQuery(window).width() <= 700) {
+		if (jq144(window).width() <= 700) {
 			jq144(this).toggleClass('minus3 plus3');
 			jq144('#boletinf2').slideToggle();
 			return false;
@@ -811,7 +811,7 @@ function myfunction() {
 jq144('#catalogo .productos').css('height', 'auto');
 jq144('#catalogo .productosultimo').css('height', 'auto');
 
-if (jQuery(window).width() > 1024) {
+if (jq144(window).width() > 1024) {
 
 		 jq144('#catalogo').each(function(){
         var highestBox = 0;
@@ -831,7 +831,7 @@ if (jQuery(window).width() > 1024) {
         jq144(this).find('.productosultimo').height(highestBox);
     });
 }
-	if ((jQuery(window).width() <= 700) &&(estoy_chico !='si')) 
+	if ((jq144(window).width() <= 700) &&(estoy_chico !='si')) 
 	{
 		estoy_chico = 'si';
 		jq144( '#plecaup' ).insertBefore( '#header' );
@@ -846,7 +846,7 @@ if (jQuery(window).width() > 1024) {
 		jq144( '#login .log2' ).insertBefore( '#login .log1' );
 		jq144( '#barraizq #banners' ).insertBefore( '#footer #txtft' );
 
-		anchopantalla = jQuery(window).width();
+		anchopantalla = jq144(window).width();
 		jq144('#bannerprincipal').css('min-width','250px');
 		jq144('#slider1_container').css ('width',anchopantalla);
 		jq144('#slider1_container').css ('height','400px');
@@ -894,7 +894,7 @@ if (jQuery(window).width() > 1024) {
 		jq144('#footer #contieneboletin').appendTo("#barraizq");
 	}
 	else {
-		if ((estoy_chico=='si')&& jQuery(window).width() > 700) {
+		if ((estoy_chico=='si')&& jq144(window).width() > 700) {
 			clearTimeout(resizeTimer);
 			resizeTimer = setTimeout(doSomething, 100);
 		}
