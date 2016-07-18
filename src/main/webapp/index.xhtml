@@ -7,19 +7,18 @@
 	xmlns:p="http://primefaces.org/ui">
 <f:view contentType="text/html">
 	<h:head>
-	 <h:outputScript library="primefaces" name="jquery/jquery.js" target="head"/>
-	<h:outputScript target="head">
-	 $ = jQuery;
+	 <h:outputScript library="primefaces" name="jquery/jquery.js"/>
+	<script type="text/javascript">
 $(window).load(function () {
   // Una vez se cargue al completo la pÃ¡gina desaparecerÃ¡ el div "cargando"
   $('.cargando').hide();
 });
-</h:outputScript>
+</script>
 		<link rel="shortcut icon" href="https://dl.dropbox.com/s/2cx1a3qzspj8za0/icon.ico" type="image/x-icon"/>
 		<link rel="icon"  href="https://dl.dropbox.com/s/2cx1a3qzspj8za0/icon.ico" type="image/x-icon"/>
 		<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
-		<script type="text/javascript" src="./js/jquery-144min.js"></script>
+		
 		<script type="text/javascript" src="./js/jssor.js"></script>
 		<script type="text/javascript" src="./js/jssor.slider.js"></script>
 		<script type="text/html" src="jquery.lazyload.js?v=1.9.1"></script>
