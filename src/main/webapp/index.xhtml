@@ -7,6 +7,8 @@
 	xmlns:p="http://primefaces.org/ui">
 <f:view contentType="text/html">
 	<h:head>
+	<h:outputScript library="primefaces" name="jquery/jquery.js"/>
+	 <h:outputScript library="primefaces" name="jquery/jquery-plugins.js" />
 	<script type="text/javascript">
 $(window).load(function () {
   // Una vez se cargue al completo la pÃ¡gina desaparecerÃ¡ el div "cargando"
@@ -400,8 +402,6 @@ $(document).ready(function() {
         		<div id ="bloqueslateralcarrito">
               		<div id="buscador">
       	  				<form method="get" action="http://genesaretmixcum.260mb.net/" name="frmbusq" onsubmit="return valida_busq();">
-      	  				<h:outputScript library="primefaces" name="jquery/jquery.js" target="head" />
-        <h:outputScript library="primefaces" name="jquery/jquery-plugins.js" target="head" />
             				<p:inputText placeholder="Buscar" name="kw" id="kw" ></p:inputText>
             				<input name="" type="submit" value="."/>
             			</form>
