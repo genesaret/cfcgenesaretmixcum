@@ -74,7 +74,7 @@ $(window).load(function () {
 		</f:facet>
 	</h:head>
 	<h:body>
-	<div id="top"></div>
+	<span class="ir-arriba"><img src="/images/general-img/ir-arriba.png" alt="ir top" /></span>
 	<div class="cargando"></div>
 	<!--Acciones el menu horizontal -->
 		
@@ -862,7 +862,25 @@ if (jq144(window).width() > 1024) {
 }
 //]]>
 </script>
-
+<script>
+jq144(document).ready(function(){
+	 
+	jq144('.ir-arriba').click(function(){
+		jq144('body, html').animate({
+			scrollTop: '0px'
+		}, 300);
+	});
+ 
+	jq144(window).scroll(function(){
+		if( jq144(this).scrollTop() > 0 ){
+			jq144('.ir-arriba').slideDown(300);
+		} else {
+			jq144('.ir-arriba').slideUp(300);
+		}
+	});
+ 
+});
+</script>
 <!--Termina Menu horizontal de catalogo de productos -->
 <!--Pleca superior -->
 
@@ -874,6 +892,5 @@ if (jq144(window).width() > 1024) {
     </div>
 </div>
 <!--Termina pleca superior -->
-<a href="#top"><img src="/images/general-img/ir-arriba.png" title="Ir arriba" style="position: fixed; bottom: 10px; right: 2%;" /></a>
 </h:body>
 </html>
