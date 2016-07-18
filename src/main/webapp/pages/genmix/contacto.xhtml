@@ -23,6 +23,7 @@ $(window).load(function () {
 		<script type="text/javascript" src="/js/jquery-validationEngine-esp.js"></script>
 		<script type="text/javascript" src="/js/jquery-validationEngine.js"></script>
 		<script type="text/javascript" src="/js/jquery.lazyload.js"></script>
+		<script type="text/javascript">  var jq144 = jQuery.noConflict(true);</script>
 		
 		
 		
@@ -54,12 +55,12 @@ $(window).load(function () {
 			{
 			alert("Dios te Bendice");
 			}
-		jQuery(document).ready(function(){
+		jq144(document).ready(function(){
 		        // cuando se hace el submit, es lo que dispara la validaci?n
-		        jQuery("#frmboletin").validationEngine();
+		        jq144("#frmboletin").validationEngine();
 		    });
-			$(function() {
-				$("img.lazy").lazyload({
+			jq144(function() {
+				jq144("img.lazy").lazyload({
 					effect : "fadeIn"
 				});
 			});
@@ -145,55 +146,55 @@ $(window).load(function () {
 		<!--Acciones el menu horizontal -->
 <script>
 //<![CDATA[
-$(document).ready(function() {
-	if (jQuery(window).width() > 700) {
+jq144(document).ready(function() {
+	if (jq144(window).width() > 700) {
 		<!--Menu horizontal fixed -->
-		num = $('#header').outerHeight() + $('#plecaup').outerHeight();
+		num = jq144('#header').outerHeight() + jq144('#plecaup').outerHeight();
 
-		$(window).bind('scroll', function() {
-			  if (jQuery(window).width() > 700) {
-				 if ($(window).scrollTop() > num) {
-					 $('#menuhoriz').addClass('fixed');
+		jq144(window).bind('scroll', function() {
+			  if (jq144(window).width() > 700) {
+				 if (jq144(window).scrollTop() > num) {
+					 jq144('#menuhoriz').addClass('fixed');
 				 }
 				 else {
-					 $('#menuhoriz').removeClass('fixed');
+					 jq144('#menuhoriz').removeClass('fixed');
 				 }
 			  }
 			  else {
-				$('#menuhoriz').removeClass('fixed');
+				jq144('#menuhoriz').removeClass('fixed');
 			  }
 		});
 
 		<!--Termina menu horizontal fixed -->
-		altomenu = $('#menuhoriz .opciones li').outerHeight()
+		altomenu = jq144('#menuhoriz .opciones li').outerHeight()
 
-		$('#menuhoriz li').hover(
+		jq144('#menuhoriz li').hover(
 			function () {
-				if (jQuery(window).width() > 700) {
-					$('ul', this).fadeIn();
-					$('ul', this).css("top", altomenu + "px");
+				if (jq144(window).width() > 700) {
+					jq144('ul', this).fadeIn();
+					jq144('ul', this).css("top", altomenu + "px");
 				}
 				else {
-					$('ul', this).css("top", 0);
+					jq144('ul', this).css("top", 0);
 				}
 			},
 			function () {
-				if (jQuery(window).width() > 700) {
-					$('ul', this).fadeOut();
+				if (jq144(window).width() > 700) {
+					jq144('ul', this).fadeOut();
 				}
 			}
 		);
 
-		$('#menuhoriz').each(function(){
+		jq144('#menuhoriz').each(function(){
 		        var highestBox = 0;
 
-		        $(this).find('.lilineav').each(function(){
-		            if($(this).height() > highestBox){
-		                highestBox = $(this).height();
+		        jq144(this).find('.lilineav').each(function(){
+		            if(jq144(this).height() > highestBox){
+		                highestBox = jq144(this).height();
 		            }
 		        })
 
-        		$(this).find('.lilineav').height(highestBox);
+        		jq144(this).find('.lilineav').height(highestBox);
 		    });
 
 		}
@@ -308,7 +309,7 @@ $(document).ready(function() {
 </div>
 <script>
 //<![CDATA[
-        jQuery(document).ready(function ($) {
+        jq144(document).ready(function ($) {
 
             var _CaptionTransitions = [];
             _CaptionTransitions["L"] = { $Duration: 900, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
@@ -381,9 +382,9 @@ $(document).ready(function() {
 
         ScaleSlider();
 
-       $(window).bind("load", ScaleSlider);
-        $(window).bind("resize", ScaleSlider);
-        $(window).bind("orientationchange", ScaleSlider);
+       jq144(window).bind("load", ScaleSlider);
+        jq144(window).bind("resize", ScaleSlider);
+        jq144(window).bind("orientationchange", ScaleSlider);
         //termina c?digo responsivo
         });
       //]]>
@@ -478,10 +479,10 @@ $(document).ready(function() {
  		</div>
  		<!--Acciones del menu vertical -->
 <script>
-$(document).ready(function() {
-    $('#bloqueslateral ul ul').slideUp();
-    $('ul>li').click(function(){
-        $(this).next('ul').slideToggle();
+jq144(document).ready(function() {
+    jq144('#bloqueslateral ul ul').slideUp();
+    jq144('ul>li').click(function(){
+        jq144(this).next('ul').slideToggle();
     });
 });
 </script>
@@ -615,53 +616,53 @@ $(document).ready(function() {
 <link rel="icon" sizes="16x16 32x32" href="http://grupocreativo.com.mx/iconotk/iconotk2.png"/>
 <!-- Carga imagenes conforme se necesita -->
 <script>
-	$(function() {
-		$("img.lazy").lazyload();
+	jq144(function() {
+		jq144("img.lazy").lazyload();
 	});
 </script>
 
 <!--Mismo alto de divs -->
 <script>
 //<![CDATA[
-$(document).ready(function(){
+jq144(document).ready(function(){
 
 
-if (jQuery(window).width() > 700) {
-    $('#plecaup').each(function(){
+if (jq144(window).width() > 700) {
+    jq144('#plecaup').each(function(){
         var highestBox = 0;
 
-        $(this).find('.menualto').each(function(){
-            if($(this).height() > highestBox){
-                highestBox = $(this).height();
+        jq144(this).find('.menualto').each(function(){
+            if(jq144(this).height() > highestBox){
+                highestBox = jq144(this).height();
             }
         })
 
-        $(this).find('.menualto').height(highestBox);
+        jq144(this).find('.menualto').height(highestBox);
     });
 
 
-    $('.contenido').each(function(){
+    jq144('.contenido').each(function(){
         var highestBox = 0;
 
-        $(this).find('.bloques').each(function(){
-            if($(this).height() > highestBox){
-                highestBox = $(this).height();
+        jq144(this).find('.bloques').each(function(){
+            if(jq144(this).height() > highestBox){
+                highestBox = jq144(this).height();
             }
         })
 
-        $(this).find('.bloques').height(highestBox);
+        jq144(this).find('.bloques').height(highestBox);
     });
 
-   $('.textofooter').each(function(){
+   jq144('.textofooter').each(function(){
         var highestBox = 0;
 
-        $(this).find('.altofooter').each(function(){
-            if($(this).height() > highestBox){
-                highestBox = $(this).height();
+        jq144(this).find('.altofooter').each(function(){
+            if(jq144(this).height() > highestBox){
+                highestBox = jq144(this).height();
             }
         })
 
-        $(this).find('.altofooter').height(highestBox);
+        jq144(this).find('.altofooter').height(highestBox);
     });
 }
 });
@@ -675,9 +676,9 @@ if (jQuery(window).width() > 700) {
 <!--Acciones el menu horizontal -->
 <script>
 //<![CDATA[
-$(document).ready(myfunction);
-$(window).resize(myfunction);
-$(document).ready(menus);
+jq144(document).ready(myfunction);
+jq144(window).resize(myfunction);
+jq144(document).ready(menus);
 
 var estoy_chico;
 var resizeTimer;
@@ -688,171 +689,171 @@ function doSomething() {
 };
 
 function menus() {
-	$('#menuhoriz .opciones .titcatresponsive').click(function(){
-		if (jQuery(window).width() <= 700) {
-				$('#menuhoriz .opciones li').slideToggle();
-				$('#menuhoriz .opciones .titcatresponsive').toggleClass('minus plus');
-				$('#menuhoriz .opciones li:has(ul)').addClass('plus2');
+	jq144('#menuhoriz .opciones .titcatresponsive').click(function(){
+		if (jq144(window).width() <= 700) {
+				jq144('#menuhoriz .opciones li').slideToggle();
+				jq144('#menuhoriz .opciones .titcatresponsive').toggleClass('minus plus');
+				jq144('#menuhoriz .opciones li:has(ul)').addClass('plus2');
 
 			return false;
 		}
 	});
 
-	$('#menuhoriz .opciones li:has(ul)').click(function(){
-		if (jQuery(window).width() <= 700) {
-			$('ul', this).slideToggle();
-			$(this).toggleClass('minus2 plus2');
+	jq144('#menuhoriz .opciones li:has(ul)').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144('ul', this).slideToggle();
+			jq144(this).toggleClass('minus2 plus2');
 			stopPropagation();
 			 return false;
 		}
 	});
 
-	$('#detprod').click(function(){
-		if (jQuery(window).width() <= 700) {
-			$('#texdetprod').slideToggle();
-			$('#detprod').toggleClass('minusdet plusdet');
+	jq144('#detprod').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144('#texdetprod').slideToggle();
+			jq144('#detprod').toggleClass('minusdet plusdet');
 			return false;
 		}
 	});
-	$('#comentdet').click(function(){
-		if (jQuery(window).width() <= 700) {
-			$('#detalle .opiniones').slideToggle();
-			$('#btnescribe').slideToggle();
-			$('#comentdet').toggleClass('minusdet plusdet');
+	jq144('#comentdet').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144('#detalle .opiniones').slideToggle();
+			jq144('#btnescribe').slideToggle();
+			jq144('#comentdet').toggleClass('minusdet plusdet');
 			return false;
 		}
 	});
-	$('#menusupcel').click(function(){
-		if (jQuery(window).width() <= 700) {
-			$('#plecaup .menu li').slideToggle();
+	jq144('#menusupcel').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144('#plecaup .menu li').slideToggle();
 			return false;
 		}
 	});
-	$('#bloqueslateral2 .tit').click(function(){
-		if (jQuery(window).width() <= 700) {
-			$(this).toggleClass('minus3 plus3');
-			$('#bloqueslateral2 .generico').slideToggle();
+	jq144('#bloqueslateral2 .tit').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144(this).toggleClass('minus3 plus3');
+			jq144('#bloqueslateral2 .generico').slideToggle();
 			return false;
 		}
 	});
-	$('#bloqueslateral3 .tit').click(function(){
-		if (jQuery(window).width() <= 700) {
-			$(this).toggleClass('minus3 plus3');
-			$('#bloqueslateral3 .contieneproductos').slideToggle();
+	jq144('#bloqueslateral3 .tit').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144(this).toggleClass('minus3 plus3');
+			jq144('#bloqueslateral3 .contieneproductos').slideToggle();
 			return false;
 		}
 	});
-	$('#bloqueslateralaceptamos .tit').click(function(){
-		if (jQuery(window).width() <= 700) {
-			$(this).toggleClass('minus3 plus3');
-			$('#bloqueslateralaceptamos .generico').slideToggle();
+	jq144('#bloqueslateralaceptamos .tit').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144(this).toggleClass('minus3 plus3');
+			jq144('#bloqueslateralaceptamos .generico').slideToggle();
 			return false;
 		}
 	});
-	$('#bloqueslateral .tit').click(function(){
-		if (jQuery(window).width() <= 700) {
-			$(this).toggleClass('minus3 plus3');
-			$('#bloqueslateral .generico').slideToggle();
+	jq144('#bloqueslateral .tit').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144(this).toggleClass('minus3 plus3');
+			jq144('#bloqueslateral .generico').slideToggle();
 			return false;
 		}
 	});
-	$('#boletinfooter').click(function(){
-		if (jQuery(window).width() <= 700) {
-			$(this).toggleClass('minus3 plus3');
-			$('#boletinf2').slideToggle();
+	jq144('#boletinfooter').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144(this).toggleClass('minus3 plus3');
+			jq144('#boletinf2').slideToggle();
 			return false;
 		}
 	});
 }
 
 function myfunction() {
-$('#catalogo .productos').css('height', 'auto');
-$('#catalogo .productosultimo').css('height', 'auto');
+jq144('#catalogo .productos').css('height', 'auto');
+jq144('#catalogo .productosultimo').css('height', 'auto');
 
-if (jQuery(window).width() > 1024) {
+if (jq144(window).width() > 1024) {
 
-		 $('#catalogo').each(function(){
+		 jq144('#catalogo').each(function(){
         var highestBox = 0;
 
-        $(this).find('.productos').each(function(){
-            if($(this).height() > highestBox){
-                highestBox = $(this).height();
+        jq144(this).find('.productos').each(function(){
+            if(jq144(this).height() > highestBox){
+                highestBox = jq144(this).height();
             }
         })
-        $(this).find('.productosultimo').each(function(){
-            if($(this).height() > highestBox){
-                highestBox = $(this).height();
+        jq144(this).find('.productosultimo').each(function(){
+            if(jq144(this).height() > highestBox){
+                highestBox = jq144(this).height();
             }
         })
 
-        $(this).find('.productos').height(highestBox);
-        $(this).find('.productosultimo').height(highestBox);
+        jq144(this).find('.productos').height(highestBox);
+        jq144(this).find('.productosultimo').height(highestBox);
     });
 }
-	if ((jQuery(window).width() <= 700) &&(estoy_chico !='si')) 
+	if ((jq144(window).width() <= 700) &&(estoy_chico !='si')) 
 	{
 		estoy_chico = 'si';
-		$( '#plecaup' ).insertBefore( '#header' );
-		$('#menuhoriz').removeClass('fixed');
-		$('#menuhoriz').css('display','block');
-		$( '#mensup' ).insertBefore( '#plecaup .menu' );
-		//$( '.textobanner' ).insertAfter( '#bannerprincipal' );
-		//$( '#cuerpo' ).insertBefore( '#barraizq' );
-		$( '#barraizq' ).insertAfter( '#cuerpo' );
-		$( '#buscador' ).insertAfter( '#cuerpo' );
-		$( '#msx' ).insertAfter( '#txtft' );
-		$( '#login .log2' ).insertBefore( '#login .log1' );
-		$( '#barraizq #banners' ).insertBefore( '#footer #txtft' );
+		jq144( '#plecaup' ).insertBefore( '#header' );
+		jq144('#menuhoriz').removeClass('fixed');
+		jq144('#menuhoriz').css('display','block');
+		jq144( '#mensup' ).insertBefore( '#plecaup .menu' );
+		//jq144( '.textobanner' ).insertAfter( '#bannerprincipal' );
+		//jq144( '#cuerpo' ).insertBefore( '#barraizq' );
+		jq144( '#barraizq' ).insertAfter( '#cuerpo' );
+		jq144( '#buscador' ).insertAfter( '#cuerpo' );
+		jq144( '#msx' ).insertAfter( '#txtft' );
+		jq144( '#login .log2' ).insertBefore( '#login .log1' );
+		jq144( '#barraizq #banners' ).insertBefore( '#footer #txtft' );
 
-		anchopantalla = jQuery(window).width();
-		$('#bannerprincipal').css('min-width','250px');
-		$('#slider1_container').css ('width',anchopantalla);
-		$('#slider1_container').css ('height','400px');
-		$('#bannerprincipal.contienebannerr').css ('width','100%');
-		$('#bannerprincipal.contienebannerr').css ('height','400px');
+		anchopantalla = jq144(window).width();
+		jq144('#bannerprincipal').css('min-width','250px');
+		jq144('#slider1_container').css ('width',anchopantalla);
+		jq144('#slider1_container').css ('height','400px');
+		jq144('#bannerprincipal.contienebannerr').css ('width','100%');
+		jq144('#bannerprincipal.contienebannerr').css ('height','400px');
 
 
 		<!--Pleca fixed -->
-		num = $('#plecaup').outerHeight();
-			 if ($(window).scrollTop() > num) {
-				 $('#plecaup').addClass('fixed');
+		num = jq144('#plecaup').outerHeight();
+			 if (jq144(window).scrollTop() > num) {
+				 jq144('#plecaup').addClass('fixed');
 			 }
 
-		$(window).bind('scroll', function() {
-			 if ($(window).scrollTop() > num) {
-				 $('#plecaup').addClass('fixed');
+		jq144(window).bind('scroll', function() {
+			 if (jq144(window).scrollTop() > num) {
+				 jq144('#plecaup').addClass('fixed');
 			 }
 			 else {
-				 $('#plecaup').removeClass('fixed');
+				 jq144('#plecaup').removeClass('fixed');
 			 }
 		});
 
 		<!--Termina Pleca fixed -->
-		$('a[href*=#buscador]').click(function(event){
-			$('#plecaup').addClass('fixed');
-			$('html, body').animate({
-				scrollTop: $( $.attr(this, 'href') ).offset().top -num-5
+		jq144('a[href*=#buscador]').click(function(event){
+			jq144('#plecaup').addClass('fixed');
+			jq144('html, body').animate({
+				scrollTop: jq144( $.attr(this, 'href') ).offset().top -num-5
 			}, 500);
 			event.preventDefault();
 		});
 
 		<!--Remplaza tablas carrito -->
-		$('.tablacarrito table').after('<div id="product-container"></div>');
-		$('.tablacarrito .item').appendTo("#product-container").each(function() {});
-		$('<div id="recalcular"></div>').appendTo('#carrito .tablacarrito');
-		$('.tablacarrito .actualizar').appendTo("#recalcular");
-		$('.tablacarrito table').remove();
+		jq144('.tablacarrito table').after('<div id="product-container"></div>');
+		jq144('.tablacarrito .item').appendTo("#product-container").each(function() {});
+		jq144('<div id="recalcular"></div>').appendTo('#carrito .tablacarrito');
+		jq144('.tablacarrito .actualizar').appendTo("#recalcular");
+		jq144('.tablacarrito table').remove();
 
 		<!--Termina Remplaza tablas carrito -->
 
 		<!--Textos footer a pleca superior -->
-		$('#footer #nos li').appendTo("#plecaup .menu ul");
+		jq144('#footer #nos li').appendTo("#plecaup .menu ul");
 		<!--Termona Textos footer a pleca superior -->
 
-		$('#footer #contieneboletin').appendTo("#barraizq");
+		jq144('#footer #contieneboletin').appendTo("#barraizq");
 	}
 	else {
-		if ((estoy_chico=='si')&& jQuery(window).width() > 700) {
+		if ((estoy_chico=='si')&& jq144(window).width() > 700) {
 			clearTimeout(resizeTimer);
 			resizeTimer = setTimeout(doSomething, 100);
 		}
