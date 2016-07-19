@@ -14,12 +14,12 @@ $(window).load(function () {
 });
 </script>
 <script>
-jq144(document).ready(function(){
-	jq144.ajax({
+$(document).ready(function(){
+	$.ajax({
 url:'http://dailyverses.net/getdailyverse.ashx?language=es&amp;isdirect=1&amp;url=' + window.location.hostname,
 dataType: 'JSONP',
 success:function(json){
-	jq144(".dailyVersesWrapper").prepend(json.html);
+	$(".dailyVersesWrapper").prepend(json.html);
 }
 });
 });
@@ -467,7 +467,6 @@ jq144(document).ready(function() {
         <div class="desc"> <a href="#bloqueslateral3">HOY</a><br/>
 
 				<div class="dailyVersesWrapper">
-<div class="dailyVerses linkToWebsite"><a href="http://dailyverses.net/es" target="_blank">DailyVerses.net</a></div>
 </div>
 			</div>
 	  </div>    </div>
