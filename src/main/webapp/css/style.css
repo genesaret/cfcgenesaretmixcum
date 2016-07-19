@@ -4252,7 +4252,7 @@ width: 20%;
 	color: #FFF;
 }
 
-#barraizq .bloquetexto.saveBtn {
+#barraizq .bloquetexto input[type=button] {
 width: 20%;
 	padding-right: 0%;
 	height: 46px !important;
@@ -4278,7 +4278,7 @@ width: 20%;
 	-moz-border-radius: .5em;
 	border-radius: .3em;
 }
-#barraizq .bloquetexto.saveBtn:hover{
+#barraizq .bloquetexto input[type=button]:hover{
 	color: #FFF;
 }
 
