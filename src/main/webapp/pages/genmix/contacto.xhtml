@@ -528,7 +528,7 @@ jq144(document).ready(function() {
         	 <h1>Contacto</h1>
       	<!--Forma de contacto -->
           <div id="contacto"> 
-			<h:form onSubmit="alert('Thank you for your feedback.');">
+			<h:form onsubmit="alert('Thank you for your feedback.');">
 			<p:growl id="msg" showDetail="true" escape="false" />
 			<p:tabView id="pnl">
 			<p:tab title="Contacto">
@@ -562,7 +562,7 @@ jq144(document).ready(function() {
 <script>DrawBotBoot()</script>
                 
                 </div>
-              <h:commandButton  id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
+              <h:commandButton  id="saveBtn" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
 			</p:tab>
 			</p:tabView>
 			              
