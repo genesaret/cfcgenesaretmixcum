@@ -1,9 +1,10 @@
-package genesaret.genemixcontacto;
+package genesaret.genemixboletin;
 
 import java.io.Serializable;
 import java.sql.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.annotation.Resource;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
@@ -18,12 +19,15 @@ import javax.transaction.NotSupportedException;
 import javax.transaction.RollbackException;
 import javax.transaction.SystemException;
 
-
+import genesaret.clasesEntidad.GmBoletin;
 import genesaret.clasesEntidad.Gmcontacto;
+import genesaret.genemixcontacto.GenemixContactoControlador;
+
+
 @ManagedBean
 @RequestScoped
 @ViewScoped
-public class GenemixContactoControlador implements Serializable{
+public class GenemixBoletinControlador implements Serializable {
 
 	/**
 	 * 
@@ -36,43 +40,34 @@ public class GenemixContactoControlador implements Serializable{
     private javax.transaction.UserTransaction utx;
     
     
-    Gmcontacto gmContacto = new Gmcontacto();
+    GmBoletin gmBoletin = new GmBoletin();
 
-    public Gmcontacto getGmContacto() {
-        return gmContacto;
+    public GmBoletin getGmBoletin() {
+        return gmBoletin;
     }
 
-    public void setScCarrera(Gmcontacto gmContacto) {
-        this.gmContacto = gmContacto;
+    public void setGmBoletin(GmBoletin gmBoletin) {
+        this.gmBoletin = gmBoletin;
     }
-
-    
-    public void enviarcoment(){
+public void addEmail(){
         
         try {
-            int id = 0;
-
-            //Query id2 = em.createQuery("SELECT MAX(s.idContacto) FROM Gmcontacto s");
-            //if (id2.getSingleResult() != null) {
-              ///  id= ((Integer) id2.getSingleResult()).intValue() + 1;
-           // }
         
             utx.begin();
-            //gmContacto.setIdContacto(id);
-            gmContacto.setFecha(fecha());
-            em.persist(gmContacto);
+            gmBoletin.setFecha(fecha());
+            em.persist(gmBoletin);
             utx.commit();
             
-            //addInfo(null, "Comentario enviado con exito!", gmContacto.getEmail());
+            //addInfo(null, "Comentario enviado con exito!", gmBoletin.getEmail());
             
-            FacesMessage msg1 = new FacesMessage(FacesMessage.SEVERITY_INFO, "Comentario enviado con exito! ","Gracias!");
+            FacesMessage msg1 = new FacesMessage(FacesMessage.SEVERITY_INFO, "Email Enviado! ","Gracias!");
             FacesContext.getCurrentInstance().addMessage(null, msg1);
-            gmContacto=null;
+            gmBoletin=null;
         } catch (IllegalStateException | SecurityException | HeuristicMixedException | HeuristicRollbackException | NotSupportedException | RollbackException | SystemException ex) {
             FacesMessage msg = new FacesMessage(FacesMessage.SEVERITY_WARN, "Algo va mal con la transaccion ","");
             FacesContext.getCurrentInstance().addMessage(null, msg);
             Logger.getLogger(GenemixContactoControlador.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("Error al enviar  Comentarios  :" +ex.getMessage());
+            System.out.println("Error al enviar email  :" +ex.getMessage());
         } 
     }
     public Date fecha()
@@ -82,4 +77,5 @@ public class GenemixContactoControlador implements Serializable{
     java.sql.Date d=new java.sql.Date(fechaSis);
     return d;
     }
+
 }
