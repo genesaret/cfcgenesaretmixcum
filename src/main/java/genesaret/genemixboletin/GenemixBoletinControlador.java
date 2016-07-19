@@ -55,15 +55,17 @@ public void addEmail(){
 		gmBoletin.setFecha(fecha());
 		
 		try{
+			//Validando que el Email no exista
 	        Query q1 =em.createQuery("SELECT s.idBoletin FROM Gmboletin s WHERE s.email = :email");
 	        q1.setParameter("email", gmBoletin.getEmail());
 	        if(q1.getSingleResult() == null){
 	            System.out.println("Es nulo");
 	        }
 	        
-	        //mensaje de no creacion
+	        //mensaje de no envio
 	           FacesMessage msg = new FacesMessage("oops! Este Email Ya Existe ");
 	           FacesContext.getCurrentInstance().addMessage(null, msg);
+	           gmBoletin=null;
 	        
 	    }catch(NoResultException e){
 	            em.persist(gmBoletin);
