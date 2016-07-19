@@ -50,42 +50,41 @@ public Gmboletin getGmBoletin() {
 		this.gmBoletin = gmBoletin;
 	}
 public void addEmail(){
-	try{
-		utx.begin();
-		gmBoletin.setFecha(fecha());
-		
-		try{
-			//Validando que el Email no exista
-	        Query q1 =em.createQuery("SELECT s.idBoletin FROM Gmboletin s WHERE s.email = :email");
-	        q1.setParameter("email", gmBoletin.getEmail());
-	        if(q1.getSingleResult() == null){
-	            System.out.println("Es nulo");
-	        }
+	try
+		{
+			utx.begin();
+			gmBoletin.setFecha(fecha());
+			try
+				{
+					//Validando que el Email no exista
+					Query q1 =em.createQuery("SELECT s.idBoletin FROM Gmboletin s WHERE s.email = :email");
+					q1.setParameter("email", gmBoletin.getEmail());
+					if(q1.getSingleResult() == null)
+						{
+							System.out.println("Es nulo");
+						}
 	        
-	        //mensaje de no envio
-	           FacesMessage msg = new FacesMessage("oops! Este Email Ya Existe ");
-	           FacesContext.getCurrentInstance().addMessage(null, msg);
-	           gmBoletin=null;
-	        
-	    }catch(NoResultException e){
-	            em.persist(gmBoletin);
-	            utx.commit();
-	            FacesMessage msg = new FacesMessage("Email  Enviado con Exito! ", "Email: " + gmBoletin.getEmail());
-	            FacesContext.getCurrentInstance().addMessage(null, msg);
-
-	        
-	    }
+					//mensaje de no envio
+					FacesMessage msg = new FacesMessage("oops! Este Email Ya Existe ","Try Again");
+					FacesContext.getCurrentInstance().addMessage(null, msg);
+					gmBoletin=null;
+				}
+				catch(NoResultException e)
+					{
+						em.persist(gmBoletin);
+						utx.commit();
+						FacesMessage msg = new FacesMessage("Email  Enviado con Exito! ", gmBoletin.getEmail());
+						FacesContext.getCurrentInstance().addMessage(null, msg);
+					}
 		
-		
-	}
-	catch (Exception e) {
-        FacesMessage msg = new FacesMessage("HA OCURRIDO UN ERROR INESPERADO.. VUELVA A INTENTAR ", "");
-        FacesContext.getCurrentInstance().addMessage(null, msg);
-        System.out.println(e);
-    }
-	
+		}
+		 catch (Exception e) 
+			{
+			 	FacesMessage msg = new FacesMessage("HA OCURRIDO UN ERROR INESPERADO.. VUELVA A INTENTAR ", "");
+			 	FacesContext.getCurrentInstance().addMessage(null, msg);
+			 	System.out.println(e);
+			}
         
-	
 	/*
         try {
         
