@@ -40,13 +40,13 @@ public class GenemixBoletinControlador implements Serializable {
     
     Gmboletin gmBoletin = new Gmboletin();
 
-    public Gmboletin getGmboletin() {
-        return gmBoletin;
-    }
-
-    public void setGmboletin(Gmboletin gmBoletin) {
-        this.gmBoletin = gmBoletin;
-    }
+   
+public Gmboletin getGmBoletin() {
+		return gmBoletin;
+	}
+	public void setGmBoletin(Gmboletin gmBoletin) {
+		this.gmBoletin = gmBoletin;
+	}
 public void addEmail(){
         
         try {

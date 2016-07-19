@@ -38,16 +38,16 @@ public class GenemixContactoControlador implements Serializable{
     
     Gmcontacto gmContacto = new Gmcontacto();
 
-    public Gmcontacto getGmContacto() {
-        return gmContacto;
-    }
-
-    public void setScCarrera(Gmcontacto gmContacto) {
-        this.gmContacto = gmContacto;
-    }
+    
 
     
-    public void enviarcoment(){
+    public Gmcontacto getGmContacto() {
+		return gmContacto;
+	}
+	public void setGmContacto(Gmcontacto gmContacto) {
+		this.gmContacto = gmContacto;
+	}
+	public void enviarcoment(){
         
         try {
             int id = 0;
