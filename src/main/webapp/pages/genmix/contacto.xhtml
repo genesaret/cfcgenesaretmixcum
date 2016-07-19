@@ -559,10 +559,10 @@ jq144(document).ready(function() {
                </div>
                <div class="comentario">
                Are you human?<br />
-<script type="text/javascript">DrawBotBoot()</script>
+<script>DrawBotBoot()</script>
                 
                 </div>
-              <p:commandButton id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
+              <p:commandButton onclick='alert(ValidBotBoot());' id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
 			</p:tab>
 			</p:tabView>
 			              
