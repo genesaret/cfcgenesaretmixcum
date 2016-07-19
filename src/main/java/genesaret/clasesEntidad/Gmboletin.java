@@ -6,18 +6,19 @@ import java.util.Date;
 
 
 /**
- * The persistent class for the gmBoletin database table.
+ * The persistent class for the gmboletin database table.
  * 
  */
 @Entity
-@NamedQuery(name="GmBoletin.findAll", query="SELECT g FROM GmBoletin g")
-public class GmBoletin implements Serializable {
+@Table(name="gmboletin")
+@NamedQuery(name="Gmboletin.findAll", query="SELECT g FROM Gmboletin g")
+public class Gmboletin implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private int idBoletin;
 	private String email;
 	private Date fecha;
 
-	public GmBoletin() {
+	public Gmboletin() {
 	}
 
 

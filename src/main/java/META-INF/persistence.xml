@@ -12,6 +12,7 @@
 		<class>genesaret.clasesEntidad.Gmtesoreria</class>
 		<class>genesaret.clasesEntidad.Gmvisitante</class>
 		<class>genesaret.clasesEntidad.GmBoletin</class>
+		<class>genesaret.clasesEntidad.Gmboletin</class>
   <properties>
   			<property name = "hibernate.show_sql" value = "true" />
   	</properties>

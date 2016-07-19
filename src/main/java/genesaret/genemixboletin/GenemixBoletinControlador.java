@@ -19,9 +19,7 @@ import javax.transaction.NotSupportedException;
 import javax.transaction.RollbackException;
 import javax.transaction.SystemException;
 
-import genesaret.clasesEntidad.GmBoletin;
-import genesaret.clasesEntidad.Gmcontacto;
-import genesaret.genemixcontacto.GenemixContactoControlador;
+import genesaret.clasesEntidad.Gmboletin;
 
 
 @ManagedBean
@@ -40,13 +38,13 @@ public class GenemixBoletinControlador implements Serializable {
     private javax.transaction.UserTransaction utx;
     
     
-    GmBoletin gmBoletin = new GmBoletin();
+    Gmboletin gmBoletin = new Gmboletin();
 
-    public GmBoletin getGmBoletin() {
+    public Gmboletin getGmboletin() {
         return gmBoletin;
     }
 
-    public void setGmBoletin(GmBoletin gmBoletin) {
+    public void setGmboletin(Gmboletin gmBoletin) {
         this.gmBoletin = gmBoletin;
     }
 public void addEmail(){
@@ -66,7 +64,7 @@ public void addEmail(){
         } catch (IllegalStateException | SecurityException | HeuristicMixedException | HeuristicRollbackException | NotSupportedException | RollbackException | SystemException ex) {
             FacesMessage msg = new FacesMessage(FacesMessage.SEVERITY_WARN, "Algo va mal con la transaccion ","");
             FacesContext.getCurrentInstance().addMessage(null, msg);
-            Logger.getLogger(GenemixContactoControlador.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(GenemixBoletinControlador.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println("Error al enviar email  :" +ex.getMessage());
         } 
     }
