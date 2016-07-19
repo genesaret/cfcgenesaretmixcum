@@ -60,7 +60,7 @@ public void addEmail(){
             
             //addInfo(null, "Comentario enviado con exito!", gmBoletin.getEmail());
             
-            FacesMessage msg1 = new FacesMessage(FacesMessage.SEVERITY_INFO, "Email Enviado! ","Gracias!");
+            FacesMessage msg1 = new FacesMessage(FacesMessage.SEVERITY_INFO, "Email Enviado  con Exito! ","Gracias!");
             FacesContext.getCurrentInstance().addMessage(null, msg1);
             gmBoletin=null;
         } catch (IllegalStateException | SecurityException | HeuristicMixedException | HeuristicRollbackException | NotSupportedException | RollbackException | SystemException ex) {
