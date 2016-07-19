@@ -6,6 +6,22 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 	<h:head>
+	<script>
+    var a = Math.ceil(Math.random() * 10);
+    var b = Math.ceil(Math.random() * 10);       
+    var c = a + b
+    function DrawBotBoot()
+    {
+        document.write("What is "+ a + " + " + b +"? ");
+        document.write("<input id='BotBootInput' type='text' maxlength='2' size='2' /> ");
+    }    
+    function ValidBotBoot(){
+        var d = document.getElementById('BotBootInput').value;
+        if (d == c) return true;        
+        return false;
+        
+    }
+    </script>
 	<script type="text/javascript">
 $(window).load(function () {
   // Una vez se cargue al completo la pÃ¡gina desaparecerÃ¡ el div "cargando"
@@ -23,22 +39,6 @@ success:function(json){
 });
 });
 </script>
-<script type="text/javascript">
-    var a = Math.ceil(Math.random() * 10);
-    var b = Math.ceil(Math.random() * 10);       
-    var c = a + b
-    function DrawBotBoot()
-    {
-        document.write("What is "+ a + " + " + b +"? ");
-        document.write("<input id='BotBootInput' type='text' maxlength='2' size='2'/> "));
-    }    
-    function ValidBotBoot(){
-        var d = document.getElementById('BotBootInput').value;
-        if (d == c) return true;        
-        return false;
-        
-    }
-    </script>
 
 		<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
