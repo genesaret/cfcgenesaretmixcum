@@ -14,12 +14,12 @@ $(window).load(function () {
 });
 </script>
 <script>
-$(document).ready(function(){
-$.ajax({
-url:'http://dailyverses.net/getdailyverse.ashx?language=es&isdirect=1&url=' + window.location.hostname,
+jq144(document).ready(function(){
+	jq144.ajax({
+url:'http://dailyverses.net/getdailyverse.ashx?language=es&amp;isdirect=1&amp;url=' + window.location.hostname,
 dataType: 'JSONP',
 success:function(json){
-$(".dailyVersesWrapper").prepend(json.html);
+	jq144(".dailyVersesWrapper").prepend(json.html);
 }
 });
 });
