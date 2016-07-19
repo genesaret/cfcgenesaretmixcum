@@ -13,6 +13,17 @@ $(window).load(function () {
   $('.cargando').hide();
 });
 </script>
+<script>
+$(document).ready(function(){
+$.ajax({
+url:'http://dailyverses.net/getdailyverse.ashx?language=es&isdirect=1&url=' + window.location.hostname,
+dataType: 'JSONP',
+success:function(json){
+$(".dailyVersesWrapper").prepend(json.html);
+}
+});
+});
+</script>
 		<link rel="shortcut icon" href="https://dl.dropbox.com/s/2cx1a3qzspj8za0/icon.ico" type="image/x-icon"/>
 		<link rel="icon"  href="https://dl.dropbox.com/s/2cx1a3qzspj8za0/icon.ico" type="image/x-icon"/>
 		<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -455,8 +466,9 @@ jq144(document).ready(function() {
         <div class="foto"> <a href="#bloqueslateral3"><img src="https://dl.dropbox.com/s/3p33ayad3yq8p71/pan-vida.png" alt="PAN DE VIDA" title="PAN DE VIDA" width="100" height="100" border="0"/></a></div>
         <div class="desc"> <a href="#bloqueslateral3">HOY</a><br/>
 
-				<span>Todo lo puedo en cristo que me fortalece.</span><br/>
-				<span class="oferta" >Filipenses 4:13.</span>
+				<div class="dailyVersesWrapper">
+<div class="dailyVerses linkToWebsite"><a href="http://dailyverses.net/es" target="_blank">DailyVerses.net</a></div>
+</div>
 			</div>
 	  </div>    </div>
   </div>

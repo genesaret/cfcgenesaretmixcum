@@ -505,19 +505,19 @@ jq144(document).ready(function() {
 			<p:tabView id="pnl">
 			<p:tab title="Contacto">
 			  <div class="campos">
-			  	<p:outputLabel for="name" value="Nombre (requerido):" /><br/>
+			  	<p:outputLabel for="name" value="Nombre:" /><br/>
 			    <p:inputText required="true" requiredMessage="Nombre requerido" maxlength="50" id="name" value="#{genemixContactoControlador.gmContacto.nombre}"/>
                 <p:message for="name" />
              </div>
               <div class="campos"> 
               	 <p:outputLabel for="telefono" value="Teléfono con lada:"/><br/>
-             	 <p:inputText  required="true"  id="telefono" requiredMessage="Telefono requerido" validatorMessage="Numero Incorrecto" maxlength="40" value="#{genemixContactoControlador.gmContacto.telefono}">
+             	 <p:inputText  required="true"  id="telefono" requiredMessage="Telefono requerido" validatorMessage="Número Incorrecto" maxlength="15" value="#{genemixContactoControlador.gmContacto.telefono}">
              	  <f:validateRegex pattern="^([+]?[\d]+)?$" />
              	 </p:inputText>
                  <p:message for="telefono" />
               </div>
               <div class="camposultimo">
-              	  <p:outputLabel for="email" value="E-mail (requerido):"/><br/>
+              	  <p:outputLabel for="email" value="E-mail:"/><br/>
               	   <p:inputText required="true" requiredMessage="Email requerido" validatorMessage="Email Incorecto" maxlength="60"  id="email" value="#{genemixContactoControlador.gmContacto.email}">
               	   <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
               	   
@@ -525,8 +525,8 @@ jq144(document).ready(function() {
                    <p:message for="email" /> 
               </div>
               <div class="comentario"> 
-              	   <p:outputLabel for="come"  value="Duda o comentario  (requerido):"></p:outputLabel><br />
-              	   <h:inputTextarea rows="6" requiredMessage="Comentario requerido" required="true" id="come"  cols="33" value="#{genemixContactoControlador.gmContacto.comentario}"></h:inputTextarea>
+              	   <p:outputLabel for="come"  value="Duda o comentario:"></p:outputLabel><br />
+              	   <h:inputTextarea rows="6" requiredMessage="Comentario requerido" required="true" id="come"  cols="33" maxlength="120" value="#{genemixContactoControlador.gmContacto.comentario}"></h:inputTextarea>
               	    <p:message for="come" />
                </div>
               <p:commandButton id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
