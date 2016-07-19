@@ -614,16 +614,21 @@ jq144(document).ready(function() {
     <div class="bloquesultimo" id="contieneboletin">
       <span class="titulos tit plus3" id="boletinfooter">Boletín</span><br/>
       <div class="bloquetexto" id="boletinf2">
-	Inscríbete para recibir información de eventos y noticias		<form action="#" method="post" name="frmboletin" id="frmboletin">
+	Inscríbete para recibir información de eventos y noticias
+	<h:form>
+	<p:growl id="msg" showDetail="true" escape="false" />
 	    <script language="JavaScript">
         boletin_flag = true;
         </script>
        
-          <p:inputText name="boletin" id="boletin" class="validate[required,custom[email]]" value="Tu e-mail aqu&iacute;" onfocus="if (boletin_flag) {boletin_flag=false; this.value='';};" ></p:inputText><input name="" type="submit" value=">"/>
-        </form>
-
+          <p:inputText  id="email" validatorMessage="Email Incorecto"  requiredMessage="Email requerido" placeholder="Tu e-mail Aquí" required="true"  maxlength="45"  value="#{genemixBoletinControlador.gmBoletin.email}"  >
+          <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+          </p:inputText>
+          <br/>
+          <p:commandButton id="saveBtn" update="@(form)" value=">" action="#{genemixBoletinControlador.addEmail()}" />
+        </h:form>
         <span class="tit" id="notitresp">S&iacute;guenos en</span><br/>
-		        <div class="redes"> <a href="https://www.facebook.com/genezaret.mixcum" target="_parent"><img src="https://dl.dropbox.com/s/ipe53efr9xyqn60/face-icon.png" width="39" height="39" alt="Facebosok"/></a></div>
+		        <div class="redes"> <a href="https://www.facebook.com/genezaret.mixcum" target="_parent"><img src="https://dl.dropbox.com/s/ipe53efr9xyqn60/face-icon.png" width="39" height="39" alt="Facebook"/></a></div>
 			        <div class="redes"><a href="#" target="_parent"><img src="/images/general-img/twiter-icon.png" width="39" height="39" alt="Twitter"/></a></div>
 
       </div>
