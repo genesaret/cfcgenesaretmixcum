@@ -6,22 +6,6 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
 	<h:head>
-	<script>
-    var a = Math.ceil(Math.random() * 10);
-    var b = Math.ceil(Math.random() * 10);       
-    var c = a + b
-    function DrawBotBoot()
-    {
-        document.write("What is "+ a + " + " + b +"? ");
-        document.write('<input id="BotBootInput" type="text" maxlength="2" size="2" /> ');
-    }    
-    function ValidBotBoot(){
-        var d = document.getElementById('BotBootInput').value;
-        if (d == c) return true;        
-        return false;
-        
-    }
-    </script>
 	<script type="text/javascript">
 $(window).load(function () {
   // Una vez se cargue al completo la pÃ¡gina desaparecerÃ¡ el div "cargando"
@@ -39,7 +23,6 @@ success:function(json){
 });
 });
 </script>
-
 		<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
 		<script type="text/javascript" src="/js/jquery-144min.js"></script>
@@ -528,7 +511,7 @@ jq144(document).ready(function() {
         	 <h1>Contacto</h1>
       	<!--Forma de contacto -->
           <div id="contacto"> 
-			<h:form onsubmit="alert(ValidBotBoot());">
+			<h:form>
 			<p:growl id="msg" showDetail="true" escape="false" />
 			<p:tabView id="pnl">
 			<p:tab title="Contacto">
@@ -557,12 +540,7 @@ jq144(document).ready(function() {
               	   <h:inputTextarea rows="6" requiredMessage="Comentario requerido" required="true" id="come"  cols="33" maxlength="120" value="#{genemixContactoControlador.gmContacto.comentario}"></h:inputTextarea>
               	    <p:message for="come" />
                </div>
-               <div class="comentario">
-               Are you human?<br />
-<script>DrawBotBoot()</script>
-                
-                </div>
-              <h:commandButton  id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
+              <p:commandButton id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
 			</p:tab>
 			</p:tabView>
 			              
@@ -618,8 +596,7 @@ jq144(document).ready(function() {
           <p:inputText  id="email" validatorMessage="Email Incorecto"  requiredMessage="Email requerido" placeholder="Tu e-mail Aquí" required="true"  maxlength="45"  value="#{genemixBoletinControlador.gmBoletin.email}"  >
           <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
           </p:inputText>
-          <br/>
-          <p:commandButton onClick="" id="saveBtn" update="@(form)" value=">" action="#{genemixBoletinControlador.addEmail()}" />
+          <p:commandButton id="saveBtn" update="@(form)" value=">" action="#{genemixBoletinControlador.addEmail()}" />
         </h:form>
 
         <span class="tit" id="notitresp">S&iacute;guenos en</span><br/>
