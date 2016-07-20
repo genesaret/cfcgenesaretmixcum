@@ -13,6 +13,17 @@ $(window).load(function () {
   $('.cargando').hide();
 });
 </script>
+<script>
+$(document).ready(function(){
+	$.ajax({
+url:'http://dailyverses.net/getdailyverse.ashx?language=es&amp;isdirect=1&amp;url=' + window.location.hostname,
+dataType: 'JSONP',
+success:function(json){
+	$(".dailyVersesWrapper").prepend(json.html);
+}
+});
+});
+</script>
 		<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
 		<script type="text/javascript" src="/js/jquery-144min.js"></script>
