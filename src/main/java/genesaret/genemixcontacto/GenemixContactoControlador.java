@@ -11,7 +11,9 @@ import javax.faces.bean.RequestScoped;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.transaction.HeuristicMixedException;
 import javax.transaction.HeuristicRollbackException;
 import javax.transaction.NotSupportedException;
@@ -50,24 +52,36 @@ public class GenemixContactoControlador implements Serializable{
 	public void enviarcoment(){
         
         try {
-            int id = 0;
-
-            //Query id2 = em.createQuery("SELECT MAX(s.idContacto) FROM Gmcontacto s");
-            //if (id2.getSingleResult() != null) {
-              ///  id= ((Integer) id2.getSingleResult()).intValue() + 1;
-           // }
+            
         
             utx.begin();
-            //gmContacto.setIdContacto(id);
             gmContacto.setFecha(fecha());
-            em.persist(gmContacto);
-            utx.commit();
+            try
+			{
+				//Validando que el Email no exista
+				Query q1 =em.createQuery("SELECT s.idContacto FROM Gmcontacto s WHERE s.email = :email");
+				q1.setParameter("email", gmContacto.getEmail());
+				if(q1.getSingleResult() == null)
+					{
+						System.out.println("Es nulo");
+					}
+        
+				//mensaje de no envio
+				FacesMessage msg = new FacesMessage("oops! Este Email Ya Existe ","Try Again");
+				FacesContext.getCurrentInstance().addMessage(null, msg);
+				gmContacto=null;
+			}
+			catch(NoResultException e)
+				{
+				 em.persist(gmContacto);
+		            utx.commit();
+		            FacesMessage msg1 = new FacesMessage(FacesMessage.SEVERITY_INFO, "Comentario enviado con exito! ","Gracias!");
+		            FacesContext.getCurrentInstance().addMessage(null, msg1);
+				}
             
             //addInfo(null, "Comentario enviado con exito!", gmContacto.getEmail());
             
-            FacesMessage msg1 = new FacesMessage(FacesMessage.SEVERITY_INFO, "Comentario enviado con exito! ","Gracias!");
-            FacesContext.getCurrentInstance().addMessage(null, msg1);
-            gmContacto=null;
+           
         } catch (IllegalStateException | SecurityException | HeuristicMixedException | HeuristicRollbackException | NotSupportedException | RollbackException | SystemException ex) {
             FacesMessage msg = new FacesMessage(FacesMessage.SEVERITY_WARN, "Algo va mal con la transaccion ","");
             FacesContext.getCurrentInstance().addMessage(null, msg);

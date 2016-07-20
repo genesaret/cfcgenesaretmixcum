@@ -638,7 +638,6 @@ jq144(document).ready(function() {
           <p:inputText  id="email" validatorMessage="Email Incorecto"  requiredMessage="Email requerido" placeholder="Tu e-mail Aquí" required="true"  maxlength="45"  value="#{genemixBoletinControlador.gmBoletin.email}"  >
           <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
           </p:inputText>
-          <br/>
           <p:commandButton id="saveBtn" update="@(form)" value=">" action="#{genemixBoletinControlador.addEmail()}" />
         </h:form>
 
