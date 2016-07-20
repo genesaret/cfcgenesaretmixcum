@@ -61,7 +61,7 @@ public class GenemixContactoControlador implements Serializable{
 				//Validando que el Email no exista
 				Query q1 =em.createQuery("SELECT s.idContacto FROM Gmcontacto s WHERE s.email = :email");
 				q1.setParameter("email", gmContacto.getEmail());
-				if(q1.getResultList() == null)
+				if(q1.getSingleResult() == null)
 					{
 						System.out.println("Es nulo");
 					}
