@@ -520,25 +520,13 @@ jq144(document).ready(function() {
 			  <pe:gChart value="#{genemixOrganigramaController.treeModel}">
 			  </pe:gChart> 
              </div>
-              <div class="campos"> 
-              	 <p:outputLabel for="telefono" value="Teléfono con lada:"/><br/>
-             	 <p:inputText  required="true"  id="telefono" requiredMessage="Telefono requerido" validatorMessage="Número Incorrecto" maxlength="15" value="#{genemixContactoControlador.gmContacto.telefono}">
-             	  <f:validateRegex pattern="^([+]?[\d]+)?$" />
-             	 </p:inputText>
-                 <p:message for="telefono" />
-              </div>
               <div class="camposultimo">
-              	  <p:outputLabel for="email" value="E-mail:"/><br/>
-              	   <p:inputText required="true" requiredMessage="Email requerido" validatorMessage="Email Incorecto" maxlength="60"  id="email" value="#{genemixContactoControlador.gmContacto.email}">
-              	   <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+              	  <p:outputLabel value="E-mail:"/><br/>
               	   
-              	   </p:inputText>
-                   <p:message for="email" /> 
+                  
               </div>
               <div class="comentario"> 
-              	   <p:outputLabel for="come"  value="Duda o comentario:"></p:outputLabel><br />
-              	   <h:inputTextarea rows="6" requiredMessage="Comentario requerido" required="true" id="come"  cols="33" maxlength="120" value="#{genemixContactoControlador.gmContacto.comentario}"></h:inputTextarea>
-              	    <p:message for="come" />
+              	   <p:outputLabel  value="Duda o comentario:"></p:outputLabel><br />
                </div>
               <p:commandButton id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
 			</p:tab>
