@@ -5,9 +5,10 @@ package genesaret.genemixorganigrama;
 
 import java.io.Serializable;
 
-import javax.annotation.ManagedBean;
 import javax.annotation.PostConstruct;
-import javax.enterprise.context.RequestScoped;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+import javax.faces.view.ViewScoped;
 
 import org.primefaces.extensions.component.gchart.model.GChartModel;
 import org.primefaces.extensions.component.gchart.model.GChartModelBuilder;
@@ -20,8 +21,9 @@ import org.primefaces.model.TreeNode;
  * @author scooter pc
  *
  */
-@ManagedBean  
-@RequestScoped  
+@ManagedBean
+@RequestScoped
+@ViewScoped
 public class GenemixOrganigramaController implements Serializable { 
 	  
     /**
