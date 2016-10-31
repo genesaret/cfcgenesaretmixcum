@@ -512,7 +512,6 @@ jq144(document).ready(function() {
         	 <h1>Contacto</h1>
       	<!--Forma de contacto -->
           <div id="contacto"> 
-			<h:form>
 			<p:growl id="msg" showDetail="true" escape="false" />
 			<p:tabView id="pnl">
 			<p:tab title="Contacto">
@@ -528,11 +527,10 @@ jq144(document).ready(function() {
               <div class="comentario"> 
               	   <p:outputLabel  value="Duda o comentario:"></p:outputLabel><br />
                </div>
-              <p:commandButton id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
+              
 			</p:tab>
 			</p:tabView>
-			              
-			</h:form>
+			         
           </div>
           <!--Termina Forma de contacto --> 
          
