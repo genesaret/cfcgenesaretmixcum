@@ -49,8 +49,8 @@ success:function(json){
 
         // For each orgchart box, provide the name, manager, and tooltip to show.
         data.addRows([
-          [{v:'Mike', f:'Mike<div style="color:red; font-style:italic">President</div>'},
-           '', 'The President'],
+          [{v:'Mike', f:'Mike<div style="color:red; font-style:italic">Pastor</div>'},
+           '', 'Pastor'],
           [{v:'Jim', f:'Jim<div style="color:red; font-style:italic">Vice President</div>'},
            'Mike', 'VP'],
           ['Alice', 'Mike', ''],
@@ -133,7 +133,7 @@ success:function(json){
 		            		<li class="menualto"><a href="/index.xhtml">Inicio</a></li>
           		            <li class="menualto"><a href="#">Eventos</a></li>
           		            <li class="menualto"><a href="/pages/genmix/contacto.xhtml">Contacto</a></li>
-          		            <li class="menualto"><a href="#">Organigrama</a></li>
+          		            <li class="menualto"><a href="/pages/genmix/organigrama.xhtml">Organigrama</a></li>
           		            <li class="menualto"><a href="#">Horarios</a></li>
 		          	   </ul>
       				</div>
@@ -540,21 +540,15 @@ jq144(document).ready(function() {
         	 <h1>Contacto</h1>
       	<!--Forma de contacto -->
           <div id="contacto"> 
-			<p:growl id="msg" showDetail="true" escape="false" />
 			<p:tabView id="pnl">
-			<p:tab title="Contacto">
-			  <div class="campos"> 
-			  <!--  <pe:gChart value="genemixOrganigramaController.standardModel" >
-			  </pe:gChart> -->
+			<p:tab title="Organigrama">
+			 <!-- <div class="campos"> 
+			    <pe:gChart value="genemixOrganigramaController.standardModel" >
+			  </pe:gChart> 
 			  <div id="chart_div"></div>
              </div>
-              <div class="campos">
-              	  <p:outputLabel value="E-mail:"/><br/>
-              	   
-                  
-              </div>
+             -->
               <div class="comentario"> 
-              	   <p:outputLabel  value="Dudaou o comentargfio:"></p:outputLabel><br />
               	   <div id="chart_div"></div>
                </div>
               
