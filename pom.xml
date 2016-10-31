@@ -42,6 +42,13 @@
 			<version>1.0.8</version>
 			<type>pom</type>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.primefaces.extensions/primefaces-extensions -->
+		<dependency>
+   		<groupId>org.primefaces.extensions</groupId>
+    	<artifactId>primefaces-extensions</artifactId>
+    	<version>4.0.0</version>
+		</dependency>
+		
 
 		<dependency>
 			<groupId>javax</groupId>

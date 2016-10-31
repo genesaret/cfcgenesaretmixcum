@@ -1,0 +1,912 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pe="http://primefaces.org/ui/extensions">
+	<h:head>
+	<script type="text/javascript">
+$(window).load(function () {
+  // Una vez se cargue al completo la pÃ¡gina desaparecerÃ¡ el div "cargando"
+  $('.cargando').hide();
+});
+</script>
+<script>
+$(document).ready(function(){
+	$.ajax({
+url:'http://dailyverses.net/getdailyverse.ashx?language=es&amp;isdirect=1&amp;url=' + window.location.hostname,
+dataType: 'JSONP',
+success:function(json){
+	$(".dailyVersesWrapper").prepend(json.html);
+}
+});
+});
+</script>
+		<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
+		<script type="text/javascript" src="/js/jquery-144min.js"></script>
+		<script type="text/javascript" src="/js/jssor.js"></script>
+		<script type="text/javascript" src="/js/jssor.slider.js"></script>
+		<script type="text/html" src="jquery.lazyload.js?v=1.9.1"></script>
+		<link rel="stylesheet" href="/css/validationEngine-jquery.css" type="text/css"/>
+		<link rel="stylesheet" href="/css/validationEngine-template.css" type="text/css"/>
+		<script type="text/javascript" src="/js/jquery-validationEngine-esp.js"></script>
+		<script type="text/javascript" src="/js/jquery-validationEngine.js"></script>
+		<script type="text/javascript" src="/js/jquery.lazyload.js"></script>
+		<script type="text/javascript">  var jq144 = jQuery.noConflict(true);</script>
+		
+		
+		
+		<!-- Google Tag Manager -->
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-WMCSGS" height="0" width="0" style="display:none;visibility:hidden">
+</iframe>
+</noscript>
+<script>
+//<![CDATA[
+(
+		function(w,d,s,l,i)
+		{
+			w[l]=w[l]||[];
+			w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+			var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),
+			dl=l!='dataLayer'?'&lt='+l:'';
+			j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})
+(window,document,'script','dataLayer','GTM-WMCSGS');
+//]]>
+</script>
+<!-- End Google Tag Manager -->
+		<script>
+		var x=5;
+		var y=20;
+		if(x&lt;=10&amp;&amp;y&lt;3)
+			{
+			alert("Dios te Bendice");
+			}
+		jq144(document).ready(function(){
+		        // cuando se hace el submit, es lo que dispara la validaci?n
+		        jq144("#frmboletin").validationEngine();
+		    });
+			jq144(function() {
+				jq144("img.lazy").lazyload({
+					effect : "fadeIn"
+				});
+			});
+		</script>
+
+		<f:facet name="first">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+			<meta content='text/html; charset=UTF-8' http-equiv="Content-Type" />
+			<title>CFCG - Mixcum</title>
+		</f:facet>
+	</h:head>
+	<h:body>
+	<span class="ir-arriba"><img src="/images/general-img/ir-arriba.png" alt="ir top" /></span>
+	<div class="cargando"></div>
+	<!--Acciones el menu horizontal -->
+		
+		<div id="wrapper">
+		  <div id="border">
+		  	<!--Header -->
+			<div id="header">
+				<div class="contienelogo">
+  					<div class="logo"><a href="/index.xhtml"><img src="https://dl.dropbox.com/s/d5nxsbfddyh3x22/logofinal.jpg" alt="C.F.C.Genesaret Mixcum A.R"  title="C.F.C.Genesaret Mixcum A.R"/></a></div>
+  				</div>
+			</div>    
+			<div id="plecaup">
+     			 <div class="contienemenutop">
+     		 		<div class="menu">
+        				<ul>
+		            		<li class="menualto"><a href="/index.xhtml">Inicio</a></li>
+          		            <li class="menualto"><a href="#">Eventos</a></li>
+          		            <li class="menualto"><a href="/pages/genmix/contacto.xhtml">Contacto</a></li>
+          		            <li class="menualto"><a href="#">Organigrama</a></li>
+          		            <li class="menualto"><a href="#">Horarios</a></li>
+		          	   </ul>
+      				</div>
+				</div>
+    	   </div>
+    	<!--Termina Pleca -->
+    	<!--Termina Header -->
+    	<!--Menu Horizontal  -->
+		<div id="bienvenido"></div>
+    	<div id="menuhoriz">
+  			<div class="opciones">
+    			<div class="titcatresponsive plus">Categorias</div>
+    			<nav>
+      				<ul>
+      					<li class="lilineav"><a href="#bienvenido"  style="color:#69B308;">Bienvenido</a></li>
+						<li class="lilineav"><a href="javascript:;">Generales</a>
+							<ul>
+                				<li><a href="#">Tesoreria</a></li>
+                				<li><a href="#">Registro visitas</a></li>
+								<li><a href="#">Proximamente</a></li>
+								<li><a href="#">Proximamente</a></li>
+								<li><a href="#">Otros</a></li>
+							</ul>
+                		 </li>
+                		 <li class="lilineav"><a href="javascript:;">Comités</a>
+                		 	<ul>
+                		 		<li><a href="#">General</a></li>
+                    			<li><a href="#">Caballeros</a></li>
+								<li><a href="#">Damas</a></li>
+								<li><a href="#">Jovénes</a></li>
+								<li><a href="#">Cocina</a></li>
+								<li><a href="#">EB</a></li>
+								<li><a href="#">Celula A</a></li>
+								<li><a href="#">Celula B</a></li>
+								<li><a href="#">Celula C</a></li>
+								<li><a href="#">Celula D</a></li>
+							 </ul>
+					     </li>
+					     <li class="lilineav"><a href="javascript:;">Ministerios</a>
+                		 	<ul>
+                		 		<li><a href="/pages/ministerios/rosember.xhtml">Rosemberg Vázquez</a></li>
+                    			<li><a href="#">Jose Hernández</a></li>
+								<li><a href="#">Proximamente</a></li>
+								<li><a href="#">Proximamente</a></li>
+							 </ul>
+					     </li>
+					 </ul>
+    			</nav>
+  			 </div>
+		</div>
+		<!--Acciones el menu horizontal -->
+<script>
+//<![CDATA[
+jq144(document).ready(function() {
+	if (jq144(window).width() > 700) {
+		<!--Menu horizontal fixed -->
+		num = jq144('#header').outerHeight() + jq144('#plecaup').outerHeight();
+
+		jq144(window).bind('scroll', function() {
+			  if (jq144(window).width() > 700) {
+				 if (jq144(window).scrollTop() > num) {
+					 jq144('#menuhoriz').addClass('fixed');
+				 }
+				 else {
+					 jq144('#menuhoriz').removeClass('fixed');
+				 }
+			  }
+			  else {
+				jq144('#menuhoriz').removeClass('fixed');
+			  }
+		});
+
+		<!--Termina menu horizontal fixed -->
+		altomenu = jq144('#menuhoriz .opciones li').outerHeight()
+
+		jq144('#menuhoriz li').hover(
+			function () {
+				if (jq144(window).width() > 700) {
+					jq144('ul', this).fadeIn();
+					jq144('ul', this).css("top", altomenu + "px");
+				}
+				else {
+					jq144('ul', this).css("top", 0);
+				}
+			},
+			function () {
+				if (jq144(window).width() > 700) {
+					jq144('ul', this).fadeOut();
+				}
+			}
+		);
+
+		jq144('#menuhoriz').each(function(){
+		        var highestBox = 0;
+
+		        jq144(this).find('.lilineav').each(function(){
+		            if(jq144(this).height() > highestBox){
+		                highestBox = jq144(this).height();
+		            }
+		        })
+
+        		jq144(this).find('.lilineav').height(highestBox);
+		    });
+
+		}
+});
+//]]>
+</script>
+<!--Termina Acciones el menu horizontal -->    <!--Termina Menu Horizontal  -->
+    	<!--Empieza Benner Rotativo  -->
+  		<div id ="bannerprincipal">
+  			<div id="slider1_container">
+    		<!-- Loading Screen -->
+    			<div u="loading" style="position: absolute; top: 0px; left: 0px;">
+      				<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+      				<div style="position: absolute; display: block; background: url(images/loading.gif) no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+    			</div>
+    			<!-- Slides Container -->
+    			<div u="slides" class="contienebannerr">
+      				<div>
+      					<img u="image" src="https://dl.dropbox.com/s/qf87592tonu1dyi/genesaret.jpg" width="1300" height="436"/>
+        				<div class="textobanner"><span class="resaltabanner">HISTORIA</span>
+        				<br/>
+          				<br/>
+          					<div class="btnbanner"><a href="#"  >Ver</a></div>
+        				</div>
+      				</div>
+      				<div>
+      					<img u="image" src="https://dl.dropbox.com/s/t318staoci30hjt/bautizocolorado.jpg" width="1300" height="436"/>
+        				<div class="textobanner"><span class="resaltabanner">Bautizos</span>
+        				<br/>
+          				<br/>
+          					<div class="btnbanner"><a href="#"  >Ver</a></div>
+        				</div>
+     				</div>
+      				<div>
+      					<img u="image" src="https://dl.dropbox.com/s/kizipgsdoen8df8/cumple-pastor.jpg" width="1300" height="436"/>
+        				<div class="textobanner"><span class="resaltabanner">CUMPLE</span>
+        				<br/>
+          				<br/>
+          					<div class="btnbanner"><a href="#"  >Ver</a></div>
+        				</div>
+      				</div>
+      				<div>
+      					<img u="image" src="https://dl.dropbox.com/s/r2gmhk0b7nizg1p/marcha.jpg" width="1300" height="436"/>
+        				<div class="textobanner"><span class="resaltabanner">MARCHA</span>
+        				<br/>
+          				<br/>
+          					<div class="btnbanner"><a href="#">Ver</a></div>
+        				</div>
+      				</div>      
+		    <!-- Bullet Navigator Skin Begin -->
+      <style>
+            /* jssor slider bullet navigator skin 21 css */
+            /*
+            .jssorb21 div           (normal)
+            .jssorb21 div:hover     (normal mouseover)
+            .jssorb21 .av           (active)
+            .jssorb21 .av:hover     (active mouseover)
+            .jssorb21 .dn           (mousedown)
+            */
+            .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av
+            {
+                background: url(/images/general-img/punto.png) no-repeat;
+                overflow:hidden;
+                cursor: pointer;
+            }
+            .jssorb21 div { background-position: -5px -5px; }
+            .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
+            .jssorb21 .av { background-position: -65px -5px; }
+            .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+        </style>
+      <!-- bullet navigator container -->
+      <div u="navigator" class="jssorb21" style="position: absolute; bottom: 26px; left: 6px;">
+        <!-- bullet navigator item prototype -->
+        <div u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
+      </div>
+      <!-- Bullet Navigator Skin End -->
+
+      <!-- Arrow Navigator Skin Begin -->
+      <style>
+            /* jssor slider arrow navigator skin 21 css */
+            /*
+            .jssora21l              (normal)
+            .jssora21r              (normal)
+            .jssora21l:hover        (normal mouseover)
+            .jssora21r:hover        (normal mouseover)
+            .jssora21ldn            (mousedown)
+            .jssora21rdn            (mousedown)
+            */
+            .jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn
+            {
+            	position: absolute;
+            	cursor: pointer;
+            	display: block;
+                background: url(/images/general-img/punto.png) center center no-repeat;
+                overflow: hidden;
+            }
+            .jssora21l { background-position: -3px -33px; }
+            .jssora21r { background-position: -63px -33px; }
+            .jssora21l:hover { background-position: -123px -33px; }
+            .jssora21r:hover { background-position: -183px -33px; }
+            .jssora21ldn { background-position: -243px -33px; }
+            .jssora21rdn { background-position: -303px -33px; }
+        </style>
+      <!-- Arrow Left -->
+      <span u="arrowleft" class="jssora21l" style="width: 55px; height: 55px; top: 123px; left: 8px;"></span>
+      <!-- Arrow Right -->
+      <span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 123px; right: 8px"></span>
+      <!-- Arrow Navigator Skin End -->
+
+    </div>
+  </div>
+</div>
+<script>
+//<![CDATA[
+        jq144(document).ready(function ($) {
+
+            var _CaptionTransitions = [];
+            _CaptionTransitions["L"] = { $Duration: 900, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["R"] = { $Duration: 900, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["T"] = { $Duration: 900, y: 0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["B"] = { $Duration: 900, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["ZMF|10"] = { $Duration: 900, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 };
+            _CaptionTransitions["RTT|10"] = { $Duration: 900, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["RTT|2"] = { $Duration: 900, $Zoom: 3, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Round: { $Rotate: 0.5} };
+            _CaptionTransitions["RTTL|BR"] = { $Duration: 900, x: -0.6, y: -0.6, $Zoom: 11, $Rotate: 1, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["CLIP|LR"] = { $Duration: 900, $Clip: 15, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic }, $Opacity: 2 };
+            _CaptionTransitions["MCLIP|L"] = { $Duration: 900, $Clip: 1, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+            _CaptionTransitions["MCLIP|R"] = { $Duration: 900, $Clip: 2, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+
+            var options = {
+                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                $SlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                },
+
+                $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
+
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //tienda con dise?o responsivo
+        function ScaleSlider() {
+            var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+            if (parentWidth)
+                jssor_slider1.$ScaleWidth(parentWidth);
+            else
+                window.setTimeout(ScaleSlider, 30);
+        }
+
+        ScaleSlider();
+
+       jq144(window).bind("load", ScaleSlider);
+        jq144(window).bind("resize", ScaleSlider);
+        jq144(window).bind("orientationchange", ScaleSlider);
+        //termina c?digo responsivo
+        });
+      //]]>
+    </script>
+    <!--Termina Banner Rotativo  -->
+		<!-- Empieza contenedor -->
+    	<div id ="contenedor">
+      	<!-- Empieza barra lateral  -->
+      		<div id="barraizq" >
+        	<!--Bloque horizontal buscador -->
+        		<div id ="bloqueslateralcarrito">
+              		<div id="buscador">
+      	  				<form method="get" action="http://genesaretmixcum.260mb.net/" name="frmbusq" onsubmit="return valida_busq();">
+            				<p:inputText placeholder="Buscar" name="kw" id="kw" ></p:inputText>
+            				<input name="" type="submit" value="."/>
+            			</form>
+          			</div>
+        		</div>
+        	<!-- Termina bloque horizontal 2 -->
+			<!--Bloque horizontal 1 -->
+  			<div id ="bloqueslateral1">
+    			<div class="titulos tit">Categorias</div>
+    			<div class="cat">
+      				<ul>
+      					<li><a href="javascript:submenu();">Generales</a></li>
+      					<ul>
+                      		<li><a href="#">Tesoreria</a></li>
+                      		<li><a href="#">Registro visitas</a></li>
+                      		<li><a href="#">Proximamente</a></li>
+                      		<li><a href="#">Proximamente</a></li>
+                      		<li><a href="#">Otros</a></li>
+                      	</ul>
+						<li><a href="javascript:submenu();">Comités</a></li>
+						<ul>
+                   			<li><a href="#">General</a></li>
+                      		<li><a href="#">Caballeros</a></li>
+  							<li><a href="#">Damas</a></li>
+  							<li><a href="#">Jovenes</a></li>
+  							<li><a href="#">Cocina</a></li>
+  							<li><a href="#">EB</a></li>
+  							<li><a href="#">Celula A</a></li>
+  							<li><a href="#">Celula B</a></li>
+  							<li><a href="#">Celula C</a></li>
+  							<li><a href="#">Celula D</a></li>
+						</ul>
+						<li><a href="javascript:submenu();">Ministerios</a></li>
+      					<ul>
+                      		<li><a href="/pages/ministerios/rosember.xhtml">Rosemberg Vázquez</a></li>
+                    			<li><a href="#">Jose Hernández</a></li>
+								<li><a href="#">Proximamente</a></li>
+								<li><a href="#">Proximamente</a></li>
+                      	</ul>
+					</ul>
+    			</div>
+  			</div>
+  			<!-- Termina bloque horizontal 2 -->
+  			<!--Bloque horizontal 2 -->
+  <div id ="bloqueslateral3">
+    <div class="titulos tit plus3">Pan de Vida</div>
+    <div class="contieneproductos">
+
+      <div class="productos">
+        <div class="foto"> <a href="#bloqueslateral3"><img src="https://dl.dropbox.com/s/3p33ayad3yq8p71/pan-vida.png" alt="PAN DE VIDA" title="PAN DE VIDA" width="100" height="100" border="0"/></a></div>
+        <div class="desc"> <a href="#bloqueslateral3">DIOS TE BENDICE!</a><br/>
+
+				<div class="dailyVersesWrapper">
+</div>
+			</div>
+	  </div>    </div>
+  </div>
+  <!-- Termina bloque horizontal 2 -->
+  			<!--Bloque horizontal 3 -->
+			<div id ="bloqueslateralaceptamos">
+				<div class="titulos tit plus3">Ofrenda Voluntaria:</div>
+				<div class="generico">
+					<div class="logos"></div>
+				 	<div class="logos">xxxxxxxxxxxxxxxxx
+				 		<br />
+				  		<a href="javascript:;"><img src="https://dl.dropbox.com/s/y51ufl2uz4mxgb1/banamex.png" alt="Banamex" title="Banamex" border="0" /></a>
+				  	</div>
+				</div>
+			 </div>
+			 <!-- Termina bloque horizontal 3 -->
+  			 <!--Banners Lateral-->
+  			<div id ="banners">
+				<div class="particion1">
+    				<a href="https://www.facebook.com/genezaret.mixcum" ><img src="https://dl.dropbox.com/s/05vrq3zdjrmqvxu/celular1.jpg" width="170" height="429" border="0" /></a>
+    			</div>	
+	  			<a href="https://www.facebook.com/genezaret.mixcum"><img src="https://dl.dropbox.com/s/pxmytknrqqhcww1/face-widget.png" alt="" style="border: 0px;" /></a>  
+	  		</div>
+ 			<!--Termina Banners Lateral -->
+ 		</div>
+ 		<!--Acciones del menu vertical -->
+<script>
+jq144(document).ready(function() {
+    jq144('#bloqueslateral ul ul').slideUp();
+    jq144('ul>li').click(function(){
+        jq144(this).next('ul').slideToggle();
+    });
+});
+</script>
+ 		<!--Termina acciones del menu vertical -->      <!-- Termina barra lateral -->
+ 		<!-- Empieza cuerpo  -->
+ 		<div id="cuerpo" >
+        <!--Banner central superior -->
+        	<div id="banners">
+        		<div class="particion1"><img src="https://dl.dropbox.com/s/wx3f1z2x1ytiz9r/Avisos.jpg" width="520" height="900" border="0" /></div>
+        	</div>
+        	<!-- Empieza catalogo  -->
+        	<div id="catalogo">
+        	
+        	 <h1>Contacto</h1>
+      	<!--Forma de contacto -->
+          <div id="contacto"> 
+			<h:form>
+			<p:growl id="msg" showDetail="true" escape="false" />
+			<p:tabView id="pnl">
+			<p:tab title="Contacto">
+			  <div class="campos"> 
+			  <pe:gChart value="#{genemixOrganigramaController.treeModel}">
+			  </pe:gChart> 
+             </div>
+              <div class="campos"> 
+              	 <p:outputLabel for="telefono" value="Teléfono con lada:"/><br/>
+             	 <p:inputText  required="true"  id="telefono" requiredMessage="Telefono requerido" validatorMessage="Número Incorrecto" maxlength="15" value="#{genemixContactoControlador.gmContacto.telefono}">
+             	  <f:validateRegex pattern="^([+]?[\d]+)?$" />
+             	 </p:inputText>
+                 <p:message for="telefono" />
+              </div>
+              <div class="camposultimo">
+              	  <p:outputLabel for="email" value="E-mail:"/><br/>
+              	   <p:inputText required="true" requiredMessage="Email requerido" validatorMessage="Email Incorecto" maxlength="60"  id="email" value="#{genemixContactoControlador.gmContacto.email}">
+              	   <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+              	   
+              	   </p:inputText>
+                   <p:message for="email" /> 
+              </div>
+              <div class="comentario"> 
+              	   <p:outputLabel for="come"  value="Duda o comentario:"></p:outputLabel><br />
+              	   <h:inputTextarea rows="6" requiredMessage="Comentario requerido" required="true" id="come"  cols="33" maxlength="120" value="#{genemixContactoControlador.gmContacto.comentario}"></h:inputTextarea>
+              	    <p:message for="come" />
+               </div>
+              <p:commandButton id="saveBtn" update="@(form)" value="Enviar" action="#{genemixContactoControlador.enviarcoment()}" />
+			</p:tab>
+			</p:tabView>
+			              
+			</h:form>
+          </div>
+          <!--Termina Forma de contacto --> 
+         
+  </div>
+        <!-- Termina catalogo  -->
+        <!--Banner inferior -->
+        <div id="banners">	    	</div>
+        <!-- Termina Banner inferior -->
+
+      </div>
+      <!-- Termina cuerpo -->
+
+    <!--Pleca -->
+
+
+      <!--Banner inferior pie de pagina -->
+      <div id="banners">	        </div>
+      <!-- Termina Banner inferior pie de pagina -->
+
+    </div>
+    <!-- Termina contenedor -->
+
+    <!-- Empieza footer  -->
+    <div id="footer">
+  <div class="contenido">
+    <div class="bloques" id="sobrenos"> <span class="tit">Nuestra empresa</span>
+      <ul id="nos">
+		<li><a href="#">Nosotros</a></li>
+		        <li><a href="#">Peticiones</a></li>
+        <li><a href="#">Celulas</a></li>
+      </ul>
+    </div>
+    <div class="bloques" id="micuenta"> <span class="tit">Mi cuenta</span>
+      <ul>
+        <li><a href="#">Ingresar</a></li>
+        <li><a href="#">Editar perfil</a></li>
+      </ul>
+    </div>
+    <div class="bloquesultimo" id="contieneboletin">
+      <span class="titulos tit plus3" id="boletinfooter">Boletín</span><br/>
+      <div class="bloquetexto" id="boletinf2">
+	Inscríbete para recibir información de eventos y noticias	
+	   <h:form>
+	<p:growl id="msg" showDetail="true" escape="false" />
+	    <script language="JavaScript">
+        boletin_flag = true;
+        </script>
+       
+          <p:inputText  id="email" validatorMessage="Email Incorecto"  requiredMessage="Email requerido" placeholder="Tu e-mail Aquí" required="true"  maxlength="45"  value="#{genemixBoletinControlador.gmBoletin.email}"  >
+          <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+          </p:inputText>
+          <p:commandButton id="saveBtn" update="@(form)" value=">" action="#{genemixBoletinControlador.addEmail()}" />
+        </h:form>
+
+        <span class="tit" id="notitresp">S&iacute;guenos en</span><br/>
+		        <div class="redes"> <a href="https://www.facebook.com/genezaret.mixcum" target="_parent"><img src="https://dl.dropbox.com/s/ipe53efr9xyqn60/face-icon.png" width="39" height="39" alt="Facebook"/></a></div>
+			        <div class="redes"><a href="#" target="_parent"><img src="/images/general-img/twiter-icon.png" width="39" height="39" alt="Twitter"/></a></div>
+
+      </div>
+    </div>
+  </div>
+  <div class="textofooter">
+    <div class="poweredby altofooter" id="msx">
+		<!--	<a href="http://www.mystorexpress.com/" target="_blank"><img src="http://mystore.mx/norw/misc/images/logo_mystore_xpress.png"
+      alt="Tienda MyStore Xpress (1452) - tkpartes.com.mx" title="C.F.C.Genesaret" width="70" height="53" border="0"
+      longdesc="http://www.mystorexpress.com" />
+		</a>-->
+	</div>
+    <div class="textf altofooter" id="txtft"> <p style="text-align:center">C.F.C.Genesaret Mixcum. Algunos derechos reservados. Tel&eacute;fono (044) 9621234567  y 123456789, Calle Juarez SN, Ejido Mixcum, Cacahoatan, Chiapas, CP 30895.</p> </div>
+    
+  </div>
+</div>
+<script>
+//<![CDATA[
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42481609-1', 'tkpartes.com.mx');
+  ga('send', 'pageview');
+//]]>
+</script>
+
+
+<link rel="icon" sizes="16x16 32x32" href="http://grupocreativo.com.mx/iconotk/iconotk2.png"/>
+<!-- Carga imagenes conforme se necesita -->
+<script>
+	jq144(function() {
+		jq144("img.lazy").lazyload();
+	});
+</script>
+
+<!--Mismo alto de divs -->
+<script>
+//<![CDATA[
+jq144(document).ready(function(){
+
+
+if (jq144(window).width() > 700) {
+    jq144('#plecaup').each(function(){
+        var highestBox = 0;
+
+        jq144(this).find('.menualto').each(function(){
+            if(jq144(this).height() > highestBox){
+                highestBox = jq144(this).height();
+            }
+        })
+
+        jq144(this).find('.menualto').height(highestBox);
+    });
+
+
+    jq144('.contenido').each(function(){
+        var highestBox = 0;
+
+        jq144(this).find('.bloques').each(function(){
+            if(jq144(this).height() > highestBox){
+                highestBox = jq144(this).height();
+            }
+        })
+
+        jq144(this).find('.bloques').height(highestBox);
+    });
+
+   jq144('.textofooter').each(function(){
+        var highestBox = 0;
+
+        jq144(this).find('.altofooter').each(function(){
+            if(jq144(this).height() > highestBox){
+                highestBox = jq144(this).height();
+            }
+        })
+
+        jq144(this).find('.altofooter').height(highestBox);
+    });
+}
+});
+//]]>
+</script>
+<!--Termina mismo alto de divs -->    <!-- Termina footer  -->
+
+    <!-- Termina border --> </div>
+  <!-- Termina wrapper --></div>
+<!--Menu horizontal de catalogo de productos -->
+<!--Acciones el menu horizontal -->
+<script>
+//<![CDATA[
+jq144(document).ready(myfunction);
+jq144(window).resize(myfunction);
+jq144(document).ready(menus);
+
+var estoy_chico;
+var resizeTimer;
+
+function doSomething() {
+	location.reload();
+	estoy_chico = 'no';
+};
+
+function menus() {
+	jq144('#menuhoriz .opciones .titcatresponsive').click(function(){
+		if (jq144(window).width() <= 700) {
+				jq144('#menuhoriz .opciones li').slideToggle();
+				jq144('#menuhoriz .opciones .titcatresponsive').toggleClass('minus plus');
+				jq144('#menuhoriz .opciones li:has(ul)').addClass('plus2');
+
+			return false;
+		}
+	});
+
+	jq144('#menuhoriz .opciones li:has(ul)').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144('ul', this).slideToggle();
+			jq144(this).toggleClass('minus2 plus2');
+			stopPropagation();
+			 return false;
+		}
+	});
+
+	jq144('#detprod').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144('#texdetprod').slideToggle();
+			jq144('#detprod').toggleClass('minusdet plusdet');
+			return false;
+		}
+	});
+	jq144('#comentdet').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144('#detalle .opiniones').slideToggle();
+			jq144('#btnescribe').slideToggle();
+			jq144('#comentdet').toggleClass('minusdet plusdet');
+			return false;
+		}
+	});
+	jq144('#menusupcel').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144('#plecaup .menu li').slideToggle();
+			return false;
+		}
+	});
+	jq144('#bloqueslateral2 .tit').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144(this).toggleClass('minus3 plus3');
+			jq144('#bloqueslateral2 .generico').slideToggle();
+			return false;
+		}
+	});
+	jq144('#bloqueslateral3 .tit').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144(this).toggleClass('minus3 plus3');
+			jq144('#bloqueslateral3 .contieneproductos').slideToggle();
+			return false;
+		}
+	});
+	jq144('#bloqueslateralaceptamos .tit').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144(this).toggleClass('minus3 plus3');
+			jq144('#bloqueslateralaceptamos .generico').slideToggle();
+			return false;
+		}
+	});
+	jq144('#bloqueslateral .tit').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144(this).toggleClass('minus3 plus3');
+			jq144('#bloqueslateral .generico').slideToggle();
+			return false;
+		}
+	});
+	jq144('#boletinfooter').click(function(){
+		if (jq144(window).width() <= 700) {
+			jq144(this).toggleClass('minus3 plus3');
+			jq144('#boletinf2').slideToggle();
+			return false;
+		}
+	});
+}
+
+function myfunction() {
+jq144('#catalogo .productos').css('height', 'auto');
+jq144('#catalogo .productosultimo').css('height', 'auto');
+
+if (jq144(window).width() > 1024) {
+
+		 jq144('#catalogo').each(function(){
+        var highestBox = 0;
+
+        jq144(this).find('.productos').each(function(){
+            if(jq144(this).height() > highestBox){
+                highestBox = jq144(this).height();
+            }
+        })
+        jq144(this).find('.productosultimo').each(function(){
+            if(jq144(this).height() > highestBox){
+                highestBox = jq144(this).height();
+            }
+        })
+
+        jq144(this).find('.productos').height(highestBox);
+        jq144(this).find('.productosultimo').height(highestBox);
+    });
+}
+	if ((jq144(window).width() <= 700) &&(estoy_chico !='si')) 
+	{
+		estoy_chico = 'si';
+		jq144( '#plecaup' ).insertBefore( '#header' );
+		jq144('#menuhoriz').removeClass('fixed');
+		jq144('#menuhoriz').css('display','block');
+		jq144( '#mensup' ).insertBefore( '#plecaup .menu' );
+		//jq144( '.textobanner' ).insertAfter( '#bannerprincipal' );
+		//jq144( '#cuerpo' ).insertBefore( '#barraizq' );
+		jq144( '#barraizq' ).insertAfter( '#cuerpo' );
+		jq144( '#buscador' ).insertAfter( '#cuerpo' );
+		jq144( '#msx' ).insertAfter( '#txtft' );
+		jq144( '#login .log2' ).insertBefore( '#login .log1' );
+		jq144( '#barraizq #banners' ).insertBefore( '#footer #txtft' );
+
+		anchopantalla = jq144(window).width();
+		jq144('#bannerprincipal').css('min-width','250px');
+		jq144('#slider1_container').css ('width',anchopantalla);
+		jq144('#slider1_container').css ('height','400px');
+		jq144('#bannerprincipal.contienebannerr').css ('width','100%');
+		jq144('#bannerprincipal.contienebannerr').css ('height','400px');
+
+
+		<!--Pleca fixed -->
+		num = jq144('#plecaup').outerHeight();
+			 if (jq144(window).scrollTop() > num) {
+				 jq144('#plecaup').addClass('fixed');
+			 }
+
+		jq144(window).bind('scroll', function() {
+			 if (jq144(window).scrollTop() > num) {
+				 jq144('#plecaup').addClass('fixed');
+			 }
+			 else {
+				 jq144('#plecaup').removeClass('fixed');
+			 }
+		});
+
+		<!--Termina Pleca fixed -->
+		jq144('a[href*=#buscador]').click(function(event){
+			jq144('#plecaup').addClass('fixed');
+			jq144('html, body').animate({
+				scrollTop: jq144( $.attr(this, 'href') ).offset().top -num-5
+			}, 500);
+			event.preventDefault();
+		});
+
+		<!--Remplaza tablas carrito -->
+		jq144('.tablacarrito table').after('<div id="product-container"></div>');
+		jq144('.tablacarrito .item').appendTo("#product-container").each(function() {});
+		jq144('<div id="recalcular"></div>').appendTo('#carrito .tablacarrito');
+		jq144('.tablacarrito .actualizar').appendTo("#recalcular");
+		jq144('.tablacarrito table').remove();
+
+		<!--Termina Remplaza tablas carrito -->
+
+		<!--Textos footer a pleca superior -->
+		jq144('#footer #nos li').appendTo("#plecaup .menu ul");
+		<!--Termona Textos footer a pleca superior -->
+
+		jq144('#footer #contieneboletin').appendTo("#barraizq");
+	}
+	else {
+		if ((estoy_chico=='si')&& jq144(window).width() > 700) {
+			clearTimeout(resizeTimer);
+			resizeTimer = setTimeout(doSomething, 100);
+		}
+	}
+}
+//]]>
+</script>
+<script>
+jq144(document).ready(function(){
+	 
+	jq144('.ir-arriba').click(function(){
+		jq144('body, html').animate({
+			scrollTop: '0px'
+		}, 300);
+	});
+ 
+	jq144(window).scroll(function(){
+		if( jq144(this).scrollTop() > 0 ){
+			jq144('.ir-arriba').slideDown(300);
+		} else {
+			jq144('.ir-arriba').slideUp(300);
+		}
+	});
+ 
+});
+</script>
+<!--Termina Menu horizontal de catalogo de productos -->
+<!--Pleca superior -->
+
+<div id="mensup">
+  <div class="mensup1" id="menusupcel"> <img src="/images/img-menu/abre_menu.png" width="30" height="24"/> </div>
+  <div class="mensup1"> <a href="#buscador"><img src="/images/img-menu/buscar_responsive.png" width="30" height="24" border="0"/></a> </div>
+  <div class="mensup1">
+    <a href="#"><img src="/images/img-menu/bible3.png" width="30" height="24" border="0"/></a>
+    </div>
+</div>
+<!--Termina pleca superior -->
+</h:body>
+</html>
