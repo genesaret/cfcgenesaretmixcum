@@ -49,9 +49,9 @@ success:function(json){
 
         // For each orgchart box, provide the name, manager, and tooltip to show.
         data.addRows([
-          [{v:'Mike', f:'Mike<div style="color:red; font-style:italic">Pastor</div>'},
+          [{v:'Mike', f:'Bernandino Vazquez<div style="color:red; font-style:italic">Pastor</div>'},
            '', 'Pastor'],
-          [{v:'Jim', f:'Jim<div style="color:red; font-style:italic">Vice President</div>'},
+          [{v:'Jim', f:'Fernando<div style="color:red; font-style:italic">Vice President</div>'},
            'Mike', 'VP'],
           ['Alice', 'Mike', ''],
           ['Bob', 'Jim', 'Bob Sponge'],
@@ -537,9 +537,10 @@ jq144(document).ready(function() {
         	<!-- Empieza catalogo  -->
         	<div id="catalogo">
         	
-        	 <h1>Contacto</h1>
+        	 <h1>Organigrama</h1>
       	<!--Forma de contacto -->
           <div id="contacto"> 
+          <h:form>
 			<p:tabView id="pnl">
 			<p:tab title="Organigrama">
 			 <!-- <div class="campos"> 
@@ -554,7 +555,7 @@ jq144(document).ready(function() {
               
 			</p:tab>
 			</p:tabView>
-			         
+          </h:form>     
           </div>
           <!--Termina Forma de contacto --> 
          
