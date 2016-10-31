@@ -26,10 +26,6 @@ import org.primefaces.model.TreeNode;
 @ViewScoped
 public class GenemixOrganigramaController implements Serializable { 
 	  
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private GChartModel standardModel = null;  
     private GChartModel treeModel = null;  
   
