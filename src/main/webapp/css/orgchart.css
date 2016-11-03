@@ -1,8 +1,4 @@
 
-@charset "utf-8";
-/* todo el css */
-
-
 
 *{
 	-webkit-box-sizing: border-box;
@@ -31,6 +27,9 @@
 
 /* Generic styling */
 
+body{
+	background: #F5EEC9;	
+}
 
 .content{
 	width: 100%;
@@ -55,7 +54,7 @@ ul{
 	list-style: none;		
 }
 
-.ul_a{
+ul a{
 	display: block;
 	background: #ccc;
 	border: 4px solid #fff;
@@ -75,13 +74,13 @@ ul{
 
 
 @media all and (max-width: 767px){
-	.ul_a{
+	ul a{
 		font-size: 1em;
 	}
 }
 
 
-.ul_a_span{
+ul a span{
 	top: 50%;
 	margin-top: -0.7em;
 	display: block;
