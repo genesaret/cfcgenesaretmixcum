@@ -55,7 +55,7 @@ ul{
 	list-style: none;		
 }
 
-.ul_a_tag{
+.ul_a{
 	display: block;
 	background: #ccc;
 	border: 4px solid #fff;
