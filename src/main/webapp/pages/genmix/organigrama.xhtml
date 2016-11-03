@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
@@ -25,6 +25,7 @@ success:function(json){
 });
 </script>
 		<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/css/orgchart.css" rel="stylesheet" type="text/css" media="all" />
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
 		<script type="text/javascript" src="/js/jquery-144min.js"></script>
 		<script type="text/javascript" src="/js/jssor.js"></script>
@@ -542,7 +543,7 @@ jq144(document).ready(function() {
           <div id="contacto"> 
           <h:form>
 			<p:tabView id="pnl">
-			<p:tab title="Organigrama">
+			<p:tab title="Juvenil">
 			 <!-- <div class="campos"> 
 			    <pe:gChart value="genemixOrganigramaController.standardModel" >
 			  </pe:gChart> 
@@ -550,8 +551,79 @@ jq144(document).ready(function() {
              </div>
              -->
               <div class="comentario"> 
-              	   <div id="chart_div"></div>
-               </div>
+<div class="content">
+  <h1></h1>
+  <figure class="org-chart cf">
+    <ul class="administration">
+      <li>					
+        <ul class="director">
+          <li>
+            <a href="#"><span>
+            <STRONG>Pastor</STRONG>
+            <br/>Bernandino Vazquez</span></a>
+            <ul class="subdirector">
+              <li><a href="#"><span>
+              <STRONG>Co-Pastor</STRONG>
+              <br/>Fernando  ?????? </span></a></li>
+            </ul>
+            <ul class="departments cf">								
+              <li><a href="#"><span>
+              <STRONG>Secretario</STRONG>
+              <br/>Ismael Ramos</span></a></li>
+              
+              <li class="department dep-a">
+                <a href="#"><span>Vocales</span></a>
+                <ul class="sections">
+                <p:inputText></h:inputText>
+                  <li class="section"><a href="#"><span></span></a></li>
+                  <li class="section"><a href="#"><span>TBD</span></a></li>
+                  <li class="section"><a href="#"><span>TBD</span></a></li>
+                  <li class="section"><a href="#"><span>TBD</span></a></li>
+                  <li class="section"><a href="#"><span>TBD</span></a></li>
+                </ul>
+              </li>
+              <!-- 
+              <li class="department dep-b">
+                <a href="#"><span>Department B</span></a>
+                <ul class="sections">
+                  <li class="section"><a href="#"><span>Section B1</span></a></li>
+                  <li class="section"><a href="#"><span>Section B2</span></a></li>
+                  <li class="section"><a href="#"><span>Section B3</span></a></li>
+                  <li class="section"><a href="#"><span>Section B4</span></a></li>
+                </ul>
+              </li>
+               -->
+               <!-- 
+              <li class="department dep-c">
+                <a href="#"><span>Department C</span></a>
+                <ul class="sections">
+                  <li class="section"><a href="#"><span>Section C1</span></a></li>
+                  <li class="section"><a href="#"><span>Section C2</span></a></li>
+                  <li class="section"><a href="#"><span>Section C3</span></a></li>
+                  <li class="section"><a href="#"><span>Section C4</span></a></li>
+                </ul>
+              </li>
+              -->
+               <!-- 
+              <li class="department dep-d">
+                <a href="#"><span>Department D</span></a>
+                <ul class="sections">
+                  <li class="section"><a href="#"><span>Section D1</span></a></li>
+                  <li class="section"><a href="#"><span>Section D2</span></a></li>
+                  <li class="section"><a href="#"><span>Section D3</span></a></li>
+                  <li class="section"><a href="#"><span>Section D4</span></a></li>
+                  <li class="section"><a href="#"><span>Section D5</span></a></li>
+                  <li class="section"><a href="#"><span>Section D6</span></a></li>
+                </ul>
+              </li>
+              -->
+            </ul>
+          </li>
+        </ul>	
+      </li>
+    </ul>			
+  </figure>
+</div>               </div>
               
 			</p:tab>
 			</p:tabView>
