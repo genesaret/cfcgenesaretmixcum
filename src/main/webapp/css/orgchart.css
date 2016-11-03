@@ -75,7 +75,7 @@ ul{
 
 
 @media all and (max-width: 767px){
-	ul a{
+	.ul_a{
 		font-size: 1em;
 	}
 }
