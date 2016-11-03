@@ -55,7 +55,7 @@ ul{
 	list-style: none;		
 }
 
-ul a{
+ul_a_tag{
 	display: block;
 	background: #ccc;
 	border: 4px solid #fff;
@@ -95,7 +95,7 @@ ul a span{
 	margin-bottom: 25px;
 }
 
-.director > li > a{
+director_a_tag{
 	width: 50%;
 	margin: 0 auto 0px auto;
 }
