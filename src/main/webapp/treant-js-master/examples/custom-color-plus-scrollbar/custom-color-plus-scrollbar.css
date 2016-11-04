@@ -44,7 +44,7 @@ body { background: #fff; }
 }
 
 @media screen and (max-width: 717px) {
-.chart {border: 3px solid #DDD; border-radius: 3px; 
+.chart { 
 width:100%;}
 
 }

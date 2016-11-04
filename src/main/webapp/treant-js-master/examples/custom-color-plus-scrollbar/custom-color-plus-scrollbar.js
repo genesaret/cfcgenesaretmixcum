@@ -19,7 +19,7 @@ var config = {
             title: "Pastor Local",
             contact: "Tel: 01 213 123 134",
         },
-        image: "/treant-js-master/headshots/1.jpg",
+        image: "/treant-js-master/examples/headshots/1.jpg",
         HTMLid: "ceo"
     },
 
@@ -30,7 +30,7 @@ var config = {
             title: "Co-Pastor",
         },
         stackChildren: true,
-        image: "../treant-js-master/headshots/default.jpg",
+        image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "coo"
     },
     cbo = {
@@ -39,7 +39,7 @@ var config = {
             name: "Ismael  Ramos",
             title: "Secretario",
         },
-        image: "../treant-js-master/headshots/default.jpg",
+        image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "cbo"
     },
     cdo = {
@@ -49,7 +49,7 @@ var config = {
             title: "Tesorero",
             contact: "Tel: 01 213 123 134",
         },
-        image: "../treant-js-master/headshots/default.jpg",
+        image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "cdo"
     },
     cio = {
@@ -99,7 +99,7 @@ var config = {
             name: "Mary Johnson",
             title: "Chief Brand Officer"
         },
-        image: "../headshots/4.jpg",
+        image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "ciso2"
     },
     ciso4 = {
@@ -108,7 +108,7 @@ var config = {
             name: "Kirk Douglas",
             title: "Chief Business Development Officer"
         },
-        image: "../headshots/11.jpg",
+        image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "ciso2"
     }
 
