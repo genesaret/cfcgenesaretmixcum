@@ -15,7 +15,7 @@ var config = {
     },
     ceo = {
         text: {
-            name: "Bernandino Vázquez Roblero",
+            name: "Bernandino Vázquez",
             title: "Pastor Local",
             contact: "Tel: 01 213 123 134",
         },
