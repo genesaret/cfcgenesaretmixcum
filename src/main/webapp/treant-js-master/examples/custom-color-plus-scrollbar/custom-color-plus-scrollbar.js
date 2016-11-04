@@ -68,7 +68,7 @@ var config = {
             title: "Chief Innovation Officer",
             contact: "we@aregreat.com"
         },
-        image: "../headshots/9.jpg",
+        image: ".../headshots/9.jpg",
         HTMLid: "ciso"
     },
     cio2 = {
