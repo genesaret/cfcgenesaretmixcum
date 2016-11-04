@@ -58,7 +58,7 @@ var config = {
             name: "Ron Blomquist",
             title: "Chief Information Security Officer"
         },
-        image: "/treant-js-master/headshots/default.png",
+        image: "/headshots/default.png",
         HTMLid: "cio"
     },
     ciso = {
