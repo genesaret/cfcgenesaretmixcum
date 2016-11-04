@@ -26,7 +26,7 @@ var config = {
     cto = {
         parent: ceo,
         text:{
-            name: "Fernando ????",
+            name: "Fernando Martínez",
             title: "Co-Pastor",
         },
         stackChildren: true,
@@ -87,8 +87,8 @@ var config = {
     ciso2 = {
         parent: cbo,
         text:{
-            name: "Alice Lopez",
-            title: "Chief Communications Officer"
+            name: "TBD",
+            title: "Vocal A"
         },
         image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "ciso2"
@@ -96,8 +96,8 @@ var config = {
     ciso3 = {
         parent: cbo,
         text:{
-            name: "Mary Johnson",
-            title: "Chief Brand Officer"
+            name: "TBD",
+            title: "Vocal E"
         },
         image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "ciso2"
@@ -105,12 +105,30 @@ var config = {
     ciso4 = {
         parent: cbo,
         text:{
-            name: "Kirk Douglas",
-            title: "Chief Business Development Officer"
+            name: "TBD",
+            title: "Vocal I"
         },
         image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "ciso2"
-    }
+    },
+    ciso5 = {
+        parent: cbo,
+        text:{
+            name: "TBD",
+            title: "Vocal O"
+        },
+        image: "/treant-js-master/examples/headshots/default.jpg",
+        HTMLid: "ciso2"
+    },
+ciso5 = {
+    parent: cbo,
+    text:{
+        name: "TBD",
+        title: "Vocal U"
+    },
+    image: "/treant-js-master/examples/headshots/default.jpg",
+    HTMLid: "ciso2"
+}
 
     ALTERNATIVE = [
         config,
