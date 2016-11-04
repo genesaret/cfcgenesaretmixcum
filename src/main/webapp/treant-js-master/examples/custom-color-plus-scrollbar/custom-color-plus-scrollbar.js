@@ -58,7 +58,7 @@ var config = {
             name: "Ron Blomquist",
             title: "Chief Information Security Officer"
         },
-        image: "/headshots/default.png",
+        image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "cio"
     },
     ciso = {
@@ -68,7 +68,7 @@ var config = {
             title: "Chief Innovation Officer",
             contact: "we@aregreat.com"
         },
-        image: "../headshots/9.jpg",
+        image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "ciso"
     },
     cio2 = {
@@ -81,7 +81,7 @@ var config = {
             href: "http://www.google.com",
             target: "_blank"
         },
-        image: "../headshots/10.jpg",
+        image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "cio2"
     },
     ciso2 = {
@@ -90,7 +90,7 @@ var config = {
             name: "Alice Lopez",
             title: "Chief Communications Officer"
         },
-        image: "../headshots/7.jpg",
+        image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "ciso2"
     },
     ciso3 = {
