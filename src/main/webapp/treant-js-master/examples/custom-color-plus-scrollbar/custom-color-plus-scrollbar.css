@@ -45,6 +45,6 @@ body { background: #fff; }
 
 @media screen and (max-width: 717px) {
 .chart { 
-width:100%;}
+width:100%; margin-top: -139px;}
 
 }
