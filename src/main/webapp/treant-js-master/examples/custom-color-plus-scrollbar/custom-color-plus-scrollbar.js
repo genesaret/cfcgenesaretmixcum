@@ -110,25 +110,7 @@ var config = {
         },
         image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "ciso2"
-    },
-    ciso5 = {
-        parent: cbo,
-        text:{
-            name: "TBD",
-            title: "Vocal O"
-        },
-        image: "/treant-js-master/examples/headshots/default.jpg",
-        HTMLid: "ciso2"
-    },
-ciso6 = {
-    parent: cbo,
-    text:{
-        name: "TBD",
-        title: "Vocal U"
-    },
-    image: "/treant-js-master/examples/headshots/default.jpg",
-    HTMLid: "ciso2"
-}
+    }
 
     ALTERNATIVE = [
         config,
@@ -141,7 +123,5 @@ ciso6 = {
         cio2,
         ciso2,
         ciso3,
-        ciso4,
-        ciso5,
-        ciso6
+        ciso4
     ];
