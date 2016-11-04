@@ -15,11 +15,11 @@ var config = {
     },
     ceo = {
         text: {
-            name: "Mark Hill",
-            title: "Chief executive officer",
+            name: "Bernandino Vázquez Roblero",
+            title: "Pastor Local",
             contact: "Tel: 01 213 123 134",
         },
-        image: "../headshots/2.jpg",
+        image: "/treant-js-master/headshots/1.jpg",
         HTMLid: "ceo"
     },
 
@@ -30,7 +30,7 @@ var config = {
             title: "Chief Technology Officer",
         },
         stackChildren: true,
-        image: "../headshots/1.jpg",
+        image: "/treant-js-master/headshots/default.jpg",
         HTMLid: "coo"
     },
     cbo = {
@@ -39,7 +39,7 @@ var config = {
             name: "Linda May",
             title: "Chief Business Officer",
         },
-        image: "../headshots/5.jpg",
+        image: "/treant-js-master/headshots/default.jpg",
         HTMLid: "cbo"
     },
     cdo = {
@@ -49,7 +49,7 @@ var config = {
             title: "Chief accounting officer",
             contact: "Tel: 01 213 123 134",
         },
-        image: "../headshots/6.jpg",
+        image: "/treant-js-master/headshots/default.jpg",
         HTMLid: "cdo"
     },
     cio = {
@@ -58,7 +58,7 @@ var config = {
             name: "Ron Blomquist",
             title: "Chief Information Security Officer"
         },
-        image: "../headshots/8.jpg",
+        image: "/treant-js-master/headshots/default.jpg",
         HTMLid: "cio"
     },
     ciso = {
