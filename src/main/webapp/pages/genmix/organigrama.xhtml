@@ -26,7 +26,10 @@ success:function(json){
 </script>
 		<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
 		<link rel="stylesheet" href="/treant-js-master/Treant.css" />
-   		<link rel="stylesheet" href="/treant-js-master/examples/basic-example/basic-example.css" />
+    <link rel="stylesheet" href="/treant-js-master/examples/custom-color-plus-scrollbar/custom-color-plus-scrollbar.css" />
+    
+    <link rel="stylesheet" href="/treant-js-master/examples/vendor/perfect-scrollbar/perfect-scrollbar.css" />
+   		
 		
 		<!--  <link href="/css/orgchart.css" rel="stylesheet" type="text/css" media="all" /> -->
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
@@ -547,15 +550,19 @@ jq144(document).ready(function() {
           <h:form>
 			<p:tabView id="pnl">
 			<p:tab title="Juvenil">
-<div class="chart" id="basic-example"></div>
+ <div class="chart" id="OrganiseChart1"></div>
     <script src="/treant-js-master/vendor/raphael.js"></script>
     <script src="/treant-js-master/Treant.js"></script>
     
-    <script src="/treant-js-master/examples/basic-example/basic-example.js"></script>
+    <script src="/treant-js-master/vendor/jquery.min.js"></script>
+    <script src="/treant-js-master/vendor/perfect-scrollbar/jquery.mousewheel.js"></script>
+    <script src="/treant-js-master/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    
+    <script src="/treant-js-master/examples/custom-color-plus-scrollbar/custom-color-plus-scrollbar.js"></script>
     <script>
-        new Treant( chart_config );
+        new Treant( ALTERNATIVE );
     </script>
-              
+ 
 			</p:tab>
 			</p:tabView>
           </h:form>     
