@@ -52,30 +52,30 @@ var config = {
         image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "cdo"
     },
-    cio = {
-        parent: cto,
-        text:{
-            name: "Ron Blomquist",
-            title: "Chief Information Security Officer"
-        },
-        image: "/treant-js-master/examples/headshots/default.jpg",
-        HTMLid: "cio"
-    },
-    ciso = {
-        parent: cto,
-        text:{
-            name: "Michael Rubin",
-            title: "Chief Innovation Officer",
-            contact: "we@aregreat.com"
-        },
-        image: "/treant-js-master/examples/headshots/default.jpg",
-        HTMLid: "ciso"
-    },
+    //cio = {
+      //  parent: cto,
+      //  text:{
+        //    name: "Ron Blomquist",
+          //  title: "Chief Information Security Officer"
+        //},
+        //image: "/treant-js-master/examples/headshots/default.jpg",
+        //HTMLid: "cio"
+    //},
+    //ciso = {
+      //  parent: cto,
+        //text:{
+          //  name: "Michael Rubin",
+            //title: "Chief Innovation Officer",
+            //contact: "we@aregreat.com"
+        //},
+        //image: "/treant-js-master/examples/headshots/default.jpg",
+        //HTMLid: "ciso"
+    //},
     cio2 = {
         parent: cdo,
         text:{
-            name: "Erica Reel",
-            title: "Chief Customer Officer"
+            name: "TBD",
+            title: "Auxiliar"
         },
         link: {
             href: "http://www.google.com",
@@ -120,7 +120,7 @@ var config = {
         image: "/treant-js-master/examples/headshots/default.jpg",
         HTMLid: "ciso2"
     },
-ciso5 = {
+ciso6 = {
     parent: cbo,
     text:{
         name: "TBD",
@@ -141,5 +141,7 @@ ciso5 = {
         cio2,
         ciso2,
         ciso3,
-        ciso4
+        ciso4,
+        ciso5,
+        ciso6
     ];
