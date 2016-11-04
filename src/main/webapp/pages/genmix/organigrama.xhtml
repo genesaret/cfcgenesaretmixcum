@@ -25,6 +25,9 @@ success:function(json){
 });
 </script>
 		<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" href="/treant-js-master/Treant.css" />
+   		<link rel="stylesheet" href="/treant-js-master/examples/basic-example/basic-example.css" />
+		
 		<!--  <link href="/css/orgchart.css" rel="stylesheet" type="text/css" media="all" /> -->
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
 		<script type="text/javascript" src="/js/jquery-144min.js"></script>
@@ -544,45 +547,15 @@ jq144(document).ready(function() {
           <h:form>
 			<p:tabView id="pnl">
 			<p:tab title="Juvenil">
-<div class="content">
-  <figure class="org-chart cf">
-    <ul class="administration">
-      <li>					
-        <ul class="director">
-          <li>
-            <a><span>Directaor</span></a>
-            <ul class="subdirector">
-              <li><a   ><span>Assistante Director</span></a></li>
-            </ul>
-            <ul class="departments cf">								
-              <li><a   ><span>Administration</span></a></li>
+<div class="chart" id="basic-example"></div>
+    <script src="/treant-js-master/vendor/raphael.js"></script>
+    <script src="/treant-js-master/Treant.js"></script>
+    
+    <script src="basic-example.js"></script>
+    <script>
+        new Treant( chart_config );
+    </script>
               
-              <li class="department dep-a">
-                <a   ><span>Department A</span></a>
-                <ul class="sections">
-                  <li class="section"><a  ><span>Section A1</span></a></li>
-                  <li class="section"><a  ><span>Section A2</span></a></li>
-                  <li class="section"><a  ><span>Section A3</span></a></li>
-                  <li class="section"><a  ><span>Section A4</span></a></li>
-                  <li class="section"><a  ><span>Section A5</span></a></li>
-                </ul>
-              </li>
-              
-              <li class="department dep-e">
-                <a  ><span>Department E</span></a>
-                <ul class="sections">
-                  <li class="section"><a  ><span>Section E1</span></a></li>
-                  <li class="section"><a  ><span>Section E2</span></a></li>
-                  <li class="section"><a  ><span>Section E3</span></a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>	
-      </li>
-    </ul>			
-  </figure>
-</div>              
 			</p:tab>
 			</p:tabView>
           </h:form>     
