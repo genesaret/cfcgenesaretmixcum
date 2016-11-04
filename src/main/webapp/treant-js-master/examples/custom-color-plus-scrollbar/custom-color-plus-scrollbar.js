@@ -49,7 +49,7 @@ var config = {
             title: "Chief accounting officer",
             contact: "Tel: 01 213 123 134",
         },
-        image: "/treant-js-master/headshots/default.jpg",
+        image: "../treant-js-master/headshots/default.jpg",
         HTMLid: "cdo"
     },
     cio = {
@@ -58,7 +58,7 @@ var config = {
             name: "Ron Blomquist",
             title: "Chief Information Security Officer"
         },
-        image: "/treant-js-master/headshots/default.jpg",
+        image: "../treant-js-master/headshots/default.png",
         HTMLid: "cio"
     },
     ciso = {
