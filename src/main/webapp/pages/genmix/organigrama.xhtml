@@ -29,9 +29,6 @@ success:function(json){
     <link rel="stylesheet" href="/treant-js-master/examples/custom-color-plus-scrollbar/custom-color-plus-scrollbar.css" />
     
     <link rel="stylesheet" href="/treant-js-master/vendor/perfect-scrollbar/perfect-scrollbar.css" />
-   		
-		
-		<!--  <link href="/css/orgchart.css" rel="stylesheet" type="text/css" media="all" /> -->
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
 		<script type="text/javascript" src="/js/jquery-144min.js"></script>
 		<script type="text/javascript" src="/js/jssor.js"></script>
@@ -43,34 +40,7 @@ success:function(json){
 		<script type="text/javascript" src="/js/jquery-validationEngine.js"></script>
 		<script type="text/javascript" src="/js/jquery.lazyload.js"></script>
 		<script type="text/javascript">  var jq144 = jQuery.noConflict(true);</script>
-		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    	<script type="text/javascript">
-      google.charts.load('current', {packages:["orgchart"]});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Name');
-        data.addColumn('string', 'Manager');
-        data.addColumn('string', 'ToolTip');
-
-        // For each orgchart box, provide the name, manager, and tooltip to show.
-        data.addRows([
-          [{v:'Mike', f:'Bernandino Vazquez<div style="color:red; font-style:italic">Pastor</div>'},
-           '', 'Pastor'],
-          [{v:'Jim', f:'Fernando<div style="color:red; font-style:italic">Vice President</div>'},
-           'Mike', 'VP'],
-          ['Alice', 'Mike', ''],
-          ['Bob', 'Jim', 'Bob Sponge'],
-          ['Carol', 'Bob', '']
-        ]);
-
-        // Create the chart.
-        var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
-        // Draw the chart, setting the allowHtml option to true for the tooltips.
-        chart.draw(data, {allowHtml:true});
-      }
-   </script>
+    
 		
 		
 		
@@ -549,7 +519,7 @@ jq144(document).ready(function() {
           <div id="contacto"> 
           <h:form>
 			<p:tabView id="pnl">
-			<p:tab title="Juvenil">
+			<p:tab title="General">
  <div class="chart" id="OrganiseChart1"></div>
     <script src="/treant-js-master/vendor/raphael.js"></script>
     <script src="/treant-js-master/Treant.js"></script>
