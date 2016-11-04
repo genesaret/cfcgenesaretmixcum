@@ -26,27 +26,27 @@ var config = {
     cto = {
         parent: ceo,
         text:{
-            name: "Joe Linux",
-            title: "Chief Technology Officer",
+            name: "Fernando ????",
+            title: "Co-Pastor",
         },
         stackChildren: true,
-        image: "/treant-js-master/headshots/default.jpg",
+        image: "../treant-js-master/headshots/default.jpg",
         HTMLid: "coo"
     },
     cbo = {
         parent: ceo,
         text:{
-            name: "Linda May",
-            title: "Chief Business Officer",
+            name: "Ismael  Ramos",
+            title: "Secretario",
         },
-        image: "/treant-js-master/headshots/default.jpg",
+        image: "../treant-js-master/headshots/default.jpg",
         HTMLid: "cbo"
     },
     cdo = {
         parent: ceo,
         text:{
-            name: "John Green",
-            title: "Chief accounting officer",
+            name: "Amado Gómez",
+            title: "Tesorero",
             contact: "Tel: 01 213 123 134",
         },
         image: "../treant-js-master/headshots/default.jpg",
