@@ -3837,6 +3837,23 @@ h2{
 	float:left;
 	margin-bottom: 2%;
 }
+#banners .iframehoy{
+	width: 100%;
+	height:auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#banners .iframefacebook{
+	width: 100%;
+	height:auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
 #banners img{
 	width: 100%;
 	height:auto;
