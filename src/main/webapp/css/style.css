@@ -861,7 +861,7 @@ a.ligaboton:hover {
 	font-size: 15px;
 	line-height: 110%;
 	color: #666;
-	background-color: #FFFFFF;
+	background-color: #898273;
 	cursor:pointer;
 	border-top-width: 1px;
 	border-right-width: 1px;
@@ -3207,7 +3207,7 @@ a.ligaboton:hover {
 	padding-top: 0px;
 	padding-right: 15px;
 	padding-bottom: 0px;
-	padding-left: 0px;
+	padding-left: 25px;
 	vertical-align: middle;
 	list-style:none;
 }
