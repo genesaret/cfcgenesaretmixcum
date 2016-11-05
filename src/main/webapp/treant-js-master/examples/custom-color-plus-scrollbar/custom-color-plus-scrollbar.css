@@ -43,8 +43,15 @@ body { background: #fff; }
     color: #636363;
 }
 
-@media screen and (max-width: 717px) {
-.chart { 
-width:100%; margin-top: -139px;}
+@media screen and (max-width: 717px) 
+{
+	.chart { 
+			width:100%; margin-top: -139px;
+		  }  
+}
 
+@media screen and (max-width: 1024px) {
+.chart { 
+			width:100%; margin-top: -139px;
+		  }  
 }
