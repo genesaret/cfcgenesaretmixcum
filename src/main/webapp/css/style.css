@@ -2383,7 +2383,7 @@ a.ligaboton:hover {
 	border-top-color: transparent;
 	padding-bottom: 3%;
 	text-align:left;
-	color:#70635B;
+	color:rgb(255, 255, 255);
 	background-image: url();
 	background-repeat: no-repeat;
 	background-position: left top;
