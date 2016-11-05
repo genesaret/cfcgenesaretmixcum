@@ -342,7 +342,7 @@ a.ligaboton:hover {
 #header {
 	width: 94%;
 	padding-right: 3%;
-	padding-left: 3%;
+	padding-left: 4%;
 	padding-top:1%;
 	padding-bottom: 1%;
 	float:left;
@@ -3386,7 +3386,7 @@ h2{
 	padding-top: 1%;
 	padding-right: 3%;
 	padding-bottom: 1%;
-	padding-left: 3%;
+	padding-left: 4%;
 	display:block!important;
 }
 #mensup {
@@ -3583,7 +3583,7 @@ h2{
 	font-size: 120%;
 	line-height: normal;
 	text-align:left;
-	padding-left:4%;
+	padding-left:5%;
 }
 .minus {
 	background-image:url(https://dl.dropbox.com/s/43z50dv79vermm7/minus.png) !important;
@@ -3726,7 +3726,7 @@ h2{
 	margin-top: 0%;
 	margin-right: 0px;
 	margin-bottom: 0px;
-	margin-left: 0px;
+	margin-left: 4px;
 	display: block;
 	text-align: left;
 	float:left;
