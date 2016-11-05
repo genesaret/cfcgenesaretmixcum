@@ -1,6 +1,6 @@
 var config = {
         container: "#OrganiseChart1",
-        rootOrientation:  'SOUTH', // NORTH || EAST || WEST || SOUTH
+        rootOrientation:  'NORTH', // NORTH || EAST || WEST || SOUTH
         // levelSeparation: 30,
         siblingSeparation:   20,
         subTeeSeparation:    60,
