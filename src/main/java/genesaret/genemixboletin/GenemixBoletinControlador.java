@@ -20,7 +20,7 @@ import genesaret.clasesEntidad.Gmboletin;
  *File: GenemixBoletinControlador.java
  *This class takes care on new user subscriptions 
  */
-@ManagedBean
+
 @RequestScoped
 @ViewScoped
 public class GenemixBoletinControlador implements Serializable
