@@ -4,11 +4,22 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	metadata-complete="false">
+	<!-- THEME CONFIG -->
 	<context-param>
 		<param-name>primefaces.THEME</param-name>
 		<param-value>south-street</param-value>
 	</context-param>
-	
+	<!-- CAPTCHA Private Key -->
+	<context-param>
+	<param-name>primefaces.PRIVATE_CAPTCHA_KEY</param-name>
+	<param-value>6LfA_SQUAAAAAJcxIbUZ6-K0vuXvYiHJODAH4AvX</param-value>
+	</context-param>
+	<!-- CAPTCHA Public Key -->
+	<context-param>
+	 <param-name>primefaces.PUBLIC_CAPTCHA_KEY</param-name>
+	 <param-value>6LfA_SQUAAAAALAEwg0LY-l3xytq-1TbCpNd1Dg6
+	 </param-value>
+	</context-param>
 		<!-- Welcome page -->
 	<welcome-file-list>
 		<welcome-file>faces/index.xhtml</welcome-file>
