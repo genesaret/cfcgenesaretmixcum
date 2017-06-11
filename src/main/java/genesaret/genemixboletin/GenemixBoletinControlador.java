@@ -22,9 +22,7 @@ import genesaret.clasesEntidad.Gmboletin;
  *This class takes care on new user subscriptions 
  */
 @ManagedBean
-@RequestScoped
 @Stateful
-@ViewScoped
 public class GenemixBoletinControlador implements Serializable
 {
 	private static final long serialVersionUID = 1L;
