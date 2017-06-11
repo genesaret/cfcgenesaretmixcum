@@ -20,7 +20,7 @@ import genesaret.clasesEntidad.Gmboletin;
  *File: GenemixBoletinControlador.java
  *This class takes care on new user subscriptions 
  */
-
+//ManagedBean
 @RequestScoped
 @ViewScoped
 public class GenemixBoletinControlador implements Serializable
@@ -63,7 +63,8 @@ public class GenemixBoletinControlador implements Serializable
 				//print the error message and set the gmBoletin object to NULL
 				FacesMessage msg = new FacesMessage("oops! Este Email Ya Existe ","Try Again");
 				FacesContext.getCurrentInstance().addMessage(null, msg);
-				gmBoletin=null;	
+				//gmBoletin=null;	
+				//utx.rollback();
 			}
 			catch(NoResultException e)//if not result was triggered in try block we can add the mail to te DB 
 			{
