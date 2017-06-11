@@ -28,10 +28,10 @@ public class GenemixBoletinControlador implements Serializable
 	private static final long serialVersionUID = 1L;
 	
 	@PersistenceContext(unitName = "GENESARETPU")
+	private EntityManager em;
 	@Resource
     private javax.transaction.UserTransaction utx;
 	
-	private EntityManager em;
     Gmboletin gmBoletin = new Gmboletin();
     
     //GETTER AND SETTER
