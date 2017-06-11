@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.sql.Date;
 
 import javax.annotation.Resource;
-import javax.ejb.Stateful;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
@@ -22,7 +21,8 @@ import genesaret.clasesEntidad.Gmboletin;
  *This class takes care on new user subscriptions 
  */
 @ManagedBean
-@Stateful
+@RequestScoped
+@ViewScoped
 public class GenemixBoletinControlador implements Serializable
 {
 	private static final long serialVersionUID = 1L;
