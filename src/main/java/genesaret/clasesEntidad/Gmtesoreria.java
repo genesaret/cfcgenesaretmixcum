@@ -6,13 +6,15 @@ import java.util.Date;
 
 
 /**
+ * File: Gmtesoreria.java
  * The persistent class for the gmtesoreria database table.
  * 
  */
 @Entity
 @Table(name="gmtesoreria")
 @NamedQuery(name="Gmtesoreria.findAll", query="SELECT g FROM Gmtesoreria g")
-public class Gmtesoreria implements Serializable {
+public class Gmtesoreria implements Serializable 
+{
 	private static final long serialVersionUID = 1L;
 	private int idTesor;
 	private String amaterno;
@@ -24,94 +26,104 @@ public class Gmtesoreria implements Serializable {
 	private String totalEntradas;
 	private String totalSalidas;
 
-	public Gmtesoreria() {
+	public Gmtesoreria() 
+	{
+		
 	}
-
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="id_tesor")
-	public int getIdTesor() {
+	public int getIdTesor() 
+	{
 		return this.idTesor;
 	}
 
-	public void setIdTesor(int idTesor) {
+	public void setIdTesor(int idTesor) 
+	{
 		this.idTesor = idTesor;
 	}
 
-
-	public String getAmaterno() {
+	public String getAmaterno() 
+	{
 		return this.amaterno;
 	}
 
-	public void setAmaterno(String amaterno) {
+	public void setAmaterno(String amaterno) 
+	{
 		this.amaterno = amaterno;
 	}
 
-
-	public String getApaterno() {
+	public String getApaterno() 
+	{
 		return this.apaterno;
 	}
 
-	public void setApaterno(String apaterno) {
+	public void setApaterno(String apaterno) 
+	{
 		this.apaterno = apaterno;
 	}
 
-
 	@Temporal(TemporalType.DATE)
-	public Date getFecha() {
+	public Date getFecha() 
+	{
 		return this.fecha;
 	}
 
-	public void setFecha(Date fecha) {
+	public void setFecha(Date fecha) 
+	{
 		this.fecha = fecha;
 	}
 
-
-	public String getNombre() {
+	public String getNombre() 
+	{
 		return this.nombre;
 	}
 
-	public void setNombre(String nombre) {
+	public void setNombre(String nombre) 
+	{
 		this.nombre = nombre;
 	}
 
-
-	public String getTesoreria() {
+	public String getTesoreria() 
+	{
 		return this.tesoreria;
 	}
 
-	public void setTesoreria(String tesoreria) {
+	public void setTesoreria(String tesoreria) 
+	{
 		this.tesoreria = tesoreria;
 	}
 
-
-	public String getTotal() {
+	public String getTotal() 
+	{
 		return this.total;
 	}
 
-	public void setTotal(String total) {
+	public void setTotal(String total) 
+	{
 		this.total = total;
 	}
 
-
 	@Column(name="total_entradas")
-	public String getTotalEntradas() {
+	public String getTotalEntradas() 
+	{
 		return this.totalEntradas;
 	}
 
-	public void setTotalEntradas(String totalEntradas) {
+	public void setTotalEntradas(String totalEntradas) 
+	{
 		this.totalEntradas = totalEntradas;
 	}
 
-
 	@Column(name="total_salidas")
-	public String getTotalSalidas() {
+	public String getTotalSalidas() 
+	{
 		return this.totalSalidas;
 	}
 
-	public void setTotalSalidas(String totalSalidas) {
+	public void setTotalSalidas(String totalSalidas) 
+	{
 		this.totalSalidas = totalSalidas;
 	}
-
 }

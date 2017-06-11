@@ -417,7 +417,7 @@ a.ligaboton:hover {
 	font-size: 40px;
 	max-width: 100%;
 	border:1px;
-	margin-left: auto;
+	margin-left: -85%;
 	margin-right:auto;
 }
 #header .carrito {
@@ -3458,7 +3458,7 @@ h2{
 	font-size: 40px;
 	max-width: 100%;
 	height:auto;
-	margin-left: auto;
+	margin-left: -85%;
 	border:0px;
 	margin-right:auto;
 }

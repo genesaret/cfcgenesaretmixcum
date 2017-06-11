@@ -4,15 +4,16 @@ import java.io.Serializable;
 import javax.persistence.*;
 import java.util.Date;
 
-
 /**
+ * Gmmiembro.java
  * The persistent class for the gmmiembros database table.
  * 
  */
 @Entity
 @Table(name="gmmiembros")
 @NamedQuery(name="Gmmiembro.findAll", query="SELECT g FROM Gmmiembro g")
-public class Gmmiembro implements Serializable {
+public class Gmmiembro implements Serializable 
+{
 	private static final long serialVersionUID = 1L;
 	private int idMiembro;
 	private String apaterno;
@@ -24,93 +25,103 @@ public class Gmmiembro implements Serializable {
 	private String municipio;
 	private String nombre;
 
-	public Gmmiembro() {
+	public Gmmiembro() 
+	{
+		
 	}
-
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="id_miembro")
-	public int getIdMiembro() {
+	public int getIdMiembro() 
+	{
 		return this.idMiembro;
 	}
 
-	public void setIdMiembro(int idMiembro) {
+	public void setIdMiembro(int idMiembro) 
+	{
 		this.idMiembro = idMiembro;
 	}
 
-
-	public String getApaterno() {
+	public String getApaterno() 
+	{
 		return this.apaterno;
 	}
 
-	public void setApaterno(String apaterno) {
+	public void setApaterno(String apaterno) 
+	{
 		this.apaterno = apaterno;
 	}
 
-
-	public String getBautizado() {
+	public String getBautizado() 
+	{
 		return this.bautizado;
 	}
 
-	public void setBautizado(String bautizado) {
+	public void setBautizado(String bautizado) 
+	{
 		this.bautizado = bautizado;
 	}
 
-
-	public String getCargo() {
+	public String getCargo() 
+	{
 		return this.cargo;
 	}
 
-	public void setCargo(String cargo) {
+	public void setCargo(String cargo) 
+	{
 		this.cargo = cargo;
 	}
 
-
-	public String getColonia() {
+	public String getColonia() 
+	{
 		return this.colonia;
 	}
 
-	public void setColonia(String colonia) {
+	public void setColonia(String colonia) 
+	{
 		this.colonia = colonia;
 	}
 
-
 	@Temporal(TemporalType.DATE)
 	@Column(name="fecha_nac")
-	public Date getFechaNac() {
+	public Date getFechaNac() 
+	{
 		return this.fechaNac;
 	}
 
-	public void setFechaNac(Date fechaNac) {
+	public void setFechaNac(Date fechaNac) 
+	{
 		this.fechaNac = fechaNac;
 	}
 
-
-	public String getGenero() {
+	public String getGenero() 
+	{
 		return this.genero;
 	}
 
-	public void setGenero(String genero) {
+	public void setGenero(String genero) 
+	{
 		this.genero = genero;
 	}
 
-
-	public String getMunicipio() {
+	public String getMunicipio() 
+	{
 		return this.municipio;
 	}
-
-	public void setMunicipio(String municipio) {
+	
+	public void setMunicipio(String municipio) 
+	{
 		this.municipio = municipio;
 	}
 
-
-	public String getNombre() {
+	public String getNombre() 
+	{
 		return this.nombre;
 	}
 
-	public void setNombre(String nombre) {
+	public void setNombre(String nombre) 
+	{
 		this.nombre = nombre;
 	}
-
 }

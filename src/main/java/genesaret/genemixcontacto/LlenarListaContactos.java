@@ -8,15 +8,22 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import genesaret.clasesEntidad.Gmcontacto;
+/**
+ * @author scooter
+ *File: LlenarListaContactos.java
+ */
 @ManagedBean(name = "LlenarListaContactos")
 @ApplicationScoped
-public class LlenarListaContactos {
-	 @PersistenceContext(unitName = "GENESARETPU")
-	    private EntityManager em;
-	     
-	      public List<Gmcontacto> ListaContactos(){
-	        List<Gmcontacto> contactos = new ArrayList<Gmcontacto>(); //inicializamos la lista de objetos de nuestra clase productos 
-	        contactos = em.createQuery("SELECT s FROM Gmcontacto s").getResultList(); //llenamos la lista d eobjetos
-	        return contactos;
-	    }
+public class LlenarListaContactos 
+{
+	@PersistenceContext(unitName = "GENESARETPU")
+	private EntityManager em;
+	@SuppressWarnings("unchecked")
+	
+	public List<Gmcontacto> ListaContactos()
+	{
+		List<Gmcontacto> contactos = new ArrayList<Gmcontacto>(); //inicializamos la lista de objetos de nuestra clase Gmcontacto 
+		contactos = em.createQuery("SELECT s FROM Gmcontacto s").getResultList(); //llenamos la lista de objetos
+		return contactos;
+	}
 }

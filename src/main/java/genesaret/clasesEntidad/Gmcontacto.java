@@ -4,15 +4,16 @@ import java.io.Serializable;
 import javax.persistence.*;
 import java.util.Date;
 
-
 /**
+ * File: Gmcontacto.java
  * The persistent class for the gmcontacto database table.
  * 
  */
 @Entity
 @Table(name="gmcontacto")
 @NamedQuery(name="Gmcontacto.findAll", query="SELECT g FROM Gmcontacto g")
-public class Gmcontacto implements Serializable {
+public class Gmcontacto implements Serializable 
+{
 	private static final long serialVersionUID = 1L;
 	private int idContacto;
 	private String comentario;
@@ -21,65 +22,72 @@ public class Gmcontacto implements Serializable {
 	private String nombre;
 	private String telefono;
 
-	public Gmcontacto() {
+	public Gmcontacto() 
+	{
+		
 	}
-
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id_contacto")
-	public int getIdContacto() {
+	public int getIdContacto() 
+	{
 		return this.idContacto;
 	}
 
-	public void setIdContacto(int idContacto) {
+	public void setIdContacto(int idContacto) 
+	{
 		this.idContacto = idContacto;
 	}
 
-
-	public String getComentario() {
+	public String getComentario() 
+	{
 		return this.comentario;
 	}
 
-	public void setComentario(String comentario) {
+	public void setComentario(String comentario) 
+	{
 		this.comentario = comentario;
 	}
 
-
-	public String getEmail() {
+	public String getEmail() 
+	{
 		return this.email;
 	}
 
-	public void setEmail(String email) {
+	public void setEmail(String email) 
+	{
 		this.email = email;
 	}
 
-
 	@Temporal(TemporalType.DATE)
-	public Date getFecha() {
+	public Date getFecha() 
+	{
 		return this.fecha;
 	}
 
-	public void setFecha(Date fecha) {
+	public void setFecha(Date fecha) 
+	{
 		this.fecha = fecha;
 	}
 
-
-	public String getNombre() {
+	public String getNombre() 
+	{
 		return this.nombre;
 	}
 
-	public void setNombre(String nombre) {
+	public void setNombre(String nombre) 
+	{
 		this.nombre = nombre;
 	}
 
-
-	public String getTelefono() {
+	public String getTelefono() 
+	{
 		return this.telefono;
 	}
 
-	public void setTelefono(String telefono) {
+	public void setTelefono(String telefono) 
+	{
 		this.telefono = telefono;
 	}
-
 }

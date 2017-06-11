@@ -4,15 +4,16 @@ import java.io.Serializable;
 import javax.persistence.*;
 import java.util.Date;
 
-
 /**
+ * 	File: Gmiglesia.java
  * The persistent class for the gmiglesia database table.
  * 
  */
 @Entity
 @Table(name="gmiglesia")
 @NamedQuery(name="Gmiglesia.findAll", query="SELECT g FROM Gmiglesia g")
-public class Gmiglesia implements Serializable {
+public class Gmiglesia implements Serializable 
+{
 	private static final long serialVersionUID = 1L;
 	private int idiglesia;
 	private String colonia;
@@ -24,91 +25,101 @@ public class Gmiglesia implements Serializable {
 	private String pastor;
 	private String telefono;
 
-	public Gmiglesia() {
+	public Gmiglesia() 
+	{
+		
 	}
-
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	public int getIdiglesia() {
+	public int getIdiglesia() 
+	{
 		return this.idiglesia;
 	}
 
-	public void setIdiglesia(int idiglesia) {
+	public void setIdiglesia(int idiglesia) 
+	{
 		this.idiglesia = idiglesia;
 	}
 
-
-	public String getColonia() {
+	public String getColonia() 
+	{
 		return this.colonia;
 	}
 
-	public void setColonia(String colonia) {
+	public void setColonia(String colonia) 
+	{
 		this.colonia = colonia;
 	}
 
-
-	public String getDireccion() {
+	public String getDireccion() 
+	{
 		return this.direccion;
 	}
 
-	public void setDireccion(String direccion) {
+	public void setDireccion(String direccion) 
+	{
 		this.direccion = direccion;
 	}
 
-
 	@Temporal(TemporalType.DATE)
-	public Date getFecha() {
+	public Date getFecha() 
+	{
 		return this.fecha;
 	}
 
-	public void setFecha(Date fecha) {
+	public void setFecha(Date fecha) 
+	{
 		this.fecha = fecha;
 	}
 
-
-	public String getMiembros() {
+	public String getMiembros() 
+	{
 		return this.miembros;
 	}
 
-	public void setMiembros(String miembros) {
+	public void setMiembros(String miembros) 
+	{
 		this.miembros = miembros;
 	}
 
-
-	public String getMunicipio() {
+	public String getMunicipio() 
+	{
 		return this.municipio;
 	}
 
-	public void setMunicipio(String municipio) {
+	public void setMunicipio(String municipio) 
+	{
 		this.municipio = municipio;
 	}
 
-
-	public String getNombre() {
+	public String getNombre() 
+	{
 		return this.nombre;
 	}
 
-	public void setNombre(String nombre) {
+	public void setNombre(String nombre) 
+	{
 		this.nombre = nombre;
 	}
 
-
-	public String getPastor() {
+	public String getPastor() 
+	{
 		return this.pastor;
 	}
 
-	public void setPastor(String pastor) {
+	public void setPastor(String pastor) 
+	{
 		this.pastor = pastor;
 	}
 
-
-	public String getTelefono() {
+	public String getTelefono() 
+	{
 		return this.telefono;
 	}
 
-	public void setTelefono(String telefono) {
+	public void setTelefono(String telefono) 
+	{
 		this.telefono = telefono;
 	}
-
 }

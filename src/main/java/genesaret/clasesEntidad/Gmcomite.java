@@ -4,15 +4,16 @@ import java.io.Serializable;
 import javax.persistence.*;
 import java.util.Date;
 
-
 /**
+ * File: Gmcomite.java
  * The persistent class for the gmcomites database table.
  * 
  */
 @Entity
 @Table(name="gmcomites")
 @NamedQuery(name="Gmcomite.findAll", query="SELECT g FROM Gmcomite g")
-public class Gmcomite implements Serializable {
+public class Gmcomite implements Serializable 
+{
 	private static final long serialVersionUID = 1L;
 	private int idComite;
 	private Date fecha;
@@ -24,92 +25,102 @@ public class Gmcomite implements Serializable {
 	private String vicepresidente;
 	private String vocal;
 
-	public Gmcomite() {
+	public Gmcomite() 
+	{
+		
 	}
-
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id_comite")
-	public int getIdComite() {
+	public int getIdComite() 
+	{
 		return this.idComite;
 	}
 
-	public void setIdComite(int idComite) {
+	public void setIdComite(int idComite) 
+	{
 		this.idComite = idComite;
 	}
 
-
 	@Temporal(TemporalType.DATE)
-	public Date getFecha() {
+	public Date getFecha() 
+	{
 		return this.fecha;
 	}
 
-	public void setFecha(Date fecha) {
+	public void setFecha(Date fecha) 
+	{
 		this.fecha = fecha;
 	}
 
-
-	public String getMiembros() {
+	public String getMiembros() 
+	{
 		return this.miembros;
 	}
 
-	public void setMiembros(String miembros) {
+	public void setMiembros(String miembros) 
+	{
 		this.miembros = miembros;
 	}
 
-
-	public String getNombre() {
+	public String getNombre() 
+	{
 		return this.nombre;
 	}
 
-	public void setNombre(String nombre) {
+	public void setNombre(String nombre) 
+	{
 		this.nombre = nombre;
 	}
 
-
-	public String getPresidente() {
+	public String getPresidente() 
+	{
 		return this.presidente;
 	}
 
-	public void setPresidente(String presidente) {
+	public void setPresidente(String presidente) 
+	{
 		this.presidente = presidente;
 	}
 
-
-	public String getSecretario() {
+	public String getSecretario() 
+	{
 		return this.secretario;
 	}
 
-	public void setSecretario(String secretario) {
+	public void setSecretario(String secretario) 
+	{
 		this.secretario = secretario;
 	}
 
-
-	public String getTesorero() {
+	public String getTesorero() 
+	{
 		return this.tesorero;
 	}
 
-	public void setTesorero(String tesorero) {
+	public void setTesorero(String tesorero) 
+	{
 		this.tesorero = tesorero;
 	}
 
-
-	public String getVicepresidente() {
+	public String getVicepresidente() 
+	{
 		return this.vicepresidente;
 	}
 
-	public void setVicepresidente(String vicepresidente) {
+	public void setVicepresidente(String vicepresidente) 
+	{
 		this.vicepresidente = vicepresidente;
 	}
 
-
-	public String getVocal() {
+	public String getVocal() 
+	{
 		return this.vocal;
 	}
 
-	public void setVocal(String vocal) {
+	public void setVocal(String vocal) 
+	{
 		this.vocal = vocal;
 	}
-
 }
