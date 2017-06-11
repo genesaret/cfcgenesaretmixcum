@@ -64,6 +64,7 @@ public class GenemixBoletinControlador implements Serializable
 				FacesMessage msg = new FacesMessage("oops! Este Email Ya Existe ","Try Again");
 				FacesContext.getCurrentInstance().addMessage(null, msg);
 				gmBoletin=null;	
+				utx.rollback();
 			}
 			catch(NoResultException e)//if not result was triggered in try block we can add the mail to te DB 
 			{

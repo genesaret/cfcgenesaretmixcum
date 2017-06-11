@@ -69,6 +69,7 @@ public class GenemixContactoControlador implements Serializable
 				FacesMessage msg = new FacesMessage("Ops! Este Email Ya Existe ","Try Again");
 				FacesContext.getCurrentInstance().addMessage(null, msg);
 				gmContacto=null;
+				utx.rollback();
 			}
 			catch(NoResultException e)
             {
