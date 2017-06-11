@@ -63,7 +63,6 @@ public class GenemixBoletinControlador implements Serializable
 				//print the error message and set the gmBoletin object to NULL
 				FacesMessage msg = new FacesMessage("oops! Este Email Ya Existe ","Try Again");
 				FacesContext.getCurrentInstance().addMessage(null, msg);
-				gmBoletin=null;	
 				//utx.rollback();
 			}
 			catch(NoResultException e)//if not result was triggered in try block we can add the mail to te DB 
@@ -73,7 +72,9 @@ public class GenemixBoletinControlador implements Serializable
 				utx.commit();
 				FacesMessage msg = new FacesMessage("Email  Enviado con Exito! ", gmBoletin.getEmail());
 				FacesContext.getCurrentInstance().addMessage(null, msg);
+				//em.close();
 			}
+			gmBoletin=null;	
 		}
 		catch (Exception e) 
 		{
