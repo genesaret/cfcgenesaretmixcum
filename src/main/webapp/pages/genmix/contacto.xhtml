@@ -599,6 +599,7 @@ jq144(document).ready(function() {
           <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
           </p:inputText>
           <p:commandButton id="saveBtn" update="@(form)" value=">" action="#{genemixBoletinControlador.addEmail()}" />
+          <p:ajaxStatus oncomplete="Recaptcha.reload();" />
         </h:form>
 
         <span class="tit" id="notitresp">S&iacute;guenos en</span><br/>
