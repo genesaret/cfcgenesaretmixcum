@@ -247,9 +247,9 @@ a.ligaboton:hover {
 #plecaup .contienemenutop {
 	width: 88%;
 	clear:left;
-	margin-top: 0px;
+	margin-top: 11px;
 	margin-right: auto;
-	margin-bottom: 0px;
+	margin-bottom: 45px;
 	margin-left: auto;
 	max-width: 1200px;
 }
@@ -413,11 +413,11 @@ a.ligaboton:hover {
 #header .logo img{
 	width: auto;
 	height:auto;
-	float:none;
+	float: left;
 	font-size: 40px;
 	max-width: 100%;
 	border:1px;
-	margin-left: -85%;
+	margin-left: auto;
 	margin-right:auto;
 }
 #header .carrito {
@@ -822,7 +822,7 @@ a.ligaboton:hover {
 }
 #bloqueslateralcarrito #buscador input[type=text]{
 	width: 71%;
-	padding-right: 5%;
+	padding-right: 48%;
 	height: 32px;
 	padding-top: 2px;
 	padding-bottom: 2px;
@@ -858,7 +858,7 @@ a.ligaboton:hover {
 	padding-left: 0%;
 	margin-left: 0px;
 	font-family: Oswald;
-	font-size: 15px;
+	font-size: 19px;
 	line-height: 110%;
 	color: #666;
 	background-color: #898273;
@@ -3454,13 +3454,13 @@ h2{
 
 #header .logo img{
 	width: auto;
-	float: right;
+	float: none;
 	font-size: 40px;
 	max-width: 100%;
 	height:auto;
-	margin-left: -85%;
+	margin-left: auto;
 	border:0px;
-	margin-right:auto;
+	margin-right: auto;
 }
 #header {
 	width: 94%;
