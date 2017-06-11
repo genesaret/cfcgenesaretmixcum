@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.sql.Date;
 
 import javax.annotation.Resource;
+import javax.ejb.Stateful;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
@@ -22,6 +23,7 @@ import genesaret.clasesEntidad.Gmboletin;
  */
 @ManagedBean
 @RequestScoped
+@Stateful
 @ViewScoped
 public class GenemixBoletinControlador implements Serializable
 {
@@ -64,7 +66,6 @@ public class GenemixBoletinControlador implements Serializable
 				FacesMessage msg = new FacesMessage("oops! Este Email Ya Existe ","Try Again");
 				FacesContext.getCurrentInstance().addMessage(null, msg);
 				gmBoletin=null;	
-				utx.rollback();
 			}
 			catch(NoResultException e)//if not result was triggered in try block we can add the mail to te DB 
 			{
