@@ -1,6 +1,3 @@
-/**
- * 
- */
 package genesaret.genemixorganigrama;
 
 import java.io.Serializable;
@@ -17,8 +14,8 @@ import org.primefaces.model.DefaultTreeNode;
 import org.primefaces.model.TreeNode;
 
 /**
- * @author scooter pc
- *
+ * @author Adalberto Perez
+ *File: GenemixOrganigramaController.java 
  */
 @ManagedBean
 @RequestScoped
